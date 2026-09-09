@@ -1,0 +1,21 @@
+@use '../variables' as *;
+
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 2.75rem;
+	padding: $space-3 $space-4;
+	border: 1px solid currentColor;
+	background: transparent;
+	color: $color-cream;
+	cursor: pointer;
+	text-decoration: none;
+	transition: background $transition-fast, color $transition-fast, border-color $transition-fast;
+}
+
+.button:hover {
+	background: $color-yellow;
+	border-color: $color-yellow;
+	color: $color-asphalt;
+}

@@ -1,0 +1,32 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+:root {
+	color-scheme: dark;
+	background: $color-asphalt;
+	color: $color-cream;
+	font-family: $font-body;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	min-width: 320px;
+	min-height: 100vh;
+	background: $color-asphalt;
+	color: $color-cream;
+}
+
+a {
+	color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible {
+	@include focus-ring;
+}
+
+::selection {
+	background: $color-yellow;
+	color: $color-asphalt;
+}

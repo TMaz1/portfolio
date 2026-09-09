@@ -1,0 +1,16 @@
+@use 'variables' as *;
+
+.container {
+	width: min(100% - ($container-gutter * 2), $container-max);
+	margin-inline: auto;
+}
+
+.site-shell {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.site-main {
+	flex: 1;
+}

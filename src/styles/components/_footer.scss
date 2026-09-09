@@ -1,0 +1,21 @@
+@use '../variables' as *;
+
+.site-footer {
+	border-top: $border-subtle;
+	padding-block: $space-8;
+	color: $color-muted;
+	font-size: $type-xs;
+}
+
+.site-footer__inner {
+	display: flex;
+	justify-content: space-between;
+	gap: $space-8;
+}
+
+@media (max-width: $breakpoint-mobile) {
+	.site-footer__inner {
+		flex-direction: column;
+		gap: $space-2;
+	}
+}

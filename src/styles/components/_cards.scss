@@ -1,0 +1,7 @@
+@use '../variables' as *;
+
+.card {
+	border: $border-subtle;
+	background: $color-charcoal;
+	box-shadow: $shadow-panel;
+}

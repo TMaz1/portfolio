@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+@mixin focus-ring {
+	outline: 2px solid $color-yellow;
+	outline-offset: 3px;
+}
+
+@mixin interactive-underline {
+	text-decoration: none;
+	transition: color $transition-fast, opacity $transition-fast;
+
+	&:hover {
+		color: $color-yellow;
+	}
+
+	&:focus-visible {
+		@include focus-ring;
+	}
+}

@@ -1,0 +1,28 @@
+@use '../variables' as *;
+
+.home-foundation {
+	min-height: min(78vh, 800px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-block: $space-24;
+}
+
+.home-foundation__eyebrow {
+	margin-bottom: $space-6;
+	color: $color-yellow;
+	font-size: $type-xs;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.home-foundation h1 {
+	max-width: 10ch;
+}
+
+.home-foundation__intro {
+	max-width: 52rem;
+	margin-top: $space-8;
+	color: $color-muted;
+	font-size: clamp(1rem, 1.5vw, 1.25rem);
+}
