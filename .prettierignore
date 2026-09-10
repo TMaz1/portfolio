@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Coverage reports
+coverage/
+
+# Vite cache
+.vite/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Generated files
+*.generated.*
+*.min.js
+*.min.css
+
+# Git
+.git/
+
+# IDE/editor files
+.vscode/
+.idea/

@@ -1,5 +1,4 @@
-@use '../variables' as *;
-@use '../mixins' as *;
+@use "../variables" as *;
 
 .site-header {
 	position: sticky;
@@ -7,11 +6,11 @@
 	z-index: $z-header;
 	border-bottom: $border-subtle;
 	background: rgba($color-asphalt, 0.94);
-	backdrop-filter: blur(14px);
+	backdrop-filter: blur(12px);
 }
 
 .site-header__inner {
-	min-height: 4.5rem;
+	min-height: $header-height;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -21,25 +20,20 @@
 .site-brand {
 	display: inline-flex;
 	align-items: baseline;
-	gap: 0.15rem;
 	color: $color-cream;
-	font-family: $font-display;
-	font-size: 1.35rem;
-	font-weight: $weight-bold;
-	letter-spacing: 0.02em;
 	text-decoration: none;
+	font-family: $font-display;
+	font-size: 1.45rem;
+	letter-spacing: 0.06em;
+	flex-shrink: 0;
+}
 
-	&:hover {
-		color: $color-yellow;
-	}
-
-	&:focus-visible {
-		@include focus-ring;
-	}
+.site-brand__mark {
+	color: $color-yellow;
 }
 
 .site-brand__suffix {
-	color: $color-yellow;
+	color: $color-muted;
 }
 
 .site-navigation {
@@ -48,33 +42,35 @@
 	gap: clamp($space-4, 3vw, $space-8);
 }
 
-.site-navigation__link {
-	@include interactive-underline;
+.site-navigation a {
 	color: $color-muted;
 	font-size: $type-sm;
-	letter-spacing: 0.04em;
+	text-decoration: none;
 	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	transition: color $transition-fast;
 }
 
-.site-navigation__link--active {
+.site-navigation a:hover,
+.site-navigation a:focus-visible,
+.site-navigation a.is-active {
 	color: $color-cream;
+}
+
+.site-navigation a.is-active::before {
+	content: "↑ ";
+	color: $color-yellow;
 }
 
 @media (max-width: $breakpoint-mobile) {
 	.site-header__inner {
-		align-items: flex-start;
-		flex-direction: column;
-		gap: $space-3;
-		padding-block: $space-4;
+		gap: $space-4;
 	}
-
 	.site-navigation {
-		width: 100%;
-		justify-content: space-between;
 		gap: $space-3;
 	}
-
-	.site-navigation__link {
+	.site-navigation a {
 		font-size: 0.68rem;
+		letter-spacing: 0.04em;
 	}
 }

@@ -1,5 +1,5 @@
-import type { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from "react";
 
 export function Container({ children }: PropsWithChildren) {
-    return <div className="container">{children}</div>;
+	return <div className="container">{children}</div>;
 }

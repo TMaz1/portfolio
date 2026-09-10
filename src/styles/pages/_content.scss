@@ -1,0 +1,78 @@
+@use "../variables" as *;
+
+.content-hero {
+	padding-top: clamp($space-16, 10vw, 9rem);
+	padding-bottom: $space-12;
+}
+
+.content-hero__eyebrow {
+	color: $color-yellow;
+	font-size: $type-xs;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.content-hero h1 {
+	max-width: 1000px;
+	margin: $space-4 0 $space-6;
+	font-family: $font-display;
+	font-size: clamp(3rem, 9vw, 8rem);
+	line-height: 0.88;
+	text-transform: uppercase;
+}
+
+.content-hero__intro {
+	max-width: $max-content-width;
+	color: $color-muted;
+	line-height: 1.8;
+	font-size: 1.05rem;
+}
+
+.content-body {
+	padding-bottom: clamp($space-16, 10vw, 9rem);
+}
+
+.content-renderer {
+	max-width: $max-content-width;
+	margin-inline: auto;
+}
+
+.content-block--paragraph {
+	margin: 0 0 $space-8;
+	color: $color-muted;
+	line-height: 1.9;
+}
+
+.content-block--heading {
+	margin: $space-12 0 $space-6;
+	font-family: $font-display;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.content-block--heading[id] {
+	scroll-margin-top: calc($header-height + $space-4);
+}
+
+.content-block--heading:first-child {
+	margin-top: 0;
+}
+
+.content-missing {
+	padding-top: clamp($space-16, 10vw, 9rem);
+	padding-bottom: clamp($space-16, 10vw, 9rem);
+}
+
+.content-missing h1 {
+	margin: $space-4 0 $space-6;
+	font-family: $font-display;
+	font-size: clamp(3rem, 8vw, 7rem);
+	line-height: 0.9;
+	text-transform: uppercase;
+}
+
+.content-missing > p:not(.content-hero__eyebrow) {
+	max-width: 600px;
+	color: $color-muted;
+	line-height: 1.8;
+}
