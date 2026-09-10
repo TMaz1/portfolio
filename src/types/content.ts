@@ -51,4 +51,13 @@ export type ContentDocument = {
 	intro: string;
 	heroLink?: ExternalLink;
 	blocks: ContentBlock[];
+	archive?: {
+		category: string;
+		filterCategories: NoteFilterCategory[];
+		readingTime: string;
+		year: number;
+	};
 };
+
+export type NoteFilterCategory =
+	"backend" | "frontend" | "infrastructure" | "performance" | "research";

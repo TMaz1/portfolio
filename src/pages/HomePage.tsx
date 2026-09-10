@@ -1,3 +1,4 @@
+import type React from "react";
 import { Link } from "react-router-dom";
 import { experience, skillGroups } from "../content/home";
 import { projects } from "../content/projects";
@@ -23,7 +24,22 @@ export function HomePage() {
 						Production-minded engineering with an interest in
 						systems, performance and the details between the layers.
 					</p>
-					<a className="hero-button" href="#work">
+					<a
+						className="hero-button"
+						href="#work"
+						onClick={(
+							event: React.MouseEvent<HTMLAnchorElement>,
+						) => {
+							event.preventDefault();
+							document.getElementById("work")?.scrollIntoView({
+								behavior: window.matchMedia(
+									"(prefers-reduced-motion: reduce)",
+								).matches
+									? "auto"
+									: "smooth",
+							});
+						}}
+					>
 						View selected work
 					</a>
 				</div>

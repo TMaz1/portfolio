@@ -1,0 +1,283 @@
+@use "../variables" as *;
+
+.notes-hero {
+	border-bottom: $border-subtle;
+}
+
+.notes-hero__inner {
+	padding-top: clamp($space-16, 11vw, 10rem);
+	padding-bottom: clamp($space-16, 11vw, 10rem);
+}
+
+.notes-hero h1 {
+	max-width: 900px;
+	margin: $space-4 0 $space-8;
+	font-family: $font-display;
+	font-size: $type-xl;
+	font-weight: $weight-regular;
+	line-height: 0.88;
+	letter-spacing: -0.035em;
+	text-transform: uppercase;
+}
+
+.notes-hero h1 span {
+	color: $color-yellow;
+}
+
+.notes-hero__description {
+	max-width: 760px;
+	color: $color-muted;
+	line-height: 1.85;
+}
+
+.notes-intro {
+	display: grid;
+	grid-template-columns: minmax(140px, 0.35fr) minmax(0, 1fr);
+	gap: $space-8;
+	padding-top: clamp($space-16, 10vw, 9rem);
+	padding-bottom: clamp($space-16, 10vw, 9rem);
+}
+
+.notes-intro__label,
+.notes-section-heading>span {
+	color: $color-yellow;
+	font-size: $type-xs;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.notes-intro__content {
+	max-width: 760px;
+}
+
+.notes-intro h2,
+.notes-section-heading h2 {
+	margin: 0 0 $space-8;
+	font-family: $font-display;
+	font-size: clamp(2.75rem, 7vw, 5.75rem);
+	font-weight: $weight-regular;
+	line-height: 0.9;
+	text-transform: uppercase;
+}
+
+.notes-intro p,
+.notes-section-heading p {
+	max-width: 760px;
+	color: $color-muted;
+	line-height: 1.85;
+}
+
+.notes-intro p+p {
+	margin-top: $space-6;
+}
+
+.notes-featured {
+	padding-bottom: clamp($space-16, 10vw, 9rem);
+}
+
+.notes-projects,
+.notes-archive {
+	padding-bottom: clamp($space-16, 10vw, 9rem);
+}
+
+.notes-section-heading {
+	display: grid;
+	grid-template-columns: minmax(150px, 0.35fr) minmax(0, 1fr);
+	gap: $space-8;
+	padding-top: clamp($space-16, 10vw, 9rem);
+	margin-bottom: $space-12;
+	border-top: $border-subtle;
+}
+
+.notes-section-heading h2 {
+	margin-bottom: $space-6;
+}
+
+.project-archive-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	border-top: 1px solid rgba($color-cream, 0.16);
+}
+
+.project-archive-card {
+	min-width: 0;
+	padding: clamp($space-8, 5vw, $space-12) clamp($space-4, 3vw, $space-8);
+	border-bottom: 1px solid rgba($color-cream, 0.16);
+}
+
+.project-archive-card:nth-child(odd) {
+	border-right: 1px solid rgba($color-cream, 0.16);
+}
+
+.project-archive-card__number {
+	color: $color-yellow;
+	font-size: $type-xs;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.project-archive-card h3 {
+	margin: $space-4 0 $space-4;
+	font-family: $font-display;
+	font-size: clamp(1.8rem, 4vw, 3rem);
+	font-weight: $weight-regular;
+	line-height: 0.95;
+	text-transform: uppercase;
+}
+
+.project-archive-card p {
+	max-width: 680px;
+	color: $color-muted;
+	line-height: 1.75;
+}
+
+.project-archive-card a {
+	display: inline-block;
+	margin-top: $space-6;
+	color: $color-cream;
+	font-size: $type-sm;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	text-decoration: none;
+}
+
+.project-archive-card a:hover,
+.project-archive-card a:focus-visible {
+	color: $color-yellow;
+}
+
+.note-filters {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: $space-8;
+	margin-bottom: $space-8;
+	padding-bottom: $space-4;
+	border-bottom: $border-subtle;
+}
+
+.note-filters__buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: $space-2 $space-4;
+}
+
+.note-filters button {
+	padding: $space-2 0;
+	border: 0;
+	background: transparent;
+	color: $color-muted;
+	cursor: pointer;
+	font-size: $type-xs;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.note-filters button:hover,
+.note-filters button:focus-visible,
+.note-filters button.is-active {
+	color: $color-cream;
+}
+
+.note-filters button.is-active {
+	color: $color-yellow;
+}
+
+.note-filters>span {
+	flex: 0 0 auto;
+	color: $color-muted;
+	font-size: $type-xs;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.notes-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	border-top: 1px solid rgba($color-cream, 0.16);
+}
+
+.note-card {
+	min-width: 0;
+	padding: clamp($space-8, 5vw, $space-12) clamp($space-4, 3vw, $space-8);
+	border-bottom: 1px solid rgba($color-cream, 0.16);
+}
+
+.note-card:nth-child(odd) {
+	border-right: 1px solid rgba($color-cream, 0.16);
+}
+
+.note-card__top,
+.note-card__bottom {
+	display: flex;
+	justify-content: space-between;
+	gap: $space-4;
+	color: $color-muted;
+	font-size: $type-xs;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.note-card__top span:first-child {
+	color: $color-yellow;
+}
+
+.note-card__body {
+	padding: $space-8 0;
+}
+
+.note-card h3 {
+	max-width: 600px;
+	margin: 0 0 $space-4;
+	font-family: $font-display;
+	font-size: clamp(1.8rem, 4vw, 3rem);
+	font-weight: $weight-regular;
+	line-height: 0.95;
+	text-transform: uppercase;
+}
+
+.note-card__body p {
+	max-width: 680px;
+	color: $color-muted;
+	line-height: 1.75;
+}
+
+.note-card__bottom a {
+	color: $color-cream;
+	text-decoration: none;
+}
+
+.note-card__bottom a:hover,
+.note-card__bottom a:focus-visible {
+	color: $color-yellow;
+}
+
+.notes-empty {
+	padding: $space-12 0;
+	color: $color-muted;
+	border-bottom: $border-subtle;
+}
+
+@media (max-width: $breakpoint-mobile) {
+	.notes-intro,
+	.notes-section-heading {
+		grid-template-columns: 1fr;
+		gap: $space-4;
+	}
+
+	.project-archive-grid,
+	.notes-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.project-archive-card:nth-child(odd),
+	.note-card:nth-child(odd) {
+		border-right: 0;
+	}
+
+	.note-filters {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: $space-4;
+	}
+}
