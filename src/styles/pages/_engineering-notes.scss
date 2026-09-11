@@ -39,7 +39,7 @@
 }
 
 .notes-intro__label,
-.notes-section-heading>span {
+.notes-section-heading > span {
 	color: $color-yellow;
 	font-size: $type-xs;
 	letter-spacing: 0.1em;
@@ -67,7 +67,7 @@
 	line-height: 1.85;
 }
 
-.notes-intro p+p {
+.notes-intro p + p {
 	margin-top: $space-6;
 }
 
@@ -183,7 +183,7 @@
 	color: $color-yellow;
 }
 
-.note-filters>span {
+.note-filters > span {
 	flex: 0 0 auto;
 	color: $color-muted;
 	font-size: $type-xs;

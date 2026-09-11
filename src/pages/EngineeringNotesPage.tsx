@@ -11,11 +11,13 @@ export function EngineeringNotesPage() {
 
 	const visibleNotes = useMemo(
 		() =>
-			articleDocuments.filter(
-				(document) =>
+			articleDocuments.filter((document) => {
+				if (!document.archive) return false;
+				return (
 					filter === "all" ||
-					document.archive?.filterCategories.includes(filter),
-			),
+					document.archive.filterCategories.includes(filter)
+				);
+			}),
 		[filter],
 	);
 
@@ -123,16 +125,13 @@ export function EngineeringNotesPage() {
 				/>
 
 				<div className="notes-grid">
-					{visibleNotes.map((document) => {
-						const number = articleDocuments.indexOf(document) + 1;
-						return (
-							<NoteCard
-								key={document.slug}
-								document={document}
-								number={number}
-							/>
-						);
-					})}
+					{visibleNotes.map((document, index) => (
+						<NoteCard
+							key={document.slug}
+							document={document}
+							number={index + 1}
+						/>
+					))}
 				</div>
 				{visibleNotes.length === 0 ? (
 					<p className="notes-empty">No entries match this filter.</p>

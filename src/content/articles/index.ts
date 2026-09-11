@@ -1,5 +1,6 @@
 import type { ContentDocument } from "../../types/content";
 
+import gettingStartedWithArticles from "./getting-started-with-articles";
 import findingThe900msPath from "./finding-the-900ms-path";
 import designingApisThatFailWell from "./designing-apis-that-fail-well";
 import theRequestIsNotTheSystem from "./the-request-is-not-the-system";
@@ -11,6 +12,7 @@ import whatTransferLearningBuysYou from "./what-transfer-learning-buys-you";
 import authenticationIsALifecycle from "./authentication-is-a-lifecycle";
 
 export const articleDocuments: ContentDocument[] = [
+	gettingStartedWithArticles,
 	findingThe900msPath,
 	designingApisThatFailWell,
 	theRequestIsNotTheSystem,

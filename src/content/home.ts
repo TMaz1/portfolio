@@ -70,7 +70,7 @@ export const experience: ExperienceItem[] = [
 			{
 				label: "CI / CD",
 				description:
-					"Contributed to development and release workflows using Azure DevOps, with exposure to unit, integration, Jenkins, Selenium, Postman and JMeter testing across multiple environments.",
+					"Contributed to development and release workflows using Azure DevOps and Jenkins, with exposure to unit, integration, Selenium, Postman and JMeter testing across multiple environments.",
 			},
 		],
 	},

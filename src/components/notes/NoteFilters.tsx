@@ -10,6 +10,7 @@ export const noteFilters: Array<{
 	{ label: "Infrastructure", value: "infrastructure" },
 	{ label: "Performance", value: "performance" },
 	{ label: "Research", value: "research" },
+	{ label: "General", value: "general" },
 ];
 
 type NoteFiltersProps = {

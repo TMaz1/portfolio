@@ -1,21 +1,20 @@
 export function HeadingBlock({
+	id,
 	level,
 	text,
-	id,
 }: {
+	id: string;
 	level: 2 | 3;
 	text: string;
-	id: string;
 }) {
-	if (level === 3)
-		return (
-			<h3 className="content-block content-block--heading" id={id}>
-				{text}
-			</h3>
-		);
-	return (
-		<h2 className="content-block content-block--heading" id={id}>
+	const className = `content-block content-block--heading content-block--heading-${level}`;
+	return level === 2 ? (
+		<h2 id={id} className={className}>
 			{text}
 		</h2>
+	) : (
+		<h3 id={id} className={className}>
+			{text}
+		</h3>
 	);
 }

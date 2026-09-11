@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { findContent } from "../content/contentRegistry";
 import { ContentHero } from "../components/content/ContentHero";
 import { ContentRenderer } from "../components/content/ContentRenderer";
+import { ContentToc } from "../components/content/ContentToc";
 
 export function ContentPage({ kind }: { kind: "article" | "project" }) {
 	const { slug } = useParams();
@@ -33,8 +34,11 @@ export function ContentPage({ kind }: { kind: "article" | "project" }) {
 	return (
 		<article className={`content-page content-page--${kind}`}>
 			<ContentHero document={document} />
-			<div className="content-body container">
-				<ContentRenderer blocks={document.blocks} />
+			<div className="content-layout container">
+				<ContentToc blocks={document.blocks} />
+				<div className="content-body">
+					<ContentRenderer blocks={document.blocks} />
+				</div>
 			</div>
 		</article>
 	);
