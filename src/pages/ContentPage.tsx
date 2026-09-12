@@ -17,14 +17,7 @@ export function ContentPage({ kind }: { kind: "article" | "project" }) {
 				<p className="content-hero__eyebrow">404 / CONTENT NOT FOUND</p>
 				<h1 id="content-missing-title">Nothing here yet.</h1>
 				<p>The requested content could not be found.</p>
-				<Link
-					className="text-link"
-					to={
-						kind === "project"
-							? "/engineering-notes"
-							: "/engineering-notes"
-					}
-				>
+				<Link className="text-link" to="/engineering-notes">
 					Back to Engineering Notes →
 				</Link>
 			</section>
@@ -35,7 +28,8 @@ export function ContentPage({ kind }: { kind: "article" | "project" }) {
 		<article className={`content-page content-page--${kind}`}>
 			<ContentHero document={document} />
 			<div className="content-layout container">
-				<ContentToc blocks={document.blocks} />
+				<ContentToc blocks={document.blocks} variant="desktop" />
+				<ContentToc blocks={document.blocks} variant="mobile" />
 				<div className="content-body">
 					<ContentRenderer blocks={document.blocks} />
 				</div>

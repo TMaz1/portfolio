@@ -126,4 +126,9 @@ export type ContentDocument = {
 };
 
 export type NoteFilterCategory =
-	"backend" | "frontend" | "infrastructure" | "performance" | "research" | "general";
+	| "backend"
+	| "frontend"
+	| "infrastructure"
+	| "performance"
+	| "research"
+	| "general";

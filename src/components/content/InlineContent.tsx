@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import type { InlineContent } from "../../types/content";
+import { scrollToContentId } from "./contentNavigation";
 
 export function InlineContent({ content }: { content: InlineContent }) {
 	if (typeof content === "string") {
@@ -29,7 +30,11 @@ export function InlineContent({ content }: { content: InlineContent }) {
 							<Link
 								key={`${segment.text}-${index}`}
 								className="content-inline-link"
-								to={{ hash: segment.href.slice(1) }}
+								to={segment.href}
+								onClick={(event) => {
+									event.preventDefault();
+									scrollToContentId(segment.href.slice(1));
+								}}
 							>
 								{segment.text}
 							</Link>

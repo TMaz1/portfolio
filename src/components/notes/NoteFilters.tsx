@@ -26,11 +26,7 @@ export function NoteFilters({
 }: NoteFiltersProps) {
 	return (
 		<div className="note-filters" aria-label="Filter engineering notes">
-			<div
-				className="note-filters__buttons"
-				role="group"
-				aria-label="Note categories"
-			>
+			<div className="note-filters__buttons">
 				{noteFilters.map((filter) => (
 					<button
 						key={filter.value}
@@ -46,7 +42,7 @@ export function NoteFilters({
 				))}
 			</div>
 			<span aria-live="polite">
-				{String(visibleCount).padStart(2, "0")} entries
+				{visibleCount} {visibleCount === 1 ? "note" : "notes"}
 			</span>
 		</div>
 	);
