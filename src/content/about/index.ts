@@ -167,6 +167,11 @@ export const aboutSkillGroups: SkillGroup[] = [
 	},
 	{
 		category: "Architecture",
-		items: ["Async Processing", "Queues", "Authentication", "Observability"],
+		items: [
+			"Async Processing",
+			"Queues",
+			"Authentication",
+			"Observability",
+		],
 	},
 ];

@@ -4,9 +4,8 @@
 	position: sticky;
 	top: 0;
 	z-index: $z-header;
-	border-bottom: $border-subtle;
-	background: rgba($color-asphalt, 0.94);
-	backdrop-filter: blur(12px);
+	background: rgba($color-black, 0.88);
+	backdrop-filter: blur(10px);
 }
 
 .site-header__inner {
@@ -14,18 +13,18 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: $space-8;
+	gap: 30px;
+	border-bottom: $border-subtle;
 }
 
 .site-brand {
 	display: inline-flex;
 	align-items: baseline;
-	color: $color-cream;
-	text-decoration: none;
-	font-family: $font-display;
-	font-size: 1.45rem;
-	letter-spacing: 0.06em;
 	flex-shrink: 0;
+	color: $color-white;
+	font-size: 12px;
+	font-weight: $weight-regular;
+	letter-spacing: 0.12em;
 }
 
 .site-brand__mark {
@@ -33,46 +32,62 @@
 }
 
 .site-brand__suffix {
-	color: $color-muted;
+	color: $color-white;
 }
 
 .site-navigation {
 	display: flex;
 	align-items: center;
-	gap: clamp($space-4, 3vw, $space-8);
+	gap: 30px;
+	color: $color-muted;
+	font-size: 10px;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
 }
 
 .site-navigation a {
-	color: $color-muted;
-	font-size: $type-sm;
-	text-decoration: none;
-	text-transform: uppercase;
-	letter-spacing: 0.08em;
+	position: relative;
 	transition: color $transition-fast;
+}
+
+.site-navigation a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -8px;
+	width: 100%;
+	height: 1px;
+	background: $color-yellow;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform $transition-fast;
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus-visible,
 .site-navigation a.is-active {
-	color: $color-cream;
+	color: $color-yellow-bright;
 }
 
-.site-navigation a.is-active::before {
-	content: "↑ ";
-	color: $color-yellow;
+.site-navigation a.is-active::after,
+.site-navigation a:hover::after {
+	transform: scaleX(1);
+	transform-origin: left;
 }
 
 @media (max-width: $breakpoint-mobile) {
 	.site-header__inner {
-		gap: $space-4;
+		min-height: 65px;
 	}
-
+	
 	.site-navigation {
-		gap: $space-3;
+		gap: 14px;
+		font-size: 8px;
 	}
+}
 
-	.site-navigation a {
-		font-size: 0.68rem;
-		letter-spacing: 0.04em;
+@media (max-width: $breakpoint-small) {
+	.site-navigation a:nth-child(2) {
+		display: none;
 	}
 }

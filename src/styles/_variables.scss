@@ -1,27 +1,43 @@
-$color-asphalt: #111111;
-$color-charcoal: #181818;
-$color-smoke: #242424;
-$color-cream: #f1eee4;
-$color-muted: #a7a49a;
-$color-yellow: #f0c84b;
-$color-cyan: #6bd5d1;
-$color-red: #e16b5c;
-$color-green: #8bcf88;
-$color-white: #ffffff;
+$color-black: #070808;
+$color-asphalt: #0d0f0f;
+$color-charcoal: #141716;
+$color-smoke: #1d211f;
+$color-smoke-light: #252927;
+
+$color-cream: #f1edda;
+$color-white: #faf8ed;
+$color-muted: #b2b1a7;
+$color-subtle: #898a82;
+$color-faint: #666861;
+
+$color-yellow: #f0c52e;
+$color-yellow-bright: #ffd94a;
+$color-yellow-dark: #a98418;
+$color-cyan: #6d9690;
+$color-cyan-bright: #89b3ac;
+$color-red: #8c4b42;
+$color-green: #6fa58d;
+
+$color-yellow-soft: rgba($color-yellow, 0.07);
+$color-cyan-soft: rgba($color-cyan, 0.08);
+$border-subtle: 1px solid rgba($color-cream, 0.16);
+$border-soft: 1px solid rgba($color-cream, 0.09);
+$border-strong: 1px solid rgba($color-cream, 0.3);
 
 $font-mono: "DM Mono", "Courier New", monospace;
 $font-display: "Oswald", Impact, sans-serif;
 $font-body: $font-mono;
 
-$type-xs: 0.72rem;
-$type-sm: 0.82rem;
-$type-md: 1rem;
-$type-lg: 1.25rem;
-$type-xl: clamp(2.75rem, 8vw, 7rem);
+$type-xs: 0.625rem;
+$type-sm: 0.75rem;
+$type-md: 0.875rem;
+$type-lg: 1rem;
+$type-xl: clamp(3.5rem, 9vw, 6.75rem);
 
+$weight-light: 300;
 $weight-regular: 400;
 $weight-medium: 500;
-$weight-bold: 700;
+$weight-bold: 500;
 
 $space-1: 0.25rem;
 $space-2: 0.5rem;
@@ -33,16 +49,18 @@ $space-12: 3rem;
 $space-16: 4rem;
 $space-24: 6rem;
 
-$container-max: 1440px;
-$container-gutter: clamp(1rem, 4vw, 4rem);
+$container-max: 1180px;
+$container-gutter: 24px;
+$max-content-width: 780px;
+$header-height: 76px;
 
-$border-subtle: 1px solid rgba($color-cream, 0.16);
-$radius-sm: 2px;
-$radius-md: 4px;
-$shadow-panel: 0 18px 60px rgba(#000, 0.24);
+$radius-sm: 0;
+$radius-md: 0;
+$shadow-panel: none;
 
-$transition-fast: 160ms ease;
-$transition-base: 240ms ease;
+$transition-fast: 180ms ease;
+$transition-base: 280ms ease;
+$transition-slow: 700ms ease;
 
 $breakpoint-wide: 1200px;
 $breakpoint-tablet: 900px;
@@ -51,8 +69,3 @@ $breakpoint-small: 430px;
 
 $z-header: 100;
 $z-overlay: 1000;
-
-$color-yellow-soft: rgba($color-yellow, 0.12);
-$color-cyan-soft: rgba($color-cyan, 0.1);
-$max-content-width: 920px;
-$header-height: 5rem;

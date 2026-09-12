@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 import { SiteFooter } from "./SiteFooter";
 import { SiteHeader } from "./SiteHeader";
 
@@ -10,6 +10,9 @@ export function SiteShell() {
 				<Outlet />
 			</main>
 			<SiteFooter />
+			<ScrollRestoration
+				getKey={(location) => location.key}
+			/>
 		</div>
 	);
 }

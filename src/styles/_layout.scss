@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 .container {
-	width: min(100% - ($container-gutter * 2), $container-max);
+	width: min($container-max, calc(100% - (#{$container-gutter} * 2)));
 	margin-inline: auto;
 }
 
@@ -13,4 +13,17 @@
 
 .site-main {
 	flex: 1;
+	margin: 0 24px;
+}
+
+@media (max-width: $breakpoint-mobile) {
+	.container {
+		width: min($container-max, calc(100% - 30px));
+	}
+}
+
+@media (max-width: $breakpoint-small) {
+	.container {
+		width: calc(100% - 28px);
+	}
 }

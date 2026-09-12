@@ -1,24 +1,90 @@
 @use "variables" as *;
 @use "mixins" as *;
 
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Oswald:wght@300;400;500&display=swap");
+
 :root {
 	color-scheme: dark;
-	background: $color-asphalt;
+	background: $color-black;
 	color: $color-cream;
 	font-family: $font-body;
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
 }
 
 body {
 	min-width: 320px;
 	min-height: 100vh;
-	background: $color-asphalt;
+	margin: 0;
+	overflow-x: hidden;
+	background:
+		radial-gradient(
+			ellipse at 76% 8%,
+			rgba($color-yellow, 0.035),
+			transparent 32%
+		),
+		radial-gradient(
+			ellipse at 12% 72%,
+			rgba($color-cyan, 0.045),
+			transparent 35%
+		),
+		$color-black;
 	color: $color-cream;
+	font-family: $font-body;
+	font-size: 12px;
+	font-weight: $weight-light;
+	line-height: 1.7;
+}
+
+body::before {
+	content: "";
+	position: fixed;
+	inset: 0;
+	z-index: $z-header + 900;
+	pointer-events: none;
+	opacity: 0.045;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='3' seed='42' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)' opacity='.7'/%3E%3C/svg%3E");
+	mix-blend-mode: soft-light;
+}
+
+body::after {
+	content: "";
+	position: fixed;
+	width: 45vw;
+	height: 45vw;
+	top: -25vw;
+	right: -15vw;
+	z-index: -1;
+	pointer-events: none;
+	border-radius: 50%;
+	background: rgba($color-yellow, 0.025);
+	filter: blur(100px);
 }
 
 a {
 	color: inherit;
+	text-decoration: none;
+}
+
+button,
+a {
+	-webkit-tap-highlight-color: transparent;
+}
+
+button {
+	font: inherit;
+}
+
+img,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+::selection {
+	background: $color-yellow;
+	color: $color-black;
 }
 
 a:focus-visible,
@@ -26,20 +92,17 @@ button:focus-visible {
 	@include focus-ring;
 }
 
-::selection {
-	background: $color-yellow;
-	color: $color-asphalt;
-}
-
 @media (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;
 	}
+	
 	*,
 	*::before,
 	*::after {
-		transition-duration: 0.01ms !important;
-		animation-duration: 0.01ms !important;
+		animation-duration: 0.001ms !important;
 		animation-iteration-count: 1 !important;
+		transition-duration: 0.001ms !important;
+		scroll-behavior: auto !important;
 	}
 }

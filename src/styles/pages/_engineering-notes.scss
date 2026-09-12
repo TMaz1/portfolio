@@ -1,48 +1,92 @@
 @use "../variables" as *;
 
 .notes-hero {
+	position: relative;
+	min-height: 510px;
+	display: flex;
+	align-items: center;
 	border-bottom: $border-subtle;
+	overflow: hidden;
+}
+
+.notes-hero::before {
+	content: "FIELD\A NOTES";
+	position: absolute;
+	right: -15px;
+	bottom: -74px;
+	white-space: pre;
+	color: rgba($color-cream, 0.018);
+	font-family: $font-display;
+	font-size: clamp(150px, 25vw, 340px);
+	font-weight: $weight-light;
+	line-height: 0.78;
+	pointer-events: none;
+}
+
+.notes-hero::after {
+	content: "";
+	position: absolute;
+	width: 440px;
+	height: 440px;
+	top: -210px;
+	right: 10%;
+	border-radius: 50%;
+	background: rgba($color-yellow, 0.035);
+	filter: blur(85px);
+	pointer-events: none;
 }
 
 .notes-hero__inner {
-	padding-top: clamp($space-16, 11vw, 10rem);
-	padding-bottom: clamp($space-16, 11vw, 10rem);
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	max-width: 930px;
+	padding: 88px 0;
+	margin-inline: auto;
+	text-align: center;
+}
+
+.notes-hero .eyebrow {
+	margin-bottom: 20px;
 }
 
 .notes-hero h1 {
 	max-width: 900px;
-	margin: $space-4 0 $space-8;
+	margin: 0 auto;
+	color: $color-white;
 	font-family: $font-display;
-	font-size: $type-xl;
-	font-weight: $weight-regular;
-	line-height: 0.88;
-	letter-spacing: -0.035em;
+	font-size: clamp(62px, 10vw, 126px);
+	font-weight: $weight-light;
+	line-height: 0.86;
+	letter-spacing: -0.04em;
 	text-transform: uppercase;
 }
 
 .notes-hero h1 span {
-	color: $color-yellow;
+	color: $color-yellow-bright;
 }
 
 .notes-hero__description {
-	max-width: 760px;
+	max-width: 690px;
+	margin: 28px auto 0;
 	color: $color-muted;
-	line-height: 1.85;
+	font-size: 12px;
+	line-height: 1.9;
 }
 
 .notes-intro {
 	display: grid;
-	grid-template-columns: minmax(140px, 0.35fr) minmax(0, 1fr);
-	gap: $space-8;
-	padding-top: clamp($space-16, 10vw, 9rem);
-	padding-bottom: clamp($space-16, 10vw, 9rem);
+	grid-template-columns: 170px minmax(0, 1fr);
+	gap: 50px;
+	padding: 110px 0;
 }
 
 .notes-intro__label,
 .notes-section-heading > span {
-	color: $color-yellow;
-	font-size: $type-xs;
-	letter-spacing: 0.1em;
+	padding-top: 9px;
+	color: $color-yellow-bright;
+	font-size: 10px;
+	letter-spacing: 0.18em;
 	text-transform: uppercase;
 }
 
@@ -52,11 +96,12 @@
 
 .notes-intro h2,
 .notes-section-heading h2 {
-	margin: 0 0 $space-8;
+	margin: 0 0 20px;
+	color: $color-white;
 	font-family: $font-display;
-	font-size: clamp(2.75rem, 7vw, 5.75rem);
-	font-weight: $weight-regular;
-	line-height: 0.9;
+	font-size: clamp(40px, 5vw, 64px);
+	font-weight: $weight-light;
+	line-height: 0.95;
 	text-transform: uppercase;
 }
 
@@ -64,220 +109,302 @@
 .notes-section-heading p {
 	max-width: 760px;
 	color: $color-muted;
-	line-height: 1.85;
+	font-size: 12px;
+	line-height: 1.9;
 }
 
 .notes-intro p + p {
-	margin-top: $space-6;
-}
-
-.notes-featured {
-	padding-bottom: clamp($space-16, 10vw, 9rem);
+	margin-top: 20px;
 }
 
 .notes-projects,
 .notes-archive {
-	padding-bottom: clamp($space-16, 10vw, 9rem);
+	padding-bottom: 110px;
 }
 
 .notes-section-heading {
 	display: grid;
-	grid-template-columns: minmax(150px, 0.35fr) minmax(0, 1fr);
-	gap: $space-8;
-	padding-top: clamp($space-16, 10vw, 9rem);
-	margin-bottom: $space-12;
+	grid-template-columns: 170px minmax(0, 1fr);
+	gap: 50px;
+	padding-top: 110px;
+	margin-bottom: 52px;
 	border-top: $border-subtle;
 }
 
-.notes-section-heading h2 {
-	margin-bottom: $space-6;
-}
-
-.project-archive-grid {
+.project-archive-grid,
+.notes-grid {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
-	border-top: 1px solid rgba($color-cream, 0.16);
+	border-top: $border-subtle;
+	border-left: $border-subtle;
 }
 
-.project-archive-card {
+.project-archive-card,
+.note-card {
+	position: relative;
 	min-width: 0;
-	padding: clamp($space-8, 5vw, $space-12) clamp($space-4, 3vw, $space-8);
-	border-bottom: 1px solid rgba($color-cream, 0.16);
+	padding: 31px 34px 30px;
+	border-right: $border-subtle;
+	border-bottom: $border-subtle;
+	background: transparent;
+	transition:
+		background $transition-base,
+		box-shadow $transition-base;
 }
 
-.project-archive-card:nth-child(odd) {
-	border-right: 1px solid rgba($color-cream, 0.16);
+.project-archive-card:hover,
+.note-card:hover {
+	background: rgba($color-cream, 0.025);
+	box-shadow: inset 0 0 0 1px rgba($color-yellow, 0.05);
 }
 
-.project-archive-card__number {
-	color: $color-yellow;
-	font-size: $type-xs;
-	letter-spacing: 0.08em;
+.project-archive-card__number,
+.note-card__top,
+.note-card__bottom {
+	color: $color-subtle;
+	font-size: 8px;
+	letter-spacing: 0.1em;
 	text-transform: uppercase;
 }
 
-.project-archive-card h3 {
-	margin: $space-4 0 $space-4;
+.project-archive-card__number,
+.note-card__top span:first-child {
+	color: $color-yellow-bright;
+}
+
+.project-archive-card h3,
+.note-card h3 {
+	margin: 50px 0 16px;
+	color: $color-white;
 	font-family: $font-display;
-	font-size: clamp(1.8rem, 4vw, 3rem);
-	font-weight: $weight-regular;
-	line-height: 0.95;
+	font-size: clamp(28px, 4vw, 38px);
+	font-weight: $weight-light;
+	line-height: 1;
 	text-transform: uppercase;
 }
 
-.project-archive-card p {
+.project-archive-card p,
+.note-card__body p {
 	max-width: 680px;
 	color: $color-muted;
-	line-height: 1.75;
+	font-size: 11px;
+	line-height: 1.8;
 }
 
-.project-archive-card a {
-	display: inline-block;
-	margin-top: $space-6;
-	color: $color-cream;
-	font-size: $type-sm;
+.project-archive-card a,
+.note-card__bottom a {
+	display: inline-flex;
+	margin-top: 25px;
+	color: $color-yellow-bright;
+	font-size: 9px;
+	letter-spacing: 0.13em;
 	text-transform: uppercase;
-	letter-spacing: 0.06em;
-	text-decoration: none;
+	transition:
+		color $transition-fast,
+		transform $transition-fast;
 }
 
 .project-archive-card a:hover,
-.project-archive-card a:focus-visible {
-	color: $color-yellow;
+.note-card__bottom a:hover {
+	color: $color-white;
+	transform: translateX(3px);
 }
 
 .note-filters {
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	justify-content: space-between;
-	gap: $space-8;
-	margin-bottom: $space-8;
-	padding-bottom: $space-4;
+	gap: 20px;
+	margin-bottom: 1px;
+	border-top: $border-subtle;
 	border-bottom: $border-subtle;
 }
 
 .note-filters__buttons {
 	display: flex;
 	flex-wrap: wrap;
-	gap: $space-2 $space-4;
 }
 
 .note-filters button {
-	padding: $space-2 0;
+	min-height: 46px;
+	padding: 0 16px;
 	border: 0;
+	border-right: $border-subtle;
 	background: transparent;
-	color: $color-muted;
+	color: $color-subtle;
 	cursor: pointer;
-	font-size: $type-xs;
-	letter-spacing: 0.08em;
+	font-size: 8px;
+	letter-spacing: 0.11em;
 	text-transform: uppercase;
+	transition:
+		color $transition-fast,
+		background $transition-fast;
+}
+
+.note-filters button:first-child {
+	border-left: $border-subtle;
 }
 
 .note-filters button:hover,
-.note-filters button:focus-visible,
-.note-filters button.is-active {
-	color: $color-cream;
+.note-filters button:focus-visible {
+	color: $color-white;
+	background: rgba($color-cream, 0.025);
 }
 
 .note-filters button.is-active {
-	color: $color-yellow;
+	color: $color-black;
+	background: $color-yellow;
 }
 
 .note-filters > span {
-	flex: 0 0 auto;
-	color: $color-muted;
-	font-size: $type-xs;
-	letter-spacing: 0.08em;
+	padding-right: 16px;
+	color: $color-subtle;
+	font-size: 8px;
+	letter-spacing: 0.1em;
 	text-transform: uppercase;
-}
-
-.notes-grid {
-	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
-	border-top: 1px solid rgba($color-cream, 0.16);
+	white-space: nowrap;
 }
 
 .note-card {
-	min-width: 0;
-	padding: clamp($space-8, 5vw, $space-12) clamp($space-4, 3vw, $space-8);
-	border-bottom: 1px solid rgba($color-cream, 0.16);
-}
-
-.note-card:nth-child(odd) {
-	border-right: 1px solid rgba($color-cream, 0.16);
+	min-height: 390px;
+	display: flex;
+	flex-direction: column;
 }
 
 .note-card__top,
 .note-card__bottom {
 	display: flex;
 	justify-content: space-between;
-	gap: $space-4;
-	color: $color-muted;
-	font-size: $type-xs;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
-}
-
-.note-card__top span:first-child {
-	color: $color-yellow;
+	gap: 16px;
 }
 
 .note-card__body {
-	padding: $space-8 0;
+	flex: 1;
+	padding-top: 55px;
 }
 
 .note-card h3 {
-	max-width: 600px;
-	margin: 0 0 $space-4;
-	font-family: $font-display;
-	font-size: clamp(1.8rem, 4vw, 3rem);
-	font-weight: $weight-regular;
-	line-height: 0.95;
-	text-transform: uppercase;
+	margin-top: 0;
 }
 
-.note-card__body p {
-	max-width: 680px;
-	color: $color-muted;
-	line-height: 1.75;
+.note-card__bottom {
+	align-items: flex-end;
 }
 
 .note-card__bottom a {
-	color: $color-cream;
-	text-decoration: none;
-}
-
-.note-card__bottom a:hover,
-.note-card__bottom a:focus-visible {
-	color: $color-yellow;
+	margin-top: 0;
 }
 
 .notes-empty {
-	padding: $space-12 0;
-	color: $color-muted;
+	padding: 70px 30px;
+	border-left: $border-subtle;
+	border-right: $border-subtle;
 	border-bottom: $border-subtle;
+	color: $color-muted;
+	text-align: center;
 }
 
-@media (max-width: $breakpoint-mobile) {
+@media (max-width: $breakpoint-tablet) {
+	.notes-hero {
+		min-height: 470px;
+	}
+
+	.notes-intro,
+	.notes-section-heading {
+		grid-template-columns: 130px minmax(0, 1fr);
+		gap: 35px;
+	}
+
+	.notes-grid,
+	.project-archive-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.project-archive-card,
+	.note-card {
+		border-right: $border-subtle;
+	}
+}
+
+@media (max-width: 700px) {
+	.notes-hero {
+		min-height: 430px;
+	}
+
+	.notes-hero__inner {
+		padding: 70px 0;
+	}
+
+	.notes-hero h1 {
+		font-size: clamp(54px, 17vw, 88px);
+	}
+
+	.notes-hero__description {
+		font-size: 11px;
+	}
+
 	.notes-intro,
 	.notes-section-heading {
 		grid-template-columns: 1fr;
-		gap: $space-4;
+		gap: 12px;
+		padding-top: 70px;
 	}
 
-	.project-archive-grid,
-	.notes-grid {
-		grid-template-columns: 1fr;
+	.notes-section-heading {
+		margin-bottom: 38px;
 	}
 
-	.project-archive-card:nth-child(odd),
-	.note-card:nth-child(odd) {
-		border-right: 0;
+	.notes-projects,
+	.notes-archive {
+		padding-bottom: 80px;
 	}
 
 	.note-filters {
-		align-items: flex-start;
+		align-items: stretch;
 		flex-direction: column;
-		gap: $space-4;
+		gap: 0;
+	}
+
+	.note-filters__buttons {
+		width: 100%;
+	}
+
+	.note-filters button {
+		flex: 1 1 auto;
+		min-height: 44px;
+		padding-inline: 10px;
+	}
+
+	.note-filters > span {
+		padding: 10px 12px;
+		border-top: $border-subtle;
+	}
+
+	.note-card {
+		min-height: 370px;
+		padding: 27px 25px;
+	}
+
+	.note-card__body {
+		padding-top: 55px;
+	}
+}
+
+@media (max-width: $breakpoint-small) {
+	.notes-hero::before {
+		font-size: 120px;
+	}
+
+	.notes-hero h1 {
+		font-size: clamp(48px, 16vw, 76px);
+	}
+
+	.notes-intro,
+	.notes-section-heading {
+		padding-top: 60px;
+	}
+	
+	.note-card {
+		min-height: 350px;
 	}
 }
