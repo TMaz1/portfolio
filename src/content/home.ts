@@ -41,7 +41,7 @@ export const experience: ExperienceItem[] = [
 		period: "Aug 2023 — Jun 2026",
 		role: "Three years. Still building.",
 		description:
-			"A career break for primary caring responsibilities. During that period, engineering remained a way of learning: modern .NET APIs, authentication, distributed systems, serverless infrastructure, frontend applications and computer vision. These projects aren't presented as substitutes for professional experience. They're evidence of continued curiosity and a deliberate move toward the technologies and architectural patterns used in modern engineering teams.",
+			"Took a career break for primary caregiving while actively upskilling in modern engineering. Maintained technical growth by building projects in modern .NET APIs, serverless infrastructure, distributed systems, and frontend apps. These projects reflect continued curiosity and a proactive transition toward modern engineering architectures.",
 		achievements: [],
 	},
 	{

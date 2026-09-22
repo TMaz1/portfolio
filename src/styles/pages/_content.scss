@@ -138,7 +138,7 @@
 
 .content-toc {
 	position: sticky;
-	top: 30px;
+	top: 106px;
 	align-self: start;
 }
 
@@ -204,7 +204,7 @@
 }
 
 .content-block {
-	scroll-margin-top: 35px;
+	scroll-margin-top: $scroll-offset;
 }
 
 .content-block--paragraph {

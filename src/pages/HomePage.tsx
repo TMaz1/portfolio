@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { experience, skillGroups } from "../content/home";
 import { projects } from "../content/projects";
 import { ExperienceTimeline } from "../components/portfolio/ExperienceTimeline";
-import { ProjectCard } from "../components/portfolio/ProjectCard";
 import { SkillsGrid } from "../components/portfolio/SkillsGrid";
 
 export function HomePage() {
@@ -68,24 +67,11 @@ export function HomePage() {
 					</div>
 				</div>
 
-				<ExperienceTimeline items={experience} />
+				<ExperienceTimeline
+					items={experience}
+					projects={projects}
+				/>
 
-				<div className="projects" id="projects">
-					<div className="projects__heading">
-						<p className="section-number">SELECTED PROJECTS</p>
-						<p>
-							Project articles document the engineering decisions,
-							implementation and trade-offs behind each build.
-						</p>
-					</div>
-					{projects.map((project, index) => (
-						<ProjectCard
-							key={project.slug}
-							project={project}
-							number={index + 1}
-						/>
-					))}
-				</div>
 			</section>
 
 			<section
