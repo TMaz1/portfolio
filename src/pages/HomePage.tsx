@@ -1,5 +1,3 @@
-import type React from "react";
-import { Link } from "react-router-dom";
 import { experience, skillGroups } from "../content/home";
 import { projects } from "../content/projects";
 import { ExperienceTimeline } from "../components/portfolio/ExperienceTimeline";
@@ -11,36 +9,32 @@ export function HomePage() {
 			<section className="hero" aria-labelledby="hero-title">
 				<div className="hero-inner container">
 					<p className="eyebrow">
-						Software Engineer / Manchester, UK
+						Tayyaba M · Technical SEO · Web Development · Manchester, UK
 					</p>
+
 					<h1 id="hero-title">
-						Building
+						Building better
 						<br />
-						things that work.
+						web experiences.
 					</h1>
+
 					<p className="hero-description">
-						C# / .NET / SQL / APIs / Full-stack development.
-						Production-minded engineering with an interest in
-						systems, performance and the details between the layers.
+						Technical SEO and web development across performance, analytics,
+						accessibility and website growth, backed by production experience in
+						C#/.NET, SQL, APIs and full-stack development.
 					</p>
-					<a
-						className="hero-button"
-						href="#work"
-						onClick={(
-							event: React.MouseEvent<HTMLAnchorElement>,
-						) => {
-							event.preventDefault();
-							document.getElementById("work")?.scrollIntoView({
-								behavior: window.matchMedia(
-									"(prefers-reduced-motion: reduce)",
-								).matches
-									? "auto"
-									: "smooth",
-							});
-						}}
-					>
-						View selected work
-					</a>
+
+					<div className="hero-links">
+						<a
+							className="hero-button"
+							href="https://www.linkedin.com/in/tayyaba-maz"
+							target="_blank"
+							rel="noreferrer"
+						>
+							Contact me on LinkedIn →
+						</a>
+					</div>
+
 				</div>
 			</section>
 
@@ -50,19 +44,23 @@ export function HomePage() {
 				aria-labelledby="work-title"
 			>
 				<div className="section-heading">
-					<div className="section-number">01 / THE WORK</div>
+					<div className="section-number">01 / EXPERIENCE</div>
+
 					<div>
 						<h2 className="section-title" id="work-title">
-							Selected work
+							Engineering,
 							<br />
-							&amp; experience
+							web &amp; growth.
 						</h2>
+
 						<p className="section-intro">
-							A career shaped by production systems, live problems
-							and increasingly modern application architecture.
-							The projects sit inside the timeline where the work
-							happened — rather than being treated as a separate
-							collection of experiments.
+							My experience sits across software engineering and
+							the wider web. I have built and supported production
+							applications, worked with APIs and databases, and
+							moved between backend, frontend and infrastructure
+							when the problem required it. More recently, that
+							work has expanded into technical SEO, performance,
+							analytics and website optimisation.
 						</p>
 					</div>
 				</div>
@@ -71,7 +69,6 @@ export function HomePage() {
 					items={experience}
 					projects={projects}
 				/>
-
 			</section>
 
 			<section
@@ -79,20 +76,23 @@ export function HomePage() {
 				aria-labelledby="stack-title"
 			>
 				<div className="section-heading">
-					<div className="section-number">02 / THE STACK</div>
+					<div className="section-number">02 / SKILLS</div>
+
 					<div>
 						<h2 className="section-title" id="stack-title">
-							What I<br />
-							work with.
+							Tools &amp;
+							<br />
+							technologies.
 						</h2>
+
 						<p className="section-intro">
-							A practical stack built through production
-							experience rather than technology collecting.
-							Comfortable moving between application code, data,
-							APIs and the frontend when the problem requires it.
+							A practical mix of application development, web
+							technologies and technical optimisation built
+							through hands-on production work.
 						</p>
 					</div>
 				</div>
+
 				<SkillsGrid groups={skillGroups} />
 			</section>
 
@@ -102,14 +102,23 @@ export function HomePage() {
 				aria-labelledby="contact-title"
 			>
 				<p className="section-number">03 / CONTACT</p>
-				<h2 id="contact-title">Let’s make something useful.</h2>
+
+				<h2 id="contact-title">
+					Interested in working together?
+				</h2>
+
 				<p>
-					For now, the portfolio keeps external contact destinations
-					out until real public links are supplied.
+					I’m open to software engineering, web development and technical SEO
+					roles where I can work close to the technical details and contribute
+					across the wider web experience.
 				</p>
-				<Link className="text-link" to="/about">
-					More about me →
-				</Link>
+
+				<a
+					className="text-link"
+					href="mailto:tayyabamazhar001@gmail.com"
+				>
+					Email me →
+				</a>
 			</section>
 		</>
 	);

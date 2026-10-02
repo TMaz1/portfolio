@@ -9,6 +9,7 @@ export const noteFilters: Array<{
 	{ label: "Frontend", value: "frontend" },
 	{ label: "Infrastructure", value: "infrastructure" },
 	{ label: "Performance", value: "performance" },
+	{ label: "SEO", value: "seo" },
 	{ label: "Research", value: "research" },
 	{ label: "General", value: "general" },
 ];

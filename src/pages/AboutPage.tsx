@@ -4,37 +4,56 @@ import { PrinciplesGrid } from "../components/about/PrinciplesGrid";
 import { ProjectRadar } from "../components/about/ProjectRadar";
 import { CultureSection } from "../components/about/CultureSection";
 import { SocialLinks } from "../components/about/SocialLinks";
+import { aboutContent } from "../content/about";
 
 export function AboutPage() {
+	const { hero } = aboutContent;
+
 	return (
 		<main className="about-page">
 			<section className="about-hero" aria-labelledby="about-title">
 				<div className="container about-hero__inner">
-					<p className="eyebrow">00 / About the developer</p>
+					<p className="eyebrow">{hero.eyebrow}</p>
+
 					<h1 id="about-title">
-						The person
-						<br />
-						behind the <span>code.</span>
+						{hero.title.lines.map((line, index) => (
+							<span key={`${line}-${index}`}>
+								{line}
+								{index < hero.title.lines.length - 1 ? <br /> : null}
+							</span>
+						))}
+
+						{hero.title.emphasis ? (
+							<span className="hero__emphasis">
+								{hero.title.emphasis}
+							</span>
+						) : null}
 					</h1>
-					<p className="about-hero__copy">
-						Software engineering is the visible part of what I do.
-						The less visible part is the curiosity behind it:
-						understanding how systems behave, why they fail, how
-						people actually use them, and what can be made simpler
-						without making it weaker.
-					</p>
+
+					<p className="about-hero__description">{hero.copy}</p>
+
+					<div className="hero-links">
+						<a
+							className="button"
+							href="#projects"
+							onClick={(event) => {
+								event.preventDefault();
+								document.getElementById("projects")?.scrollIntoView({
+									behavior: "smooth",
+									block: "start",
+								});
+							}}
+						>
+							View projects →
+						</a>
+					</div>
+
 					<div className="about-hero__meta">
-						<span>
-							<strong>Focus</strong> C# / .NET / APIs / Web
-						</span>
-						<span>
-							<strong>Interests</strong> Systems / Performance /
-							UX
-						</span>
-						<span>
-							<strong>Elsewhere</strong> Books / Games / Film /
-							Anime
-						</span>
+						{hero.meta.map((item) => (
+							<span key={item.label}>
+								<strong>{item.label}</strong> {item.value}
+							</span>
+						))}
 					</div>
 				</div>
 			</section>

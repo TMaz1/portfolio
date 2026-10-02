@@ -79,6 +79,13 @@
 	line-height: 1.9;
 }
 
+.hero-links {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+}
+
 .hero-button {
 	display: inline-flex;
 	align-items: center;
@@ -200,11 +207,16 @@
 }
 
 .company {
-	margin-bottom: 25px;
+	display: inline-block;
+	margin-bottom: 18px;
 	color: $color-yellow-bright;
 	font-size: 10px;
 	letter-spacing: 0.13em;
 	text-transform: uppercase;
+}
+
+.company:hover {
+	text-decoration: underline;
 }
 
 .timeline-content>p {
@@ -409,6 +421,7 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 0.5rem;
+	margin-bottom: 25px;
 }
 
 .tech span {

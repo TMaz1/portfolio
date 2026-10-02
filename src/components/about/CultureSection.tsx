@@ -1,16 +1,28 @@
 import { useState } from "react";
-import { cultureItems } from "../../content/about";
+import { aboutContent } from "../../content/about";
 
 export function CultureSection() {
+	const { culture } = aboutContent;
+	const { items, section, carousel } = culture;
+
 	const [activeIndex, setActiveIndex] = useState(0);
-	const activeItem = cultureItems[activeIndex];
+
+	const itemCount = items.length;
+
+	if (itemCount === 0) {
+		return null;
+	}
+
+	const activeItem = items[activeIndex];
 
 	function move(delta: number) {
 		setActiveIndex(
-			(current) =>
-				(current + delta + cultureItems.length) % cultureItems.length,
+			(current) => (current + delta + itemCount) % itemCount,
 		);
 	}
+
+	const currentNumber = String(activeIndex + 1).padStart(2, "0");
+	const totalNumber = String(itemCount).padStart(2, "0");
 
 	return (
 		<section
@@ -19,30 +31,32 @@ export function CultureSection() {
 			aria-labelledby="culture-title"
 		>
 			<div className="about-section-heading">
-				<div className="section-number">05 / OFFLINE</div>
+				<div className="section-number">{section.number}</div>
+
 				<div>
 					<h2 className="section-title" id="culture-title">
-						Things
-						<br />
-						outside code.
+						{section.title.lines.map((line, index) => (
+							<span key={`${line}-${index}`}>
+								{line}
+								{index < section.title.lines.length - 1 ? (
+									<br />
+								) : null}
+							</span>
+						))}
 					</h2>
-					<p className="section-intro">
-						Software isn't the only thing I spend time thinking
-						about. Books, games, films, television and other
-						interests tend to feed back into how I think about
-						narrative, systems, atmosphere, design and people.
-					</p>
+
+					<p className="section-intro">{section.intro}</p>
 				</div>
 			</div>
 
 			<div
 				className="culture-carousel"
 				aria-roledescription="carousel"
-				aria-label="Culture and interests"
+				aria-label={carousel.ariaLabel}
 			>
 				<div className="culture-carousel__header">
 					<div>
-						<p className="culture-label">05.01 / INTERESTS</p>
+						<p className="culture-label">{carousel.label}</p>
 						<h3>{activeItem.category}</h3>
 					</div>
 					<div className="carousel-controls">
@@ -50,7 +64,7 @@ export function CultureSection() {
 							type="button"
 							className="carousel-button"
 							onClick={() => move(-1)}
-							aria-label="Previous interest"
+							aria-label={carousel.previousLabel}
 						>
 							←
 						</button>
@@ -58,7 +72,7 @@ export function CultureSection() {
 							type="button"
 							className="carousel-button"
 							onClick={() => move(1)}
-							aria-label="Next interest"
+							aria-label={carousel.nextLabel}
 						>
 							→
 						</button>
@@ -75,8 +89,7 @@ export function CultureSection() {
 					) : null}
 					<div className="culture-card__content">
 						<p className="culture-card__index">
-							INTEREST /{" "}
-							{String(activeIndex + 1).padStart(2, "0")}
+							{carousel.indexLabel} / {currentNumber}
 						</p>
 						<h4>{activeItem.title}</h4>
 						<p>{activeItem.description}</p>
@@ -89,8 +102,9 @@ export function CultureSection() {
 				</article>
 
 				<div className="carousel-counter" aria-hidden="true">
-					{String(activeIndex + 1).padStart(2, "0")} /{" "}
-					{String(cultureItems.length).padStart(2, "0")}
+					{currentNumber}
+					{carousel.counterSeparator}
+					{totalNumber}
 				</div>
 			</div>
 		</section>

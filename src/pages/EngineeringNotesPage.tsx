@@ -27,16 +27,38 @@ export function EngineeringNotesPage() {
 				<div className="notes-hero__inner container">
 					<p className="eyebrow">Engineering / Field Notes / 2026</p>
 					<h1 id="notes-page-title">
-						How the
-						<br />
-						<span>things</span> work.
+						What I'm
+						<span className="hero__emphasis">Learning.</span>
 					</h1>
 					<p className="notes-hero__description">
-						Technical notes from the space between writing code and
-						making software behave. Architecture decisions,
+						Technical notes from architecture decisions,
 						performance work, debugging investigations, APIs,
 						infrastructure, databases and frontend systems.
 					</p>
+
+					<div className="hero-links">
+						<a className="button"
+							href="#notes"
+							onClick={(event) => {
+								event.preventDefault();
+								document.getElementById("notes")?.scrollIntoView({
+									behavior: "smooth",
+									block: "start",
+								});
+							}}
+						>
+							Notes →
+						</a>
+
+						<a
+							className="button"
+							href="https://www.linkedin.com/in/tayyaba-maz"
+							target="_blank"
+							rel="noreferrer"
+						>
+							LinkedIn ↗
+						</a>
+					</div>
 				</div>
 			</section>
 

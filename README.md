@@ -53,3 +53,16 @@ npm run build
 ```
 
 This keeps it to roughly half a page while still explaining what the project is, how to run it, and the important navigation/content architecture.
+
+TODO::
+- Burger nav mobile responsiveness
+- home page projects = 4, engineering notes page projects = 6 (or more)
+
+- create more articles/project docs:
+- event driven basics
+- 1 billion row challenge -> what i did and what i would do differently now with 2 million records
+- technical SEO 
+
+- ai gateway progress/journey
+- event driven api (internal link to event driven basics article)
+- payments process sandbox with drawbacks with using terraform hashicorp

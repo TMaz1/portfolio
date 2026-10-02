@@ -55,9 +55,7 @@ export function ContentRenderer({ blocks }: { blocks: ContentBlock[] }) {
 						return (
 							<ImageBlock
 								key={block.id}
-								src={block.src}
-								alt={block.alt}
-								caption={block.caption}
+								image={block.image}
 							/>
 						);
 					case "quote":

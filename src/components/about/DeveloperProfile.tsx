@@ -1,28 +1,25 @@
-import { developerProfile } from "../../content/about";
+import { AboutSectionHeading } from "./AboutSectionHeading";
+import { aboutContent } from "../../content/about";
 
 export function DeveloperProfile() {
+	const { developer } = aboutContent;
+
 	return (
 		<section
 			className="about-developer"
 			id="developer"
-			aria-labelledby="developer-title"
+			aria-labelledby="developer-section-title"
 		>
-			<div className="about-section-heading">
-				<div className="section-number">01 / DEVELOPER</div>
-				<div>
-					<h2 className="section-title">
-						More than
-						<br />a stack.
-					</h2>
-					<p className="section-intro">{developerProfile.intro}</p>
-				</div>
-			</div>
+			<AboutSectionHeading
+				content={developer.section}
+				titleId="developer-section-title"
+			/>
 
 			<div className="about-developer-grid">
 				<article className="about-developer-main">
-					<p className="eyebrow">{developerProfile.eyebrow}</p>
-					<h3 id="developer-title">{developerProfile.title}</h3>
-					{developerProfile.paragraphs.map((paragraph) => (
+					<p className="eyebrow">{developer.eyebrow}</p>
+					<h3 id="developer-title">{developer.title}</h3>
+					{developer.paragraphs.map((paragraph) => (
 						<p key={paragraph}>{paragraph}</p>
 					))}
 				</article>

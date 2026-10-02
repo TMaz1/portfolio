@@ -63,13 +63,18 @@
 	text-transform: uppercase;
 }
 
-.about-hero h1 span {
+.about-hero h1 {
+	color: $color-white;
+}
+
+.hero__emphasis {
+	margin-left: 0.2em;
 	color: $color-yellow-bright;
 }
 
-.about-hero__copy {
+.about-hero__description {
 	max-width: 690px;
-	margin: 32px auto 0;
+	margin: 28px auto 30px;
 	color: $color-muted;
 	font-size: 12px;
 	line-height: 1.95;
@@ -92,7 +97,7 @@
 	font-weight: $weight-regular;
 }
 
-.about-hero__meta span + span::before {
+.about-hero__meta span+span::before {
 	content: "/";
 	margin-right: 35px;
 	color: rgba($color-cream, 0.22);
@@ -372,7 +377,7 @@
 	text-transform: uppercase;
 }
 
-.culture-card__content > p:not(.culture-card__index) {
+.culture-card__content>p:not(.culture-card__index) {
 	max-width: 680px;
 	margin: 0;
 	color: $color-muted;
@@ -405,7 +410,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 30px;
 	padding: 28px 0;
 	border-bottom: $border-subtle;
 }
@@ -474,7 +478,7 @@
 		font-size: clamp(56px, 17vw, 90px);
 	}
 
-	.about-hero__copy {
+	.about-hero__description {
 		font-size: 11px;
 	}
 
@@ -483,7 +487,7 @@
 		gap: 8px;
 	}
 
-	.about-hero__meta span + span::before {
+	.about-hero__meta span+span::before {
 		display: none;
 	}
 

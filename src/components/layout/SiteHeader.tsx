@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { SiteNavigation } from "./SiteNavigation";
+import { MobileNavigation } from "./MobileNavigation";
 
 export function SiteHeader() {
 	return (
@@ -9,7 +10,9 @@ export function SiteHeader() {
 					<span className="site-brand__mark">TM</span>
 					<span className="site-brand__suffix">.DEV</span>
 				</Link>
+
 				<SiteNavigation />
+				<MobileNavigation />
 			</div>
 		</header>
 	);

@@ -1,41 +1,47 @@
 import { Link } from "react-router-dom";
-import { socialLinks } from "../../content/about";
+import { AboutSectionHeading } from "./AboutSectionHeading";
+import { aboutContent } from "../../content/about";
 
 export function SocialLinks() {
+	const { social } = aboutContent;
+
 	return (
 		<section
 			className="about-social"
 			id="social"
 			aria-labelledby="social-title"
 		>
-			<div className="about-section-heading">
-				<div className="section-number">06 / SOCIAL LINKS</div>
-				<div>
-					<h2 className="section-title" id="social-title">
-						Follow the
-						<br />
-						trail.
-					</h2>
-					<p className="section-intro">
-						The useful material tends to happen elsewhere:
-						repositories, notes, experiments and unfinished things.
-					</p>
-				</div>
-			</div>
+			<AboutSectionHeading
+				content={social.section}
+				titleId="social-title"
+			/>
+
 			<div className="social-list">
-				{socialLinks.map((link) => (
+				{social.items.map((link) => (
 					<article className="social-item" key={link.label}>
 						<div>
 							<p className="eyebrow">{link.label}</p>
 							<p>{link.description}</p>
 						</div>
+
 						{link.href ? (
-							<Link className="text-link" to={link.href}>
-								Open →
-							</Link>
+							link.href.startsWith("/") ? (
+								<Link className="text-link" to={link.href}>
+									{social.openLabel}
+								</Link>
+							) : (
+								<a
+									className="text-link"
+									href={link.href}
+									target="_blank"
+									rel="noreferrer"
+								>
+									{social.openLabel}
+								</a>
+							)
 						) : (
 							<span className="social-item__pending">
-								Public link not supplied
+								{social.pendingLabel}
 							</span>
 						)}
 					</article>

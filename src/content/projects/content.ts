@@ -1,9 +1,16 @@
 import type { ContentDocument } from "../../types/content";
 import { projects } from "./index";
+
+import apiGateway from "./ai-gateway";
 import authenticationApiMfaEmailVerification from "./authentication-api";
+import eventDrivenAppointmentsApi from "./event-driven-appointments-api";
+import frontendSocialSystem from "./frontend-social-system";
 
 const authoredProjectDocuments: ContentDocument[] = [
+	apiGateway,
 	authenticationApiMfaEmailVerification,
+	eventDrivenAppointmentsApi,
+	frontendSocialSystem,
 ];
 
 const authoredSlugs = new Set(

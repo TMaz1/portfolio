@@ -1,4 +1,5 @@
 import type { ExperienceItem } from "../../types/content";
+import { isValidUrl } from "../../utils/validation";
 import { ProjectCard } from "./ProjectCard";
 
 type ExperienceTimelineProps = {
@@ -70,9 +71,20 @@ export function ExperienceTimeline({
 						<div className="timeline-content">
 							<h3 className="role">{item.role}</h3>
 
-							<div className="company">
-								{item.company}
-							</div>
+							{isValidUrl(item.companyUrl) ? (
+								<a
+									className="company"
+									href={item.companyUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									{item.company} →
+								</a>
+							) : (
+								<div className="company">
+									{item.company}
+								</div>
+							)}
 
 							<p>{item.description}</p>
 

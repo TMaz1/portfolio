@@ -3,9 +3,9 @@ import type { ContentDocument } from "../../types/content";
 const article: ContentDocument = {
 	kind: "article",
 	slug: "getting-started-with-articles",
-	title: "Getting Started With Articles — TM.DEV",
+	title: "Article Content Structure — TM.DEV",
 	eyebrow: "ARTICLE / REFERENCE",
-	intro: "Everything you need to understand the platform, structure your workspace, write useful documentation, and build a maintainable documentation workflow from start to finish.",
+	intro: "A reference for structuring articles with the available content blocks, choosing the appropriate block for each purpose, and maintaining consistent documentation across the platform.",
 	archive: {
 		category: "General",
 		filterCategories: ["general"],
@@ -21,7 +21,7 @@ const article: ContentDocument = {
 			text: [
 				{
 					type: "text",
-					text: "DocsHub gives your team a single place to organise product documentation, technical guides, processes, and reference material.",
+					text: "Articles are composed from a defined set of content blocks. Each block has a specific purpose, allowing information to be presented consistently without requiring every article to follow the same visual structure.",
 				},
 			],
 		},
@@ -31,14 +31,8 @@ const article: ContentDocument = {
 			text: [
 				{
 					type: "text",
-					text: "The goal is simple: make useful information easy to find, easy to understand, and easy to maintain. Instead of scattering information across multiple tools, you can structure everything into a consistent ",
+					text: "The content model separates the information itself from its presentation. Authors can therefore combine headings, paragraphs, lists, tables, code examples, cards, callouts, steps, pathways, FAQs, and calls to action according to the needs of the article.",
 				},
-				{
-					type: "link",
-					text: "documentation system",
-					href: "#workspace",
-				},
-				{ type: "text", text: "." },
 			],
 		},
 		{
@@ -47,32 +41,42 @@ const article: ContentDocument = {
 			text: [
 				{
 					type: "text",
-					text: "Whether you are documenting a small internal process or building a complete ",
+					text: "A well-structured article should use each block for a clear reason. ",
 				},
-				{ type: "link", text: "knowledge base", href: "#key-concepts" },
-				{ type: "text", text: ", the same principles apply: " },
 				{
 					type: "link",
-					text: "clear organisation",
-					href: "#workspace",
+					text: "Headings",
+					href: "#key-concepts",
 				},
 				{
 					type: "text",
-					text: ", useful content, predictable navigation, and ",
+					text: " establish hierarchy, ",
 				},
 				{
 					type: "link",
-					text: "regular maintenance",
+					text: "content blocks",
+					href: "#reference-table",
+				},
+				{
+					type: "text",
+					text: " communicate the relevant information, and ",
+				},
+				{
+					type: "link",
+					text: "navigation and maintenance",
 					href: "#maintenance",
 				},
-				{ type: "text", text: "." },
+				{
+					type: "text",
+					text: " keep longer documentation usable over time.",
+				},
 			],
 		},
 		{
 			type: "callout",
 			id: "overview-important",
 			label: "Important",
-			text: "Keep documentation focused on the reader. Every section should answer a question, explain a process, or provide a useful reference.",
+			text: "A block should communicate a distinct piece of information or serve a distinct structural purpose. Avoid using a more complex block when a paragraph, list, or heading communicates the same information clearly.",
 		},
 		{
 			type: "cards",
@@ -80,29 +84,29 @@ const article: ContentDocument = {
 			columns: 3,
 			items: [
 				{
-					tag: "Start here",
-					title: "Learn the basics",
+					tag: "Structure",
+					title: "Organise content",
 					icon: "01",
 					description:
-						"Understand the core concepts before moving into advanced configuration.",
-					meta: "5 min read",
+						"Use headings, paragraphs, and lists to establish the logical structure of an article.",
+					meta: "Core blocks",
 					tone: "primary",
 				},
 				{
-					tag: "Guides",
-					title: "Follow a workflow",
+					tag: "Presentation",
+					title: "Communicate clearly",
 					icon: "02",
 					description:
-						"Follow practical steps to move from an empty workspace to a finished documentation project.",
-					meta: "8 min read",
+						"Use cards, callouts, tables, steps, and examples when a specialised presentation improves comprehension.",
+					meta: "Content blocks",
 					tone: "secondary",
 				},
 				{
 					tag: "Reference",
-					title: "Explore components",
+					title: "Support the reader",
 					icon: "03",
 					description:
-						"Explore reusable content patterns for guides, examples, warnings, and technical references.",
+						"Use FAQs, pathways, links, and calls to action to provide context, navigation, or a clear next step.",
 				},
 			],
 		},
@@ -111,7 +115,7 @@ const article: ContentDocument = {
 		{
 			type: "paragraph",
 			id: "key-concepts-intro",
-			text: "Before creating pages, it helps to understand the basic building blocks of a documentation system.",
+			text: "An article is a sequence of typed content blocks. The block type determines the information pattern being represented, while the content provides the subject matter.",
 		},
 		{
 			type: "cards",
@@ -120,31 +124,31 @@ const article: ContentDocument = {
 			items: [
 				{
 					tag: "Structure",
-					title: "Spaces",
+					title: "Headings",
 					icon: "A",
 					description:
-						"A space is a high-level collection of related documentation. Use spaces to separate products, teams, projects, or major areas of knowledge.",
+						"Define the hierarchy of an article and divide related information into identifiable sections.",
 				},
 				{
 					tag: "Content",
-					title: "Pages",
+					title: "Paragraphs",
 					icon: "B",
 					description:
-						"Pages contain the actual documentation. Keep each page focused on a specific task, concept, question, or reference.",
+						"Provide the primary explanatory content. Use paragraphs for information that does not require a specialised presentation.",
 				},
 				{
 					tag: "Navigation",
-					title: "Collections",
+					title: "Links",
 					icon: "C",
 					description:
-						"Collections group related pages together so readers can move naturally from introductory material to more advanced topics.",
+						"Connect related sections or resources and allow readers to move directly to relevant information.",
 				},
 				{
-					tag: "Discovery",
-					title: "Search",
+					tag: "Emphasis",
+					title: "Callouts",
 					icon: "D",
 					description:
-						"Search helps readers find information when they do not know where a particular page lives in the documentation structure.",
+						"Highlight information that requires additional attention, such as warnings, definitions, or important notes.",
 				},
 			],
 		},
@@ -155,10 +159,10 @@ const article: ContentDocument = {
 			tone: "definition",
 			text: [
 				{ type: "text", text: "A " },
-				{ type: "text", text: "documentation system", strong: true },
+				{ type: "text", text: "content block", strong: true },
 				{
 					type: "text",
-					text: " is more than a collection of pages. It is the combination of structure, navigation, content, conventions, and maintenance practices that help people find and use information.",
+					text: " is a typed unit of article content. Blocks provide a predictable structure for rendering information while allowing individual articles to combine different presentation patterns.",
 				},
 			],
 		},
@@ -172,7 +176,7 @@ const article: ContentDocument = {
 		{
 			type: "paragraph",
 			id: "before-you-start-intro",
-			text: "A good documentation project starts with a clear structure. Before creating individual pages, decide what information your readers actually need.",
+			text: "Before creating an article, establish its purpose, audience, and expected outcome. The content should determine which blocks are required rather than the other way around.",
 		},
 		{
 			type: "list",
@@ -182,26 +186,26 @@ const article: ContentDocument = {
 					content: [
 						{
 							type: "text",
-							text: "Define your audience. ",
+							text: "Define the purpose. ",
 							strong: true,
 						},
 						{
 							type: "text",
-							text: "Know who will be reading the documentation and what level of knowledge they already have.",
+							text: "Determine whether the article explains a concept, documents a process, provides reference information, or addresses a problem.",
 						},
 					],
 					items: [
 						{
 							content:
-								"Consider their existing technical knowledge.",
+								"Identify the question or task the article should address.",
 						},
 						{
 							content:
-								"Use terminology they will already understand.",
+								"Remove information that does not support that purpose.",
 						},
 						{
 							content:
-								"Explain unfamiliar concepts before relying on them.",
+								"Choose blocks based on the information being communicated.",
 						},
 					],
 				},
@@ -209,29 +213,29 @@ const article: ContentDocument = {
 					content: [
 						{
 							type: "text",
-							text: "Identify common questions. ",
+							text: "Identify the audience. ",
 							strong: true,
 						},
 						{
 							type: "text",
-							text: "Start with problems people repeatedly need to solve.",
+							text: "Write at an appropriate level of technical knowledge and provide context where it is required.",
 						},
 					],
 					items: [
-						{ content: "Look at support requests." },
-						{ content: "Review questions from new users." },
+						{ content: "Use terminology consistently." },
+						{ content: "Define terms that may be unfamiliar." },
 					],
 				},
 				{
 					content: [
 						{
 							type: "text",
-							text: "Keep navigation predictable. ",
+							text: "Plan the structure. ",
 							strong: true,
 						},
 						{
 							type: "text",
-							text: "Readers should always know where they are and what comes next.",
+							text: "Arrange sections in an order that allows the reader to understand the subject without unnecessary backtracking.",
 						},
 					],
 				},
@@ -246,18 +250,30 @@ const article: ContentDocument = {
 		{
 			type: "paragraph",
 			id: "reader-purpose",
-			text: "One of the easiest ways to improve documentation is to stop thinking about what the team wants to publish and start thinking about what the reader is trying to accomplish.",
+			text: "The structure of an article should reflect the reader's information needs. Begin with enough context to establish the subject, then present the relevant details in the order they are most useful.",
 		},
 		{
 			type: "paragraph",
 			id: "reader-focus",
-			text: "A useful page usually has one primary purpose. If readers have to scan through several unrelated topics before finding the answer they need, the page is probably trying to do too much.",
+			text: "Avoid combining unrelated subjects in a single section. When a topic requires substantial explanation, give it its own heading or page so that readers can identify and reference it independently.",
+		},
+		{
+			type: "image",
+			id: "image-example",
+			image: {
+				src: "/assets/images/article/placeholder-1.jpg",
+				alt: "Example article image demonstrating image configuration",
+				ratio: "3:2",
+				crop: "cover",
+				caption:
+					"Image configuration: set src to an internal asset path or external URL, provide descriptive alt text, and optionally choose a ratio (auto, 16:9, 4:3, 3:2, or 1:1). Use cover to fill the selected ratio and crop the edges, or contain to keep the complete image visible. Captions are optional and can be omitted or set to null.",
+			},
 		},
 		{
 			type: "callout",
 			id: "reader-tip",
 			label: "Tip",
-			text: "Write the page title as if someone were searching for the answer. “Configure notifications” is usually more useful than “Notification settings”.",
+			text: "Prefer specific headings that describe their content. “Configure notifications” communicates an action more precisely than a generic heading such as “Settings”.",
 		},
 
 		{
@@ -269,7 +285,7 @@ const article: ContentDocument = {
 		{
 			type: "paragraph",
 			id: "reference-table-intro",
-			text: "Different documentation types can share the same visual system while changing the content structure inside the article.",
+			text: "Different article types require different information structures. The same block system can support each type while preserving a consistent visual language.",
 		},
 		{
 			type: "table",
@@ -285,26 +301,26 @@ const article: ContentDocument = {
 					[
 						"Concept",
 						"Explain an idea",
-						"Definition → explanation → examples → FAQ",
-						"Definitions and concepts",
+						"Definition → explanation → examples → related topics",
+						"Architecture and terminology",
 					],
 					[
 						"How-to",
 						"Complete a task",
 						"Prerequisites → steps → result → troubleshooting",
-						"Task walkthroughs",
+						"Configuration and setup",
 					],
 					[
 						"Reference",
 						"Look up details",
-						"Specification → parameters → examples → errors",
+						"Specification → properties → examples → constraints",
 						"API and configuration references",
 					],
 					[
 						"Troubleshooting",
-						"Solve a problem",
-						"Problem → causes → solutions → prevention",
-						"Issue resolution guides",
+						"Resolve a problem",
+						"Symptom → causes → resolution → prevention",
+						"Errors and operational issues",
 					],
 				],
 			},
@@ -319,12 +335,12 @@ const article: ContentDocument = {
 		{
 			type: "paragraph",
 			id: "workspace-intro",
-			text: "A predictable workspace makes documentation easier to navigate as the number of pages grows.",
+			text: "Article structure should remain predictable as the documentation set grows. Group related material at the appropriate level and avoid introducing additional hierarchy without a clear navigational benefit.",
 		},
 		{
 			type: "paragraph",
 			id: "workspace-depth",
-			text: "Start broad and become more specific as you move deeper into the structure. Avoid creating a large number of top-level categories unless there is a clear reason for each one.",
+			text: "A useful hierarchy generally moves from broad subject areas to specific collections and individual pages. The exact terminology may vary between products, but the underlying principle is to keep each level meaningful and easy to scan.",
 		},
 		{
 			type: "cards",
@@ -335,20 +351,20 @@ const article: ContentDocument = {
 					title: "Product",
 					icon: "01",
 					description:
-						"The highest-level area for a product, service, or major body of documentation.",
+						"Represents a major product, service, platform, or other top-level area of documentation.",
 					tone: "primary",
 				},
 				{
 					title: "Collection",
 					icon: "02",
 					description:
-						"Group related guides, references, tutorials, or operational material.",
+						"Groups related articles such as guides, concepts, references, or operational procedures.",
 				},
 				{
 					title: "Page",
 					icon: "03",
 					description:
-						"Answer one focused question or document one specific process.",
+						"Contains a focused explanation, procedure, reference, or other self-contained unit of documentation.",
 				},
 			],
 		},
@@ -357,42 +373,52 @@ const article: ContentDocument = {
 			id: "workspace-warning",
 			label: "Avoid over-structuring",
 			tone: "warning",
-			text: "Do not create a new category simply because you have one or two pages that could fit inside it. Structure should emerge from the content rather than being created for its own sake.",
+			text: "Do not introduce categories solely to make the hierarchy appear more complete. A category should represent a meaningful grouping that helps readers locate related content.",
 		},
 
 		{ type: "heading", id: "setup", level: 2, text: "Setup" },
 		{
 			type: "paragraph",
 			id: "setup-intro",
-			text: "Use the following sequence when creating a new documentation section.",
+			text: "Use the following sequence when creating a new article or documentation section. The sequence separates content definition, structure, navigation, and review.",
 		},
 		{
 			type: "steps",
 			id: "setup-steps",
 			items: [
 				{
-					title: "Create the section",
+					title: "Set the image source",
 					description:
-						"Give the section a clear name that describes what readers will find inside it.",
-					screenshotLabel: "Workspace / section preview",
+						"Provide an internal asset path or external URL through the src property. The image can then be displayed using one of the available presentation ratios, such as 3:2, 4:3, 1:1, or 16:9.",
+					image: {
+						src: "/assets/images/article/placeholder-1.jpg",
+						alt: "3:2 image with cover",
+						ratio: "3:2",
+						crop: "cover",
+						caption: "Source: Unsplash",
+					},
 				},
 				{
-					title: "Add your content",
+					title: "Choose how it fits",
 					description:
-						"Start with the most important information. Use headings, lists, examples, and callouts to improve readability.",
-					screenshotLabel: "Content editor preview",
+						"Use cover when the image should fill its selected ratio and allow the edges to be cropped. Use contain when the complete image should remain visible instead.",
+					image: {
+						src: "/assets/images/article/placeholder-1.jpg",
+						alt: "1:1 image with contain",
+						ratio: "1:1",
+						crop: "contain",
+					},
 				},
 				{
-					title: "Add navigation",
+					title: "Use a wider presentation",
 					description:
-						"Connect related pages and make the intended reading path obvious.",
-					screenshotLabel: "Navigation preview",
-				},
-				{
-					title: "Publish and review",
-					description:
-						"Preview the page on desktop and mobile before making it available to readers.",
-					screenshotLabel: "Published page preview",
+						"Choose a wider ratio such as 16:9 when the image benefits from a landscape presentation. The same configuration can also use 4:3 or other supported ratios when a different shape is more appropriate.",
+					image: {
+						src: "/assets/images/article/placeholder-1.jpg",
+						alt: "16:9 image with cover",
+						ratio: "16:9",
+						crop: "cover",
+					},
 				},
 			],
 		},
@@ -406,7 +432,7 @@ const article: ContentDocument = {
 		{
 			type: "paragraph",
 			id: "writing-intro",
-			text: "Good documentation is not necessarily longer documentation. The best pages communicate the required information with as little friction as possible.",
+			text: "The block system provides presentation structure, but the quality of an article still depends on precise, relevant, and maintainable writing.",
 		},
 		{
 			type: "cards",
@@ -414,33 +440,33 @@ const article: ContentDocument = {
 			columns: 2,
 			items: [
 				{
-					title: "Use clear headings",
+					title: "Use descriptive headings",
 					description:
-						"Describe exactly what the reader will learn or accomplish in the section.",
+						"Make each heading communicate the subject, question, or action covered by the following section.",
 					tag: "Recommended",
-					meta: "Clarity",
+					meta: "Structure",
 					tone: "primary",
 				},
 				{
-					title: "Use active language",
+					title: "Write directly",
 					description:
-						"Tell readers what to do directly instead of hiding instructions behind passive language.",
+						"Prefer precise sentences and direct instructions. Remove unnecessary introductions, repetition, and filler.",
 					tag: "Recommended",
-					meta: "Action",
+					meta: "Clarity",
 				},
 				{
-					title: "Show examples",
+					title: "Use the right block",
 					description:
-						"Demonstrate concepts with realistic examples when an explanation alone could be ambiguous.",
+						"Choose lists, tables, steps, code, or callouts when their structure represents the information more clearly than plain prose.",
 					tag: "Recommended",
-					meta: "Examples",
+					meta: "Semantics",
 				},
 				{
-					title: "Remove repetition",
+					title: "Avoid duplication",
 					description:
-						"Do not repeat the same instructions across multiple pages. Link to the authoritative explanation instead.",
+						"Do not maintain multiple independent explanations of the same information. Keep one authoritative explanation and reference it elsewhere.",
 					tag: "Avoid",
-					meta: "Maintainability",
+					meta: "Maintenance",
 				},
 			],
 		},
@@ -453,7 +479,7 @@ const article: ContentDocument = {
 		{
 			type: "paragraph",
 			id: "useful-page-structure-intro",
-			text: "For most guides, a simple structure works well: explain what the reader is about to accomplish, provide the required context, walk through the process, and finish with the expected result or next action.",
+			text: "A typical article can move from context to detail and then to action. Not every page requires every stage, but the sequence provides a useful baseline for guides and technical documentation.",
 		},
 		{
 			type: "list",
@@ -464,7 +490,7 @@ const article: ContentDocument = {
 						{ type: "text", text: "Context. ", strong: true },
 						{
 							type: "text",
-							text: "Explain why the reader is here and what the page covers.",
+							text: "Explain the subject and establish why the information is relevant.",
 						},
 					],
 				},
@@ -473,7 +499,7 @@ const article: ContentDocument = {
 						{ type: "text", text: "Requirements. ", strong: true },
 						{
 							type: "text",
-							text: "Mention anything that must be completed beforehand.",
+							text: "Identify prerequisites, assumptions, permissions, or required resources.",
 						},
 					],
 				},
@@ -482,7 +508,7 @@ const article: ContentDocument = {
 						{ type: "text", text: "Instructions. ", strong: true },
 						{
 							type: "text",
-							text: "Present the actual process in a logical order.",
+							text: "Present procedures in the order in which they should be performed.",
 						},
 					],
 				},
@@ -491,7 +517,7 @@ const article: ContentDocument = {
 						{ type: "text", text: "Verification. ", strong: true },
 						{
 							type: "text",
-							text: "Explain how the reader can confirm that everything worked correctly.",
+							text: "Describe the expected result or provide a method for confirming completion.",
 						},
 					],
 				},
@@ -500,7 +526,7 @@ const article: ContentDocument = {
 						{ type: "text", text: "Next action. ", strong: true },
 						{
 							type: "text",
-							text: "Point the reader towards the most useful follow-up.",
+							text: "Provide the most relevant follow-up information, related article, or action.",
 						},
 					],
 				},
@@ -511,55 +537,72 @@ const article: ContentDocument = {
 		{
 			type: "paragraph",
 			id: "examples-intro",
-			text: "Examples are especially useful when explaining technical concepts or showing readers exactly what they should expect.",
+			text: "Examples should demonstrate how information is represented rather than simply repeat the surrounding explanation. They are particularly useful for code, configuration, hierarchy, and expected output.",
 		},
 		{
 			type: "paragraph",
 			id: "examples-semantic",
-			text: "A simple documentation page can use semantic HTML and reusable CSS classes rather than relying on deeply nested one-off styles.",
+			text: "For example, a documentation page can combine semantic HTML with reusable classes while keeping the underlying structure simple and predictable.",
 		},
 		{
 			type: "code",
 			id: "example-html",
 			language: "HTML",
-			code: `<section class="article-section">\n  <h2>Getting started</h2>\n  <p>Follow these steps to create your first page.</p>\n\n  <div class="callout">\n    <strong>Tip</strong>\n    Start with the reader's goal.\n  </div>\n</section>`,
+			code: `<article class="article">
+  <h2>Getting started</h2>
+  <p>Follow these steps to create your first page.</p>
+
+  <div class="callout">
+    <strong>Tip</strong>
+    Start with the reader's goal.
+  </div>
+</article>`,
 		},
 		{
 			type: "paragraph",
 			id: "examples-hierarchy-intro",
-			text: "A practical documentation hierarchy might look like this:",
+			text: "A documentation hierarchy can also be represented explicitly when explaining how related pages are organised.",
 		},
 		{
 			type: "code",
 			id: "example-hierarchy",
 			language: "Structure",
-			code: `Product\n├── Getting started\n├── Guides\n│   ├── Configuration\n│   ├── Integrations\n│   └── Troubleshooting\n├── Reference\n│   ├── API\n│   └── Settings\n└── FAQ`,
+			code: `Product
+├── Getting started
+├── Guides
+│   ├── Configuration
+│   ├── Integrations
+│   └── Troubleshooting
+├── Reference
+│   ├── API
+│   └── Settings
+└── FAQ`,
 		},
 
 		{ type: "heading", id: "publishing", level: 2, text: "Publishing" },
 		{
 			type: "paragraph",
 			id: "publishing-intro",
-			text: "Publishing should be treated as the final step of the documentation workflow rather than the point at which content is first reviewed.",
+			text: "Publishing is the final stage of the article workflow. Review should happen before publication so that readers receive content that is complete, internally consistent, and suitable for the intended presentation.",
 		},
 		{
 			type: "steps",
 			id: "publishing-steps",
 			items: [
 				{
-					title: "Check the content",
+					title: "Review the content",
 					description:
-						"Confirm that the instructions are complete, accurate, and written for the intended audience.",
+						"Confirm that the article is accurate, complete, appropriately scoped, and understandable to its intended audience.",
 				},
 				{
-					title: "Check the links",
+					title: "Validate references",
 					description:
-						"Make sure internal references, external links, navigation, and examples all point to the correct destination.",
+						"Check internal links, external links, navigation, examples, code samples, and any referenced resources.",
 				},
 				{
-					title: "Check the layout",
+					title: "Review the presentation",
 					description:
-						"Review the page at different screen sizes and confirm that headings, code, tables, and cards remain readable.",
+						"Check headings, tables, code blocks, cards, callouts, spacing, and responsive behaviour across supported screen sizes.",
 				},
 			],
 		},
@@ -568,38 +611,38 @@ const article: ContentDocument = {
 			id: "publishing-checklist",
 			label: "Publishing checklist",
 			tone: "success",
-			text: "Content reviewed, links tested, examples verified, metadata updated, and the page checked on both desktop and mobile.",
+			text: "Content reviewed, references verified, examples checked, metadata confirmed, and the final layout reviewed across supported screen sizes.",
 		},
 
 		{ type: "heading", id: "maintenance", level: 2, text: "Maintenance" },
 		{
 			type: "paragraph",
 			id: "maintenance-intro",
-			text: "Documentation becomes less useful when it is allowed to drift away from the product or process it describes. Maintenance should therefore be part of the normal workflow.",
+			text: "Published documentation is part of the product and should be maintained alongside the systems and processes it describes. Changes to the underlying subject should trigger a review of related articles.",
 		},
 		{
 			type: "pathway",
 			id: "maintenance-pathway",
 			items: [
 				{
-					title: "Review important pages",
+					title: "Review affected pages",
 					description:
-						"Revisit frequently used guides whenever the underlying product, process, or interface changes.",
+						"Identify documentation affected by changes to products, interfaces, APIs, processes, terminology, or system behaviour.",
 				},
 				{
-					title: "Remove outdated content",
+					title: "Remove obsolete information",
 					description:
-						"Archive or replace instructions that no longer describe the current experience.",
+						"Update, replace, or archive instructions that no longer describe the current system or supported workflow.",
 				},
 				{
 					title: "Consolidate duplicates",
 					description:
-						"When several pages explain the same concept, choose one authoritative source and link to it.",
+						"When multiple pages describe the same subject, retain a clear authoritative source and reference it from related content.",
 				},
 				{
-					title: "Improve based on feedback",
+					title: "Use reader feedback",
 					description:
-						"Use search behaviour, support questions, and reader feedback to identify areas that need clearer explanations.",
+						"Treat support questions, reported errors, search behaviour, and direct feedback as signals for unclear or incomplete documentation.",
 				},
 			],
 		},
@@ -607,14 +650,14 @@ const article: ContentDocument = {
 			type: "callout",
 			id: "maintenance-tip",
 			label: "Maintenance tip",
-			text: "If a page describes a process that changes frequently, consider assigning an owner who is responsible for reviewing it after major releases.",
+			text: "For documentation describing frequently changing systems, assign an owner or responsible team so that updates have a clear point of accountability.",
 		},
 
-		{ type: "heading", id: "routes", level: 2, text: "Routes" },
+		{ type: "heading", id: "routes", level: 2, text: "Block selection" },
 		{
 			type: "paragraph",
 			id: "routes-intro",
-			text: "People enter software development through different starting points. University, apprenticeships, independent learning, intensive training, internal moves, and career changes can all form part of a pathway.",
+			text: "Different information patterns benefit from different block types. The following examples describe common ways to select a block based on the information being presented.",
 		},
 		{
 			type: "cards",
@@ -622,51 +665,51 @@ const article: ContentDocument = {
 			columns: 4,
 			items: [
 				{
-					title: "University",
+					title: "Explanation",
 					description:
-						"A broader academic route that can provide foundations across computing and related subjects.",
+						"Use paragraphs and headings when the primary requirement is to explain a concept or provide context.",
 				},
 				{
-					title: "Apprenticeship",
+					title: "Procedure",
 					description:
-						"Combine structured learning with workplace experience where an appropriate route is available.",
+						"Use numbered steps when readers need to perform actions in a defined sequence.",
 				},
 				{
-					title: "Independent learning",
+					title: "Comparison",
 					description:
-						"Learn through courses, documentation, books and your own practical work.",
+						"Use a table when multiple items need to be compared against the same set of attributes.",
 				},
 				{
-					title: "Intensive training",
+					title: "Emphasis",
 					description:
-						"Concentrate learning into a shorter period while still needing practice and evidence afterwards.",
+						"Use a callout when information needs additional visual emphasis without becoming part of the main flow.",
 				},
 				{
-					title: "Internal move",
+					title: "Options",
 					description:
-						"Build technology capability while drawing on knowledge of your existing organisation or industry.",
+						"Use cards when several related items need to be presented as distinct, independently scannable entries.",
 				},
 				{
-					title: "Career change",
+					title: "Hierarchy",
 					description:
-						"Combine transferable professional strengths with new technical capability.",
+						"Use headings and structured navigation when the reader needs to understand relationships between sections or pages.",
 				},
 				{
-					title: "Practical projects",
+					title: "Reference",
 					description:
-						"Learn by building, collaborating and solving realistic problems.",
+						"Use code blocks for exact syntax, configuration, output, or other material where formatting is significant.",
 				},
 				{
-					title: "More than one route",
+					title: "Follow-up",
 					description:
-						"Real pathways often combine several approaches rather than following one perfectly.",
+						"Use pathways, FAQs, and calls to action when readers need clear routes to related information or subsequent tasks.",
 				},
 			],
 		},
 		{
 			type: "paragraph",
 			id: "routes-outcome",
-			text: "The route matters less than what you can demonstrate at the point you are ready to move forward. A qualification can be valuable, but it does not automatically demonstrate that you can apply the skills in practice.",
+			text: "The objective is not to use every available block. Select the smallest set of blocks that represents the information accurately and makes the article easy to scan and maintain.",
 		},
 
 		{ type: "heading", id: "faq", level: 2, text: "FAQ" },
@@ -676,28 +719,28 @@ const article: ContentDocument = {
 			items: [
 				{
 					question: "How much content should each page contain?",
-					answer: "Enough to completely answer the reader’s question without adding unrelated information. If a page becomes too large, split it into smaller focused pages.",
+					answer: "A page should contain enough information to fulfil its stated purpose without introducing unrelated subjects. Split large topics when separate sections could be understood and maintained independently.",
 				},
 				{
 					question: "Should every page use the same layout?",
-					answer: "The visual system should stay consistent, but individual pages can use different content components when that makes the information easier to understand.",
+					answer: "The visual system should remain consistent, but the block composition should reflect the information being presented. A reference page may require a table while a procedure may require steps.",
 				},
 				{
 					question:
 						"How should I organise a large documentation set?",
-					answer: "Start with a small number of meaningful top-level categories and group related pages underneath them. Avoid creating deep navigation trees unless they genuinely help readers find information.",
+					answer: "Use a small number of meaningful top-level areas and group related pages beneath them. Introduce deeper hierarchy only when it improves discovery or reflects a genuine relationship between the content.",
 				},
 				{
-					question: "Why are short sections better?",
-					answer: "Short sections improve scanning, make navigation easier, and allow readers to quickly locate the specific information they need.",
+					question: "Why are short sections useful?",
+					answer: "Short, focused sections improve scanning and make it easier for readers to identify the information relevant to their current task.",
 				},
 				{
 					question: "How often should documentation be reviewed?",
-					answer: "Frequently used documentation should be reviewed whenever the related product or process changes. Less frequently used reference material can be reviewed on a regular maintenance schedule.",
+					answer: "Review documentation when the system, process, interface, or terminology it describes changes. Frequently used material may also benefit from scheduled reviews.",
 				},
 				{
 					question: "Can I add custom components?",
-					answer: "Yes. New components should use the same spacing, typography, colour, border, and responsive rules as the existing design system.",
+					answer: "Yes, provided the component follows the established content model and design system. New components should have a defined purpose and consistent behaviour across supported layouts.",
 				},
 			],
 		},
@@ -705,10 +748,10 @@ const article: ContentDocument = {
 		{
 			type: "cta",
 			id: "final-cta",
-			title: "Ready to build better docs?",
-			text: "Use this layout as a consistent foundation for guides, references, tutorials, troubleshooting articles, and product documentation.",
+			title: "Build consistent documentation",
+			text: "Use the available content blocks according to their intended purpose to create articles that are structured, readable, and maintainable.",
 			href: "#overview",
-			label: "Get started",
+			label: "Review the structure",
 		},
 	],
 };

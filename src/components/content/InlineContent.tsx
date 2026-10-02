@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import type { InlineContent } from "../../types/content";
-import { scrollToContentId } from "./contentNavigation";
+import { scrollToContentId } from "../../utils/contentNavigation";
 
 export function InlineContent({ content }: { content: InlineContent }) {
 	if (typeof content === "string") {

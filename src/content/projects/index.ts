@@ -2,87 +2,61 @@ import type { ProjectSummary } from "../../types/content";
 
 export const projects: ProjectSummary[] = [
 	{
-		slug: "payments-processing-sandbox",
-		title: "Payments Processing Sandbox",
+		slug: "ai-gateway",
+		title: "AI Gateway",
 		description:
-			"A serverless payments-processing environment exploring asynchronous workflows, failure handling and infrastructure as code. Designed around queues, retries and dead-letter processing rather than a simple request/response flow.",
+			"A secure gateway between applications and AI providers, designed to centralise authentication, authorisation, rate limiting, resource controls, provider selection and response validation. The project explores how AI access can be treated as a controlled application boundary rather than exposing models directly to clients.",
 		technologies: [
-			"AWS Lambda",
-			"SQS",
-			"DynamoDB",
-			"S3",
-			"Terraform",
-			"JavaScript",
-			"CloudWatch",
-		],
-	},
-	{
-		slug: "e-commerce-products-api",
-		title: "E-Commerce Products API",
-		description:
-			"Production-style REST API built around a relational data model, with caching and automated testing. Demonstrates the stack closest to my professional .NET experience while incorporating modern ASP.NET 8 patterns.",
-		technologies: [
-			"ASP.NET 8",
-			"EF Core",
-			"SQL Server",
-			"Redis",
-			"xUnit",
-			"Moq",
+			"Python",
 			"SQLite",
-		],
-	},
-	{
-		slug: "event-driven-appointments-api",
-		title: "Event-Driven Appointments API",
-		description:
-			"An event-driven API for appointment and document workflows. Built around webhooks, retry behaviour and dead-letter queues, with Docker providing a consistent development environment.",
-		technologies: [
-			"Node.js",
-			"TypeScript",
-			"Docker",
-			"Webhooks",
-			"Retries",
-			"DLQ",
+			"Authentication",
+			"Authorisation",
+			"Rate Limiting",
+			"Ollama",
 		],
 	},
 	{
 		slug: "authentication-api",
 		title: "Authentication API",
 		description:
-			"Modern ASP.NET Core authentication implementation covering the less glamorous but important parts of account security: MFA, email verification, password recovery and token lifecycle management.",
+			"A modular authentication service built with ASP.NET Core 8, covering registration, email verification, MFA, password recovery, JWT and refresh-token sessions, role-based authorisation and account management. Built to explore the security and infrastructure behind a production-style authentication flow.",
 		technologies: [
 			"ASP.NET Core 8",
 			"C#",
+			"Entity Framework Core",
+			"SQL Server",
+			"Redis",
 			"JWT",
-			"Refresh Tokens",
 			"MFA",
-			"Security",
+		],
+	},
+	{
+		slug: "event-driven-appointments-api",
+		title: "Event-Driven Appointments API",
+		description:
+			"An API for appointments and documents built around asynchronous webhook delivery. Failed events are retried using exponential backoff and jitter before being moved to a dead-letter queue, providing a practical exploration of reliability and failure handling in event-driven systems.",
+		technologies: [
+			"Node.js",
+			"TypeScript",
+			"REST APIs",
+			"Webhooks",
+			"Docker",
+			"Retries",
+			"Dead-Letter Queue",
 		],
 	},
 	{
 		slug: "frontend-social-system",
 		title: "Frontend Social System",
 		description:
-			"High-interactivity social media prototype focused on frontend behaviour, application state and user interaction. A contrast to the backend-heavy projects elsewhere in the portfolio.",
+			"A frontend systems project exploring how a growing interactive application can remain maintainable as its UI and state become more complex. It uses reusable components, normalised state and a service layer to support dynamic layouts, collections, filtering, reordering and persistent user state.",
 		technologies: [
+			"React",
 			"TypeScript",
-			"Frontend",
-			"UI State",
-			"Interactions",
-			"Responsive",
-		],
-	},
-	{
-		slug: "image-to-text",
-		title: "Image To Text",
-		description:
-			"Bulk OCR pipeline for extracting text from images. Uses computer-vision preprocessing before passing images through Tesseract, demonstrating a different side of engineering: working with imperfect real-world input.",
-		technologies: [
-			"Python",
-			"OpenCV",
-			"Tesseract",
-			"OCR",
-			"Image Processing",
+			"Vite",
+			"State Management",
+			"Responsive UI",
+			"localStorage",
 		],
 	},
 ];

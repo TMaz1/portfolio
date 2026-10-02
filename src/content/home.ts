@@ -3,45 +3,46 @@ import type { ExperienceItem, SkillGroup } from "../types/content";
 export const experience: ExperienceItem[] = [
 	{
 		kind: "role",
-		period: "Jun 2026 — Present",
+		period: "Jun 2026 — Sep 2026",
 		role: "Web Developer",
 		company: "SkilledUp Life",
+		companyUrl: "https://skilledup.life/",
 		description:
-			"Returned to professional development working across a live WordPress platform, combining frontend engineering, performance optimisation, accessibility, technical SEO and cloud infrastructure. Focused on improving the technical foundations of the site rather than treating performance, search and UX as separate concerns.",
+			"Worked across frontend development, technical SEO, web performance, accessibility, analytics and WordPress. Focused on improving the technical foundations of the website while using search, user behaviour and performance data to guide practical changes.",
 		achievements: [
 			{
-				label: "~0.9s LCP",
+				label: "Frontend",
 				description:
-					"Improved desktop Lighthouse performance to approximately 0.9s LCP, 0.8s FCP, 100ms TBT and 0.004 CLS through critical-rendering-path, image and asset optimisation.",
+					"Developed responsive webpages and reusable content structures using React, TypeScript, JavaScript, HTML and CSS, including Knowledge Hub and Career Pathways templates designed for future expansion.",
 			},
 			{
-				label: "Core Web Vitals",
+				label: "Performance",
 				description:
-					"Investigated rendering, caching, Cloudflare, server-response and third-party script behaviour to identify performance bottlenecks across WordPress, Elementor and hosting infrastructure.",
+					"Improved Lighthouse Performance from 48 to 72 on mobile and 91 to 98 on desktop, while reducing mobile CLS from 0.373 to 0.006 through frontend, asset, caching and infrastructure optimisation.",
 			},
 			{
-				label: "SEO stack",
+				label: "Technical SEO",
 				description:
-					"Implemented and validated AIOSEO, canonical URLs, XML sitemaps, Open Graph metadata, Organisation, Website, BlogPosting, Author, Breadcrumb and FAQ structured data, alongside llms.txt.",
+					"Implemented and validated canonical URLs, XML sitemaps, Open Graph metadata and structured data across Organisation, Website, Article and Breadcrumb schema, alongside ongoing work around AI-search visibility.",
 			},
 			{
-				label: "50+",
+				label: "Analytics",
 				description:
-					"SEO-focused webpage opportunities structured into a reusable Knowledge Hub and Career Pathways architecture using HTML, CSS and JavaScript prototypes.",
+					"Used GA4, Google Search Console and search-intent analysis to identify acquisition, attribution and content opportunities, contributing to growth in organic sessions, organic users, sessions and active users.",
 			},
 			{
-				label: "+52.9%",
+				label: "Web architecture",
 				description:
-					"GA4 active-user growth from July to August, alongside measurable quarter-to-date growth in active users, sessions and new users.",
+					"Audited the wider WordPress and hosting environment, investigating rendering, JavaScript, fonts, images, Elementor assets, caching, Cloudflare and third-party resources to identify technical improvements.",
 			},
 		],
 	},
 	{
 		kind: "break",
 		period: "Aug 2023 — Jun 2026",
-		role: "Three years. Still building.",
+		role: "Career break",
 		description:
-			"Took a career break for primary caregiving while actively upskilling in modern engineering. Maintained technical growth by building projects in modern .NET APIs, serverless infrastructure, distributed systems, and frontend apps. These projects reflect continued curiosity and a proactive transition toward modern engineering architectures.",
+			"Took a career break to fulfil primary caring responsibilities. Returned to professional web development in June 2026, bringing previous software engineering experience together with a broader focus on web performance, technical SEO and digital optimisation.",
 		achievements: [],
 	},
 	{
@@ -49,63 +50,70 @@ export const experience: ExperienceItem[] = [
 		period: "Oct 2022 — Aug 2023",
 		role: ".NET Developer",
 		company: "Takepayments Ltd",
+		companyUrl: "https://www.takepayments.com/",
 		description:
-			"Delivered production features across C#, ASP.NET Core 7, Entity Framework, SQL Server, React, JavaScript, Bootstrap and SASS rather than working exclusively within one layer.",
+			"Developed and maintained customer-facing and internal web applications within a fintech environment, working across C#, .NET, REST APIs, SQL Server, React, JavaScript and Umbraco.",
 		achievements: [
 			{
-				label: "REST APIs",
+				label: "C# / .NET",
 				description:
-					"Developed API-driven filtering and data endpoints for merchant applications, exposing application status, trading status, partner and agent information to frontend workflows.",
+					"Developed production features across C#, ASP.NET Core, REST APIs and established .NET applications, working across frontend, backend and database layers.",
+			},
+			{
+				label: "APIs",
+				description:
+					"Built API-driven filtering and data functionality for merchant applications, exposing application, trading, partner and agent information to operational workflows.",
 			},
 			{
 				label: "SQL Server",
 				description:
-					"Worked with relational application data across SQL Server, Entity Framework and REST APIs, connecting database state with operational dashboards and customer-facing workflows.",
+					"Worked with relational application data through SQL Server, Entity Framework and REST APIs, connecting backend data with dashboards and customer-facing functionality.",
 			},
 			{
 				label: "Umbraco",
 				description:
-					"Built reusable CMS components including configurable cards, modal layouts and customer-facing content modules, allowing non-technical teams to manage dynamic website content.",
+					"Built reusable CMS components and configurable content modules for customer-facing websites, balancing maintainability, usability and requirements from non-technical teams.",
 			},
 			{
-				label: "CI / CD",
+				label: "Delivery",
 				description:
-					"Contributed to development and release workflows using Azure DevOps and Jenkins, with exposure to unit, integration, Selenium, Postman and JMeter testing across multiple environments.",
+					"Worked within Agile development and release workflows using Git, Azure DevOps and Jenkins, collaborating with development, QA, marketing and business stakeholders.",
 			},
 		],
 	},
 	{
 		kind: "role",
 		period: "Oct 2021 — Oct 2022",
-		role: "Web Development Service Desk",
+		role: "Service Desk Assistant",
 		company: "Takepayments Ltd",
+		companyUrl: "https://www.takepayments.com/",
 		description:
-			"Started in production web support before progressing into full-stack development. Worked directly with live WordPress and WooCommerce systems, developing custom functionality while diagnosing application, database, JavaScript, hosting and infrastructure issues under real production constraints.",
+			"Started in production web support before progressing into bespoke development. Worked across a large WordPress estate, diagnosing live application, database, JavaScript, hosting and infrastructure issues while developing custom functionality.",
 		achievements: [
 			{
 				label: "2.7M+",
 				description:
-					"UK postcode records processed by a custom WooCommerce radius plugin. Reworked database generation using chunked inserts and optimised queries, reducing processing time from approximately 2 hours to around 2 minutes.",
+					"Optimised generation of a MySQL database containing more than 2.7 million UK postcode records, using chunked inserts and query optimisation to reduce processing time from approximately 2 hours to around 2 minutes.",
 			},
 			{
-				label: "Full-stack",
+				label: "PHP / MySQL",
 				description:
-					"Built custom WordPress and WooCommerce functionality across PHP, MariaDB/MySQL, JavaScript, AJAX and bespoke frontend themes, including wishlist, postcode-radius and product-enquiry features.",
-			},
-			{
-				label: "400+",
-				description:
-					"Technical support issues resolved across application faults, production bugs, feature requests, styling issues, billing problems and critical live-site incidents.",
-			},
-			{
-				label: "260+",
-				description:
-					"Client websites supported and established across three dedicated servers using WordPress Toolkit, WHM, cPanel, Cloudflare and third-party hosting environments.",
+					"Built bespoke WordPress and WooCommerce functionality using PHP, MySQL, JavaScript, jQuery and AJAX, including custom plugins and backend functionality.",
 			},
 			{
 				label: "Production",
 				description:
-					"Diagnosed and deployed fixes for high-impact PHP and JavaScript issues, including multi-site PHP entry conflicts and asynchronous JavaScript loading problems affecting WooCommerce functionality.",
+					"Diagnosed and resolved live PHP, JavaScript, plugin, theme and hosting issues, including production incidents affecting multiple websites and WooCommerce functionality.",
+			},
+			{
+				label: "400+",
+				description:
+					"Resolved more than 400 production support issues across application faults, website errors, feature requests, styling problems, merchant issues and time-sensitive incidents.",
+			},
+			{
+				label: "260+",
+				description:
+					"Deployed and established more than 260 WordPress websites across three dedicated servers and multiple hosting environments using cPanel, WHM, Cloudflare and WordPress tooling.",
 			},
 		],
 	},
@@ -114,23 +122,24 @@ export const experience: ExperienceItem[] = [
 		period: "May 2021 — Jul 2021",
 		role: "Research Assistant",
 		company: "Manchester Metropolitan University",
+		companyUrl: "https://www.mmu.ac.uk/",
 		description:
-			"Contributed to research investigating automated assessment of online content credibility, preparing structured datasets for machine-learning classification. Analysed articles against criteria including bias, supporting evidence and author experience, with the wider research subsequently presented at EASE 21.",
+			"Contributed to research into automated assessment of online content credibility, preparing structured datasets for machine-learning research and analysing web content against defined credibility criteria.",
 		achievements: [
 			{
 				label: "ML dataset",
 				description:
-					"Collected and annotated 100+ articles to create structured training and evaluation data for credibility-classification research.",
+					"Collected and annotated more than 100 online articles to create structured data for credibility-classification research.",
 			},
 			{
-				label: "Classification",
+				label: "Research",
 				description:
-					"Applied defined credibility criteria including bias, supporting evidence and author experience to transform unstructured web content into labelled research data.",
+					"Evaluated content against criteria including bias, supporting evidence and author experience, turning unstructured web content into labelled research data.",
 			},
 			{
 				label: "EASE 21",
 				description:
-					"Research contributed to work subsequently presented at the 25th International Conference on Evaluation and Assessment in Software Engineering.",
+					"The wider research was subsequently presented at the 25th International Conference on Evaluation and Assessment in Software Engineering.",
 			},
 		],
 	},
@@ -143,46 +152,59 @@ export const skillGroups: SkillGroup[] = [
 			"C#",
 			"JavaScript",
 			"TypeScript",
-			"Python",
 			"PHP",
+			"SQL",
 			"HTML / CSS",
 		],
 	},
 	{
 		category: "Frameworks",
 		items: [
+			".NET",
 			"ASP.NET Core",
-			".NET 7 / 8",
 			"React",
 			"Entity Framework Core",
 			"WordPress",
 			"WooCommerce",
+			"Umbraco",
 		],
 	},
 	{
-		category: "Infrastructure",
+		category: "Web & SEO",
 		items: [
-			"AWS",
-			"Lambda / SQS",
-			"Docker",
-			"Terraform",
-			"Cloudflare",
-			"Azure DevOps",
+			"Technical SEO",
+			"Core Web Vitals",
+			"GA4",
+			"Google Search Console",
+			"Structured Data",
+			"Information Architecture",
+			"UX / CRO",
+			"Accessibility",
+			"AI Search",
 		],
 	},
 	{
-		category: "Databases",
-		items: ["SQL Server", "MySQL / MariaDB", "MongoDB", "Redis", "SQLite"],
+		category: "Data",
+		items: [
+			"SQL Server",
+			"MySQL / MariaDB",
+			"SQLite",
+			"REST APIs",
+			"AJAX",
+		],
 	},
 	{
-		category: "Tools",
+		category: "Tools & Infrastructure",
 		items: [
 			"Git",
-			"Jenkins",
-			"Umbraco",
-			"AJAX / jQuery",
+			"Azure DevOps",
+			"Cloudflare",
+			"cPanel / WHM",
 			"Postman",
-			"JMeter",
+			"Lighthouse",
+			"PageSpeed Insights",
+			"Screaming Frog",
+			"AWS",
 		],
 	},
 ];

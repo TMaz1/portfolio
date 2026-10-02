@@ -11,7 +11,9 @@ export function SiteShell() {
 			</main>
 			<SiteFooter />
 			<ScrollRestoration
-				getKey={(location) => location.key}
+				getKey={(location) => {
+					return `${location.pathname}`;
+				}}
 			/>
 		</div>
 	);
