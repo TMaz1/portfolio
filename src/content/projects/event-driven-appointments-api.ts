@@ -1,5 +1,7 @@
 import type { ContentDocument } from "../../types/content";
 
+const eventsGuideHref = "/articles/event-driven-architecture-practical-guide";
+
 const article: ContentDocument = {
 	kind: "project",
 	slug: "event-driven-appointments-api",
@@ -9,7 +11,7 @@ const article: ContentDocument = {
 		"A small event-driven API for managing appointments and documents, with asynchronous webhook delivery, retries, exponential backoff, jitter, and dead-letter handling.",
 	heroLink: {
 		label: "Event-Driven Architecture Basics",
-		href: "/articles/event-driven-architecture-practical-guide",
+		href: eventsGuideHref,
 	},
 	archive: {
 		category: "Backend",
@@ -46,7 +48,7 @@ const article: ContentDocument = {
 				{
 					type: "link",
 					text: "Should This Be Event-Driven?",
-					href: "#/articles/event-driven-architecture-practical-guide#start-here",
+					href: `${eventsGuideHref}?section=start-here`,
 				},
 				{
 					type: "text",
@@ -138,7 +140,7 @@ Appointments API
 				{
 					type: "link",
 					text: "What Must Happen Synchronously?",
-					href: "#/articles/event-driven-architecture-practical-guide#event-boundary",
+					href: `${eventsGuideHref}?section=event-boundary`,
 				},
 				{
 					type: "text",
@@ -261,7 +263,7 @@ Appointments API
 				{
 					type: "link",
 					text: "duplicate-delivery and idempotency",
-					href: "#/articles/event-driven-architecture-practical-guide#retries",
+					href: `${eventsGuideHref}?section=retries`,
 				},
 				{
 					type: "text",
@@ -313,7 +315,7 @@ Appointments API
 				{
 					type: "link",
 					text: "Retries, Idempotency and the DLQ",
-					href: "#/articles/event-driven-architecture-practical-guide#retries",
+					href: `${eventsGuideHref}?section=retries`,
 				},
 				{
 					type: "text",
@@ -350,7 +352,7 @@ Appointments API
 				{
 					type: "link",
 					text: "Make Asynchronous Execution Traceable",
-					href: "#/articles/event-driven-architecture-practical-guide#observability",
+					href: `${eventsGuideHref}?section=observability`,
 				},
 				{
 					type: "text",
@@ -455,7 +457,7 @@ npx ts-node src/tests/test-webhook.ts`,
 				{
 					type: "link",
 					text: "Event-Driven Architecture practical guide",
-					href: "#/articles/event-driven-architecture-practical-guide",
+					href: eventsGuideHref,
 				},
 				{
 					type: "text",
@@ -469,7 +471,7 @@ npx ts-node src/tests/test-webhook.ts`,
 			id: "final-cta",
 			title: "Read the architecture guide",
 			text: "Explore the wider reasoning behind the patterns demonstrated by this project, from asynchronous boundaries and retries to idempotency, ordering, contracts, and observability.",
-			href: "#/articles/event-driven-architecture-practical-guide",
+			href: eventsGuideHref,
 			label: "Read the Event-Driven Architecture guide",
 		},
 	],

@@ -46,7 +46,7 @@ const article: ContentDocument = {
 				{
 					type: "link",
 					text: "Headings",
-					href: "#key-concepts",
+					href: "?section=key-concepts",
 				},
 				{
 					type: "text",
@@ -55,7 +55,7 @@ const article: ContentDocument = {
 				{
 					type: "link",
 					text: "content blocks",
-					href: "#reference-table",
+					href: "?section=reference-table",
 				},
 				{
 					type: "text",
@@ -64,7 +64,7 @@ const article: ContentDocument = {
 				{
 					type: "link",
 					text: "navigation and maintenance",
-					href: "#maintenance",
+					href: "?section=maintenance",
 				},
 				{
 					type: "text",
@@ -750,7 +750,7 @@ const article: ContentDocument = {
 			id: "final-cta",
 			title: "Build consistent documentation",
 			text: "Use the available content blocks according to their intended purpose to create articles that are structured, readable, and maintainable.",
-			href: "#overview",
+			href: "?section=overview",
 			label: "Review the structure",
 		},
 	],

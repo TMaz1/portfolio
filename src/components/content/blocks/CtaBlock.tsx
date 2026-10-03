@@ -8,12 +8,14 @@ export function CtaBlock({
 	text,
 	href,
 	label,
+	external = false,
 }: {
 	id: string;
 	title: string;
 	text: InlineContent;
 	href: string;
 	label: string;
+	external?: boolean;
 }) {
 	return (
 		<section
@@ -26,14 +28,20 @@ export function CtaBlock({
 					<InlineContentView content={text} />
 				</p>
 			</div>
-			{href.startsWith("#") ? (
-				<Link className="button" to={{ hash: href.slice(1) }}>
-					{label} →
-				</Link>
-			) : (
-				<a className="button" href={href}>
+
+			{external ? (
+				<a
+					className="button"
+					href={href}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					{label} →
 				</a>
+			) : (
+				<Link className="button" to={href}>
+					{label} →
+				</Link>
 			)}
 		</section>
 	);

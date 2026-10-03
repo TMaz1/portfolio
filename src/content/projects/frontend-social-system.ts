@@ -535,6 +535,7 @@ interface UserState {
             text: "The live application is available as a static deployment on GitHub Pages.",
             href: demoHref,
             label: "Open the live demo",
+            external: true,
         },
     ],
 };

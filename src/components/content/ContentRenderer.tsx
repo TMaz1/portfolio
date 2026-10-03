@@ -106,6 +106,7 @@ export function ContentRenderer({ blocks }: { blocks: ContentBlock[] }) {
 								text={block.text}
 								href={block.href}
 								label={block.label}
+								external={block.external}
 							/>
 						);
 				}

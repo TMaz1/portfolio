@@ -121,6 +121,7 @@ export type ContentBlock =
 		text: InlineContent;
 		href: string;
 		label: string;
+		external?: boolean;
 	};
 
 export type ContentDocument = {

@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
-import type { InlineContent } from "../../types/content";
-import { scrollToContentId } from "../../utils/contentNavigation";
+import type { InlineContent as InlineContentType } from "../../types/content";
 
-export function InlineContent({ content }: { content: InlineContent }) {
+export function InlineContent({
+	content,
+}: {
+	content: InlineContentType;
+}) {
 	if (typeof content === "string") {
 		return <>{content}</>;
 	}
@@ -18,26 +21,10 @@ export function InlineContent({ content }: { content: InlineContent }) {
 								className="content-inline-link"
 								href={segment.href}
 								target="_blank"
-								rel="noreferrer"
+								rel="noopener noreferrer"
 							>
 								{segment.text}
 							</a>
-						);
-					}
-
-					if (segment.href.startsWith("#")) {
-						return (
-							<Link
-								key={`${segment.text}-${index}`}
-								className="content-inline-link"
-								to={segment.href}
-								onClick={(event) => {
-									event.preventDefault();
-									scrollToContentId(segment.href.slice(1));
-								}}
-							>
-								{segment.text}
-							</Link>
 						);
 					}
 

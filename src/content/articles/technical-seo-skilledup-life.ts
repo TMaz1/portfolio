@@ -448,7 +448,7 @@ const article: ContentDocument = {
             title: "Build, measure, improve.",
             text:
                 "My experience has reinforced a simple approach to technical SEO and web development: understand the whole system, improve the highest-value parts first, and measure the result.",
-            href: "#introduction",
+            href: "?section=introduction",
             label: "Back to the approach",
         },
     ],

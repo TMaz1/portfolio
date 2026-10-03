@@ -303,6 +303,7 @@ Response:
                 "View the source repository for the gateway architecture, provider abstraction, security controls, tests, and implementation details.",
             href: repoHref,
             label: "View on GitHub",
+            external: true,
         },
     ],
 };
