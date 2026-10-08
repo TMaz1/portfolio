@@ -55,7 +55,7 @@
 .content-hero__eyebrow {
 	margin: 0 0 20px;
 	color: $color-yellow-bright;
-	font-size: 10px;
+	font-size: $type-xs;
 	letter-spacing: 0.22em;
 	text-transform: uppercase;
 }
@@ -76,7 +76,7 @@
 	max-width: 690px;
 	margin: 28px auto 0;
 	color: $color-muted;
-	font-size: 12px;
+	font-size: $type-sm;
 	line-height: 1.9;
 }
 
@@ -210,14 +210,14 @@
 .content-block--paragraph {
 	margin: 0 0 18px;
 	color: $color-muted;
-	font-size: 11px;
+	font-size: $type-sm;
 	line-height: 1.9;
 }
 
 .content-block--paragraph-lead {
 	margin-bottom: 24px;
 	color: $color-cream;
-	font-size: 12px;
+	font-size: $type-sm;
 	line-height: 1.9;
 }
 
@@ -275,7 +275,7 @@
 	padding: 17px 0 17px 27px;
 	border-bottom: $border-subtle;
 	color: $color-muted;
-	font-size: 11px;
+	font-size: $type-sm;
 	line-height: 1.85;
 }
 
@@ -326,7 +326,7 @@
 	position: relative;
 	padding-left: 19px;
 	color: $color-subtle;
-	font-size: 10px;
+	font-size: $type-xs;
 }
 
 .content-list__nested li::before {
@@ -396,7 +396,7 @@
 .content-quote blockquote {
 	margin: 0;
 	color: $color-cream;
-	font-size: 12px;
+	font-size: $type-xs;
 	line-height: 1.85;
 }
 
@@ -411,7 +411,7 @@
 	min-width: 680px;
 	border-collapse: collapse;
 	color: $color-muted;
-	font-size: 10px;
+	font-size: $type-xs;
 	line-height: 1.7;
 }
 
@@ -591,13 +591,13 @@
 	height: 24px;
 	place-items: center;
 	border: 1px solid currentColor;
-	font-size: 10px;
+	font-size: $type-xs;
 }
 
 .content-callout p {
 	margin: 0;
 	color: $color-muted;
-	font-size: 10.5px;
+	font-size: $type-xs;
 	line-height: 1.85;
 }
 
@@ -643,7 +643,7 @@
 .content-pathway p {
 	margin: 10px 0 0;
 	color: $color-muted;
-	font-size: 11px;
+	font-size: $type-sm;
 	line-height: 1.85;
 }
 
@@ -728,7 +728,7 @@
 	padding: 17px 0;
 	color: $color-white;
 	cursor: pointer;
-	font-size: 11px;
+	font-size: $type-sm;
 	font-weight: $weight-regular;
 	list-style: none;
 }
@@ -752,7 +752,7 @@
 	max-width: 760px;
 	padding: 0 0 20px;
 	color: $color-muted;
-	font-size: 10.5px;
+	font-size: $type-xs;
 	line-height: 1.85;
 }
 
@@ -782,7 +782,7 @@
 	max-width: 680px;
 	margin: 20px 0 0;
 	color: $color-muted;
-	font-size: 11px;
+	font-size: $type-sm;
 	line-height: 1.85;
 }
 
@@ -809,7 +809,7 @@
 .content-missing>p:not(.content-hero__eyebrow) {
 	max-width: 600px;
 	color: $color-muted;
-	font-size: 12px;
+	font-size: $type-sm;
 	line-height: 1.9;
 }
 
@@ -905,7 +905,7 @@
 	}
 
 	.content-hero__intro {
-		font-size: 10px;
+		font-size: $type-xs;
 	}
 
 	.content-hero__meta {
@@ -972,11 +972,11 @@
 	}
 
 	.content-block--paragraph {
-		font-size: 10px;
+		font-size: $type-xs;
 	}
 
 	.content-block--paragraph-lead {
-		font-size: 11px;
+		font-size: $type-sm;
 	}
 
 	.content-cards--2,

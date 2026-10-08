@@ -39,10 +39,7 @@ export function ExperienceTimeline({
 										</p>
 
 										<p>
-											Project articles document the
-											engineering decisions,
-											implementation and trade-offs
-											behind each build.
+											A selection of self-directed projects built to strengthen and broaden my software engineering skills. Each project explores practical engineering challenges, architectural decisions, implementation and trade-offs.
 										</p>
 									</div>
 

@@ -12,16 +12,17 @@
 }
 
 .hero::before {
-	content: "TM.DEV";
+	content: "";
 	position: absolute;
 	right: -20px;
 	bottom: -74px;
-	color: rgba($color-cream, 0.018);
-	font-family: $font-display;
-	font-size: clamp(170px, 27vw, 370px);
-	font-weight: $weight-light;
-	line-height: 0.78;
-	white-space: nowrap;
+	width: clamp(170px, 27vw, 370px);
+	aspect-ratio: 1;
+	background-image: url("/assets/images/logo.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	opacity: 0.018;
 	pointer-events: none;
 }
 
@@ -49,7 +50,7 @@
 .eyebrow,
 .section-number {
 	color: $color-yellow-bright;
-	font-size: 10px;
+	font-size: $type-xs;
 	line-height: 1.4;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
@@ -75,7 +76,7 @@
 	max-width: 650px;
 	margin: 28px auto 30px;
 	color: $color-muted;
-	font-size: 12px;
+	font-size: $type-sm;
 	line-height: 1.9;
 }
 
@@ -148,7 +149,7 @@
 	max-width: 650px;
 	margin: 0;
 	color: $color-muted;
-	font-size: 12px;
+	font-size: $type-sm;
 	line-height: 1.9;
 }
 
@@ -178,7 +179,7 @@
 	position: relative;
 	padding-right: 50px;
 	color: $color-muted;
-	font-size: 10px;
+	font-size: $type-xs;
 	line-height: 1.6;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
@@ -210,7 +211,7 @@
 	display: inline-block;
 	margin-bottom: 18px;
 	color: $color-yellow-bright;
-	font-size: 10px;
+	font-size: $type-xs;
 	letter-spacing: 0.13em;
 	text-transform: uppercase;
 }
@@ -223,7 +224,7 @@
 	max-width: 720px;
 	margin: 0 0 25px;
 	color: $color-muted;
-	font-size: 12px;
+	font-size: $type-sm;
 	line-height: 1.9;
 }
 
@@ -233,7 +234,7 @@
 	gap: 20px;
 	padding: 14px 0;
 	border-top: $border-subtle;
-	font-size: 10px;
+	font-size: $type-xs;
 }
 
 .achievement strong {
@@ -283,7 +284,7 @@
 .break-label {
 	margin-bottom: 20px;
 	color: $color-yellow-bright;
-	font-size: 10px;
+	font-size: $type-xs;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 }
@@ -303,7 +304,7 @@
 	max-width: 680px;
 	margin: 0 auto 30px;
 	color: $color-muted;
-	font-size: 12px;
+	font-size: $type-sm;
 	line-height: 1.9;
 }
 
@@ -327,7 +328,7 @@
 	max-width: 680px;
 	margin: 8px auto 0;
 	color: $color-muted;
-	font-size: 11px;
+	font-size: $type-sm;
 	line-height: 1.8;
 	text-align: center;
 }
@@ -336,7 +337,7 @@
 	position: relative;
 	min-width: 0;
 	min-height: 330px;
-	padding: 34px;
+	padding: 45px;
 	overflow: hidden;
 	border-right: $border-subtle;
 	border-bottom: $border-subtle;
@@ -412,7 +413,7 @@
 	max-width: 500px;
 	margin: 0 auto 25px;
 	color: $color-muted;
-	font-size: 11px;
+	font-size: $type-sm;
 	line-height: 1.8;
 }
 
@@ -441,7 +442,7 @@
 	font-size: 9px;
 	letter-spacing: 0.13em;
 	text-transform: uppercase;
-	opacity: 0;
+	opacity: 0.7;
 	transform: translateY(5px);
 	transition:
 		opacity $transition-fast,
@@ -487,7 +488,7 @@
 	padding: 8px 0;
 	border-top: $border-soft;
 	color: $color-muted;
-	font-size: 10px;
+	font-size: $type-xs;
 	line-height: 1.6;
 }
 
@@ -510,7 +511,7 @@
 .contact-section p:not(.section-number) {
 	max-width: 680px;
 	color: $color-muted;
-	font-size: 12px;
+	font-size: $type-sm;
 	line-height: 1.9;
 }
 
@@ -571,7 +572,7 @@
 	}
 
 	.hero-description {
-		font-size: 11px;
+		font-size: $type-sm;
 	}
 
 	.section-heading,
@@ -635,7 +636,7 @@
 
 @media (max-width: $breakpoint-small) {
 	.hero::before {
-		font-size: 120px;
+		font-size: $type-title;
 	}
 
 	.hero h1 {

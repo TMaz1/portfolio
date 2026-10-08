@@ -70,7 +70,7 @@
 	max-width: 690px;
 	margin: 28px auto 30px;
 	color: $color-muted;
-	font-size: 12px;
+	font-size: $type-sm;
 	line-height: 1.9;
 }
 
@@ -85,7 +85,7 @@
 .notes-section-heading > span {
 	padding-top: 9px;
 	color: $color-yellow-bright;
-	font-size: 10px;
+	font-size: $type-xs;
 	letter-spacing: 0.18em;
 	text-transform: uppercase;
 }
@@ -109,7 +109,7 @@
 .notes-section-heading p {
 	max-width: 760px;
 	color: $color-muted;
-	font-size: 12px;
+	font-size: $type-sm;
 	line-height: 1.9;
 }
 
@@ -187,7 +187,7 @@
 .note-card__body p {
 	max-width: 680px;
 	color: $color-muted;
-	font-size: 11px;
+	font-size: $type-sm;
 	line-height: 1.8;
 }
 
@@ -340,7 +340,7 @@
 	}
 
 	.notes-hero__description {
-		font-size: 11px;
+		font-size: $type-sm;
 	}
 
 	.notes-intro,
@@ -392,7 +392,7 @@
 
 @media (max-width: $breakpoint-small) {
 	.notes-hero::before {
-		font-size: 120px;
+		font-size: $type-title;
 	}
 
 	.notes-hero h1 {

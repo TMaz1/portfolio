@@ -8,32 +8,32 @@ export const experience: ExperienceItem[] = [
 		company: "SkilledUp Life",
 		companyUrl: "https://skilledup.life/",
 		description:
-			"Worked across frontend development, technical SEO, web performance, accessibility, analytics and WordPress. Focused on improving the technical foundations of the website while using search, user behaviour and performance data to guide practical changes.",
+			"Owned website engineering and growth initiatives across frontend architecture, performance and data, translating technical research into measurable improvements and collaborating with stakeholders through delivery.",
 		achievements: [
 			{
-				label: "Frontend",
+				label: "React + TypeScript",
 				description:
-					"Developed responsive webpages and reusable content structures using React, TypeScript, JavaScript, HTML and CSS, including Knowledge Hub and Career Pathways templates designed for future expansion.",
+					"Initiated and developed reusable Knowledge Hub and Career Pathways prototypes, establishing scalable content and navigation architecture for future expansion.",
 			},
 			{
-				label: "Performance",
+				label: "48 → 72 Mobile",
 				description:
-					"Improved Lighthouse Performance from 48 to 72 on mobile and 91 to 98 on desktop, while reducing mobile CLS from 0.373 to 0.006 through frontend, asset, caching and infrastructure optimisation.",
+					"Led performance optimisation that increased Lighthouse mobile performance from 48 to 72 and desktop from 91 to 98, while reducing mobile CLS from 0.373 to 0.006.",
 			},
 			{
-				label: "Technical SEO",
+				label: "Technical Leadership",
 				description:
-					"Implemented and validated canonical URLs, XML sitemaps, Open Graph metadata and structured data across Organisation, Website, Article and Breadcrumb schema, alongside ongoing work around AI-search visibility.",
+					"Translated audits and technical research into prioritised engineering requirements, then worked with stakeholders to troubleshoot, review and guide implementation.",
 			},
 			{
-				label: "Analytics",
+				label: "Platform Engineering",
 				description:
-					"Used GA4, Google Search Console and search-intent analysis to identify acquisition, attribution and content opportunities, contributing to growth in organic sessions, organic users, sessions and active users.",
+					"Identified systemic issues across the WordPress and hosting stack, driving improvements across rendering, asset delivery, caching and third-party dependencies.",
 			},
 			{
-				label: "Web architecture",
+				label: "77.3% Active Users",
 				description:
-					"Audited the wider WordPress and hosting environment, investigating rendering, JavaScript, fonts, images, Elementor assets, caching, Cloudflare and third-party resources to identify technical improvements.",
+					"Used GA4 and Search Console data to prioritise growth opportunities, contributing to 77.3% higher active users, 70.1% higher sessions, 40.4% higher organic sessions and 40.2% higher organic users.",
 			},
 		],
 	},
@@ -42,7 +42,7 @@ export const experience: ExperienceItem[] = [
 		period: "Aug 2023 — Jun 2026",
 		role: "Career break",
 		description:
-			"Took a career break to fulfil primary caring responsibilities. Returned to professional web development in June 2026, bringing previous software engineering experience together with a broader focus on web performance, technical SEO and digital optimisation.",
+			"Took a career break to fulfil primary caring responsibilities while actively upskilling in modern software engineering.",
 		achievements: [],
 	},
 	{
@@ -52,32 +52,32 @@ export const experience: ExperienceItem[] = [
 		company: "Takepayments Ltd",
 		companyUrl: "https://www.takepayments.com/",
 		description:
-			"Developed and maintained customer-facing and internal web applications within a fintech environment, working across C#, .NET, REST APIs, SQL Server, React, JavaScript and Umbraco.",
+			"Developed and maintained internal and customer-facing web applications in a high-traffic fintech environment using C#, ASP.NET Core, React, Umbraco, JavaScript, REST APIs and SQL.",
 		achievements: [
 			{
-				label: "C# / .NET",
+				label: "Full-stack .NET",
 				description:
-					"Developed production features across C#, ASP.NET Core, REST APIs and established .NET applications, working across frontend, backend and database layers.",
+					"Developed features across C#, ASP.NET Core, React and Umbraco, integrating frontend components with REST APIs, SQL data and existing .NET applications.",
 			},
 			{
-				label: "APIs",
+				label: "API + SQL",
 				description:
-					"Built API-driven filtering and data functionality for merchant applications, exposing application, trading, partner and agent information to operational workflows.",
+					"Developed REST API endpoints and SQL-backed filtering logic for merchant application and partner data, allowing sales teams to view and segment approval, trading and lead information in internal dashboards.",
 			},
 			{
-				label: "SQL Server",
+				label: "800+ Websites",
 				description:
-					"Worked with relational application data through SQL Server, Entity Framework and REST APIs, connecting backend data with dashboards and customer-facing functionality.",
+					"Was brought into the Websites Made Easy team to handle high-priority security and technical tasks across 800+ websites hosted on three dedicated servers, drawing on previous knowledge of the environment.",
 			},
 			{
-				label: "Umbraco",
+				label: "Business → Code",
 				description:
-					"Built reusable CMS components and configurable content modules for customer-facing websites, balancing maintainability, usability and requirements from non-technical teams.",
+					"Worked directly with marketing, sales and management to turn business requirements, reports and competitor research into technical solutions, assessing implementation options and delivery effort.",
 			},
 			{
-				label: "Delivery",
+				label: "Compliance Delivery",
 				description:
-					"Worked within Agile development and release workflows using Git, Azure DevOps and Jenkins, collaborating with development, QA, marketing and business stakeholders.",
+					"Implemented and coordinated website changes required by Payment Services Regulator updates, working across shared React components and customer-facing journeys within Agile release cycles.",
 			},
 		],
 	},
@@ -85,35 +85,35 @@ export const experience: ExperienceItem[] = [
 		kind: "role",
 		period: "Oct 2021 — Oct 2022",
 		role: "Service Desk Assistant",
-		company: "Takepayments Ltd",
-		companyUrl: "https://www.takepayments.com/",
+		company: "Takepayments Ltd — Websites Made Easy",
+		companyUrl: "https://websitesmadeeasyportfolio.bee-online.com/our-work/",
 		description:
-			"Started in production web support before progressing into bespoke development. Worked across a large WordPress estate, diagnosing live application, database, JavaScript, hosting and infrastructure issues while developing custom functionality.",
+			"Worked as a hybrid service desk and web developer within Websites Made Easy, the website division of Takepayments Ltd, now operating within Global Payments, developing bespoke WordPress functionality while supporting 800+ production websites.",
 		achievements: [
 			{
-				label: "2.7M+",
+				label: "2.7M → 2 min",
 				description:
-					"Optimised generation of a MySQL database containing more than 2.7 million UK postcode records, using chunked inserts and query optimisation to reduce processing time from approximately 2 hours to around 2 minutes.",
+					"Engineered MySQL processing for 2.7M+ UK postcode records using chunked inserts and query optimisation, reducing database generation time from approximately 2 hours to around 2 minutes.",
 			},
 			{
-				label: "PHP / MySQL",
+				label: "Full-stack PHP",
 				description:
-					"Built bespoke WordPress and WooCommerce functionality using PHP, MySQL, JavaScript, jQuery and AJAX, including custom plugins and backend functionality.",
+					"Developed bespoke WordPress and WooCommerce functionality using PHP, MySQL, JavaScript, jQuery and AJAX, including custom plugins, backend functionality and REST API integrations.",
 			},
 			{
-				label: "Production",
+				label: "260+ Deployments",
 				description:
-					"Diagnosed and resolved live PHP, JavaScript, plugin, theme and hosting issues, including production incidents affecting multiple websites and WooCommerce functionality.",
+					"Deployed 260+ WordPress websites across three dedicated servers, bringing 190+ sites live while handling deployment, security, plugin compatibility and performance issues.",
 			},
 			{
-				label: "400+",
+				label: "400+ Production Issues",
 				description:
-					"Resolved more than 400 production support issues across application faults, website errors, feature requests, styling problems, merchant issues and time-sensitive incidents.",
+					"Resolved 400+ live issues across PHP, JavaScript, WooCommerce, plugins, themes and hosting, including production outages caused by PHP conflicts and JavaScript execution errors.",
 			},
 			{
-				label: "260+",
+				label: "Technical Mentoring",
 				description:
-					"Deployed and established more than 260 WordPress websites across three dedicated servers and multiple hosting environments using cPanel, WHM, Cloudflare and WordPress tooling.",
+					"Mentored website designers and merchant-facing colleagues on technical processes, helping them diagnose issues and communicate solutions, and received peer recognition for problem-solving and technical communication.",
 			},
 		],
 	},
@@ -124,22 +124,17 @@ export const experience: ExperienceItem[] = [
 		company: "Manchester Metropolitan University",
 		companyUrl: "https://www.mmu.ac.uk/",
 		description:
-			"Contributed to research into automated assessment of online content credibility, preparing structured datasets for machine-learning research and analysing web content against defined credibility criteria.",
+			"Contributed to machine-learning research investigating the credibility of online content.",
 		achievements: [
 			{
-				label: "ML dataset",
+				label: "ML Research Dataset",
 				description:
-					"Collected and annotated more than 100 online articles to create structured data for credibility-classification research.",
-			},
-			{
-				label: "Research",
-				description:
-					"Evaluated content against criteria including bias, supporting evidence and author experience, turning unstructured web content into labelled research data.",
+					"Collected and annotated 100+ online articles, evaluating bias, supporting evidence and author experience to transform unstructured web content into structured, labelled data for credibility-classification research.",
 			},
 			{
 				label: "EASE 21",
 				description:
-					"The wider research was subsequently presented at the 25th International Conference on Evaluation and Assessment in Software Engineering.",
+					"Structured research data for credibility-classification models; the wider project was subsequently presented at EASE '21, the International Conference on Evaluation and Assessment in Software Engineering.",
 			},
 		],
 	},
@@ -180,7 +175,7 @@ export const skillGroups: SkillGroup[] = [
 			"Information Architecture",
 			"UX / CRO",
 			"Accessibility",
-			"AI Search",
+			"AI Search Visibility",
 		],
 	},
 	{

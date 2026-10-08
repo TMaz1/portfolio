@@ -207,17 +207,10 @@ export const aboutContent: AboutPageContent = {
 			},
 			{
 				category: "Watching",
-				title: "Hunter × Hunter",
+				title: "Films, Anime",
 				description:
-					"Rewatching the 2011 anime. Last watched when I was 15. One of my favourite anime. Leorio is my favourite character.",
+					"Rewatching Hunter × Hunter (2011) anime. Just watched Coraline, The Usual Suspects and The Thing (1982) for the first time.",
 				metadata: "03 / WATCHING",
-			},
-			{
-				category: "Film",
-				title: "Coraline",
-				description:
-					"Just watched it for the first time.",
-				metadata: "04 / FILM",
 			},
 			{
 				category: "Reading",

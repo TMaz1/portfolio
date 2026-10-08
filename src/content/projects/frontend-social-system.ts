@@ -5,10 +5,10 @@ const demoHref = "https://tmaz1.github.io/frontend-social-system/";
 const article: ContentDocument = {
     kind: "project",
     slug: "frontend-social-system",
-    title: "Removing the Backend",
+    title: "Frontend Social Media System",
     eyebrow: "ENGINEERING / FRONTEND SYSTEMS",
     intro:
-        "How far can you take a frontend-only application before the absence of a backend becomes the architecture?",
+        "A frontend-only social media website built to explore reusable components, client-side state management, dynamic layouts and persistent user interactions without a backend.",
     heroLink: {
         label: "View the live demo",
         href: demoHref,

@@ -6,9 +6,15 @@ export function SiteHeader() {
 	return (
 		<header className="site-header">
 			<div className="site-header__inner container">
-				<Link className="site-brand" to="/" aria-label="TM.DEV home">
-					<span className="site-brand__mark">TM</span>
-					<span className="site-brand__suffix">.DEV</span>
+				<Link className="site-brand" to="/" aria-label="Home">
+					<img
+						className="site-brand__logo"
+						src="/assets/images/logo.png"
+						alt=""
+						width="48"
+						height="48"
+						decoding="async"
+					/>
 				</Link>
 
 				<SiteNavigation />

@@ -1,11 +1,11 @@
-import { createHashRouter, Navigate } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import { SiteShell } from "../components/layout/SiteShell";
 import { HomePage } from "../pages/HomePage";
 import { ContentPage } from "../pages/ContentPage";
 import { EngineeringNotesPage } from "../pages/EngineeringNotesPage";
 import { AboutPage } from "../pages/AboutPage";
 
-export const router = createHashRouter([
+export const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <SiteShell />,

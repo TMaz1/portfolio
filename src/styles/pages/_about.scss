@@ -76,7 +76,7 @@
 	max-width: 690px;
 	margin: 28px auto 30px;
 	color: $color-muted;
-	font-size: 12px;
+	font-size: $type-sm;
 	line-height: 1.95;
 }
 
@@ -160,7 +160,7 @@
 	max-width: 720px;
 	margin: 0 0 22px;
 	color: $color-muted;
-	font-size: 12px;
+	font-size: $type-sm;
 	line-height: 1.9;
 }
 
@@ -215,7 +215,7 @@
 .principle p {
 	margin: 0;
 	color: $color-muted;
-	font-size: 10px;
+	font-size: $type-xs;
 	line-height: 1.85;
 }
 
@@ -262,7 +262,7 @@
 	max-width: 700px;
 	margin: 0;
 	color: $color-muted;
-	font-size: 10px;
+	font-size: $type-xs;
 	line-height: 1.85;
 }
 
@@ -381,7 +381,7 @@
 	max-width: 680px;
 	margin: 0;
 	color: $color-muted;
-	font-size: 11px;
+	font-size: $type-sm;
 	line-height: 1.9;
 }
 
@@ -421,7 +421,7 @@
 .social-item p:not(.eyebrow) {
 	margin: 0;
 	color: $color-muted;
-	font-size: 10px;
+	font-size: $type-xs;
 	line-height: 1.7;
 }
 
@@ -479,7 +479,7 @@
 	}
 
 	.about-hero__description {
-		font-size: 11px;
+		font-size: $type-sm;
 	}
 
 	.about-hero__meta {
@@ -554,7 +554,7 @@
 
 @media (max-width: $breakpoint-small) {
 	.about-hero::before {
-		font-size: 120px;
+		font-size: $type-title;
 	}
 
 	.about-hero h1 {

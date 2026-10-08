@@ -9,7 +9,7 @@ export function HomePage() {
 			<section className="hero" aria-labelledby="hero-title">
 				<div className="hero-inner container">
 					<p className="eyebrow">
-						Tayyaba M · Technical SEO · Web Development · Manchester, UK
+						Tayyaba M · Web Development · Manchester, UK
 					</p>
 
 					<h1 id="hero-title">
@@ -19,19 +19,17 @@ export function HomePage() {
 					</h1>
 
 					<p className="hero-description">
-						Technical SEO and web development across performance, analytics,
-						accessibility and website growth, backed by production experience in
-						C#/.NET, SQL, APIs and full-stack development.
+						Website Growth Engineer and Software Engineer combining development, performance, analytics, SEO and UX to build high-performing websites that deliver better experiences and business results. Experienced across C#/.NET, SQL, APIs, React, TypeScript, WordPress, Umbraco and production web infrastructure.
 					</p>
 
 					<div className="hero-links">
 						<a
 							className="hero-button"
-							href="https://www.linkedin.com/in/tayyaba-maz"
+							href="https://github.com/tmaz1"
 							target="_blank"
-							rel="noreferrer"
+							rel="noopener noreferrer"
 						>
-							Contact me on LinkedIn →
+							Github →
 						</a>
 					</div>
 
@@ -54,13 +52,7 @@ export function HomePage() {
 						</h2>
 
 						<p className="section-intro">
-							My experience sits across software engineering and
-							the wider web. I have built and supported production
-							applications, worked with APIs and databases, and
-							moved between backend, frontend and infrastructure
-							when the problem required it. More recently, that
-							work has expanded into technical SEO, performance,
-							analytics and website optimisation.
+							My background is rooted in software engineering, with experience building and supporting production applications across the backend, frontend, APIs, databases and infrastructure. That breadth has naturally extended into website optimisation, where I now also work across technical SEO, performance, analytics and UX to improve how websites perform and deliver results.
 						</p>
 					</div>
 				</div>
@@ -104,20 +96,18 @@ export function HomePage() {
 				<p className="section-number">03 / CONTACT</p>
 
 				<h2 id="contact-title">
-					Interested in working together?
+					Let's build something better.
 				</h2>
 
 				<p>
-					I’m open to software engineering, web development and technical SEO
-					roles where I can work close to the technical details and contribute
-					across the wider web experience.
+					I'm interested in software and web engineering roles where I can work across the technical details and the wider web experience — from building applications to improving performance, usability and growth.
 				</p>
 
 				<a
 					className="text-link"
 					href="mailto:tayyabamazhar001@gmail.com"
 				>
-					Email me →
+					Contact me →
 				</a>
 			</section>
 		</>

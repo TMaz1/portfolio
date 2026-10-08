@@ -3,7 +3,7 @@ import type { ContentDocument } from "../../types/content";
 const article: ContentDocument = {
 	kind: "article",
 	slug: "getting-started-with-articles",
-	title: "Article Content Structure — TM.DEV",
+	title: "Getting Started With Articles",
 	eyebrow: "ARTICLE / REFERENCE",
 	intro: "A reference for structuring articles with the available content blocks, choosing the appropriate block for each purpose, and maintaining consistent documentation across the platform.",
 	archive: {
