@@ -6,8 +6,8 @@ export function SiteFooter() {
 					src="/assets/images/logo.png"
 					alt=""
 					className="site-footer__logo"
-					width="64"
-					height="64"
+					width="35"
+					height="35"
 					loading="lazy"
 					decoding="async"
 				/>

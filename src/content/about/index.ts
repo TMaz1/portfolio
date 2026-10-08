@@ -4,11 +4,11 @@ export const aboutContent: AboutPageContent = {
 	hero: {
 		eyebrow: "00 / About",
 		title: {
-			lines: ["Building with"],
-			emphasis: "purpose.",
+			lines: ["About"],
+			emphasis: "Me.",
 		},
 		copy:
-			"Software engineer with a technical SEO background, working across .NET, APIs, web development and the wider technical foundations behind useful digital experiences.",
+			"Software engineer with a technical SEO background, working across .NET, APIs, web development and the systems behind useful digital experiences.",
 		meta: [
 			{
 				label: "Focus",
@@ -28,29 +28,26 @@ export const aboutContent: AboutPageContent = {
 		section: {
 			number: "01 / DEVELOPER",
 			title: {
-				lines: ["Practical engineering."],
+				lines: ["HOW I WORK"],
 			},
 			intro:
 				"Build what solves the problem, understand what you are building, and leave the system better than you found it.",
 		},
-		eyebrow: "Engineering profile",
-		title:
-			"10 years of coding experience.",
+		eyebrow: "Background",
+		title: "From curiosity to engineering.",
 		paragraphs: [
-			"My background spans software engineering and technical SEO, giving me a practical view of both how systems are built and how people find and use them. I’ve spent around ten years working with code, with much of my experience centred around C#, .NET, APIs, web development and data.", 
-			"More recently, my work has expanded into Python, AI systems and the infrastructure around them. I enjoy understanding how the pieces connect: application code, databases, APIs, authentication, infrastructure and the interfaces people actually use.", 
-			"I’m interested in building useful systems, learning through implementation, and keeping complexity proportional to the problem.",
+			"I started coding at 16, with Visual Basic and C# as my first programming languages. It took me a while to really enjoy it, but once it clicked, I realised how much you could build with code. Some of the first projects I genuinely loved were small arcade-style games and maths-based learning games and quizzes, built with Processing and Pygame. Since then, I've experimented with Python, Haskell, Prolog, Java, Android, React Native and plenty of other technologies through university and personal projects.",
+			"More recently, I've been deliberately pushing into areas I haven't worked with professionally yet, particularly Python, AI systems, APIs, distributed systems and infrastructure. Working on websites commercially has given me a good understanding of the problems businesses actually run into, and I've found myself wanting to understand the systems behind some of them. That has led me to build things like an AI gateway, authentication systems, event-driven APIs and OCR pipelines, often because they solve problems I recognise or because they're areas I know I should understand better.",
+			"Professionally, I've worked across web development and software engineering, progressing from production web support into .NET development within a fintech environment. My commercial experience spans C#, .NET, TypeScript, SQL, REST APIs, React, WordPress and Umbraco, working across frontend, backend, databases, CMS platforms and live production infrastructure.",
 		],
 	},
-
 	techStack: {
 		section: {
 			number: "02 / CURRENT STACK",
 			title: {
 				lines: ["What I'm", "working with."],
 			},
-			intro:
-				"The technologies currently shaping my engineering work.",
+			intro: "The technologies I'm using across current work and projects.",
 		},
 		groups: [
 			{
@@ -68,7 +65,7 @@ export const aboutContent: AboutPageContent = {
 					"TypeScript",
 					"React",
 					"HTML",
-					"CSS",
+					"CSS / SCSS",
 				],
 			},
 			{
@@ -82,18 +79,18 @@ export const aboutContent: AboutPageContent = {
 			{
 				category: "AI",
 				items: [
-					"AI Gateways",
 					"Ollama",
 					"LLMs",
 					"RAG",
 					"Embeddings",
+					"AI Gateways",
 				],
 			},
 			{
-				category: "Infrastructure",
+				category: "Systems",
 				items: [
-					"Docker",
 					"REST APIs",
+					"Docker",
 					"JWT",
 					"MFA",
 					"RBAC",
@@ -108,30 +105,29 @@ export const aboutContent: AboutPageContent = {
 				lines: ["How I build."],
 			},
 			intro:
-				"Three things I try to keep consistent, regardless of the stack.",
+				"A few things I try to keep consistent, regardless of the stack.",
 		},
-
 		items: [
 			{
 				number: "01 / EFFORT",
 				label: "Effort",
 				title: "Do the work properly.",
 				description:
-					"Full effort matters, but more code does not mean better code. I aim to solve the actual problem without creating problems for the next person.",
+					"More code does not mean better code. I try to solve the actual problem without creating unnecessary problems for the next person.",
 			},
 			{
 				number: "02 / MODULARITY",
 				label: "Modularity",
 				title: "Keep it changeable.",
 				description:
-					"I prefer simple, modular systems and avoid over-engineering until the problem actually requires it. Technical debt is easier to avoid than to explain later.",
+					"I prefer simple, modular systems and avoid adding complexity until the problem actually requires it.",
 			},
 			{
 				number: "03 / FAILURE",
 				label: "Failure",
 				title: "Fail early. Test harder.",
 				description:
-					"AI can make me more productive, but generated code still needs to earn its place through testing and review. I would rather know about a failure loudly and early so users experience it quietly and it gets fixed faster.",
+					"AI can make me more productive, but generated code still needs to earn its place through testing and review. I'd rather find problems early, understand why they happened and fix them properly.",
 			},
 		],
 	},
@@ -149,7 +145,7 @@ export const aboutContent: AboutPageContent = {
 				status: "Incomplete",
 				title: "AI Gateway",
 				description:
-					"A secure gateway between applications and AI providers, designed to centralise authentication, authorisation, rate limiting, resource controls, provider selection and response validation.",
+					"A secure gateway between applications and AI providers, handling authentication, authorisation, rate limiting, resource controls, provider selection and response validation. I'm building it to understand how AI access can be controlled at the application boundary.",
 				technologies: [
 					"Python",
 					"SQLite",
@@ -158,36 +154,23 @@ export const aboutContent: AboutPageContent = {
 					"Rate Limiting",
 				],
 			},
-			{
-				status: "Future",
-				title: "AI-Powered Appointment Platform",
-				description:
-					"A full-stack platform for appointments, documents, customers and business workflows, combining ASP.NET Core 8 authentication, appointment APIs, Redis, SQL Server and a dedicated AI layer. The AI Gateway will provide the controlled boundary between the application and AI providers, with a separate Python/FastAPI service handling capabilities such as classification, RAG, embeddings and structured outputs.",
-				technologies: [
-					"ASP.NET Core 8",
-					"Python",
-					"FastAPI",
-					"SQL Server",
-					"Redis",
-				],
-			},
 		],
 	},
 	culture: {
 		section: {
-			number: "06 / INTERESTS",
+			number: "05 / OUTSIDE ENGINEERING",
 			title: {
-				lines: ["Currently doing."],
+				lines: ["Outside", "engineering."],
 			},
 			intro:
-				"Under progress. I’ll add images and talking points here over time.",
+				"A few things I enjoy away from code.",
 		},
 		carousel: {
-			label: "06.01 / CURRENTLY DOING",
+			label: "05.01 / INTERESTS",
 			previousLabel: "Previous",
 			nextLabel: "Next",
-			ariaLabel: "Currently doing",
-			indexLabel: "CURRENTLY DOING",
+			ariaLabel: "Interests outside engineering",
+			indexLabel: "INTEREST",
 			counterSeparator: " / ",
 		},
 		items: [
@@ -195,60 +178,43 @@ export const aboutContent: AboutPageContent = {
 				category: "Craft",
 				title: "Embroidery & upcycling",
 				description:
-					"Basic embroidery and upcycling / garment alteration.",
+					"Learning embroidery and experimenting with garment alterations and upcycling.",
 				metadata: "01 / CRAFT",
 			},
 			{
 				category: "Scrapbooking",
 				title: "Scrapbooking",
 				description:
-					"Scrapbooking with scrapbook materials and magazine snippets.",
+					"Collecting magazine snippets, paper and other bits into scrapbook pages.",
 				metadata: "02 / SCRAPBOOKING",
-			},
-			{
-				category: "Watching",
-				title: "Films, Anime",
-				description:
-					"Rewatching Hunter × Hunter (2011) anime. Just watched Coraline, The Usual Suspects and The Thing (1982) for the first time.",
-				metadata: "03 / WATCHING",
-			},
-			{
-				category: "Reading",
-				title: "Elevator Pitch",
-				description:
-					"Currently reading Elevator Pitch by Linwood Barclay.",
-				metadata: "05 / READING",
 			},
 		],
 	},
 	social: {
 		section: {
-			number: "07 / ELSEWHERE",
+			number: "06 / CONNECT",
 			title: {
-				lines: ["Find me", "elsewhere."],
+				lines: ["CONNECT"],
 			},
-			intro:
-				"Engineering work, notes and professional history.",
+			intro: "Find me, my work and what I'm learning.",
 		},
 		openLabel: "Open →",
 		pendingLabel: "Public link not supplied",
 		items: [
 			{
-				label: "GitHub",
-				description:
-					"Repositories, experiments and implementation work.",
-				href: "https://github.com/tmaz1",
-			},
-			{
 				label: "LinkedIn",
-				description:
-					"Professional history and engineering experience.",
+				description: "Professional experience and background.",
 				href: "https://www.linkedin.com/in/tayyaba-maz",
 			},
 			{
-				label: "Engineering Notes",
+				label: "GitHub",
+				description: "Projects, experiments and implementation work.",
+				href: "https://github.com/tmaz1",
+			},
+			{
+				label: "Writing",
 				description:
-					"Longer-form notes about systems, implementation and learning.",
+					"Notes on systems, implementation and things I'm learning.",
 				href: "/engineering-notes",
 			},
 		],

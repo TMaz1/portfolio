@@ -39,7 +39,7 @@ export function ExperienceTimeline({
 										</p>
 
 										<p>
-											A selection of self-directed projects built to strengthen and broaden my software engineering skills. Each project explores practical engineering challenges, architectural decisions, implementation and trade-offs.
+											Projects I've built to explore areas I wanted to understand better, from authentication and event-driven systems to AI infrastructure and frontend architecture.
 										</p>
 									</div>
 

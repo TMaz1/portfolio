@@ -44,7 +44,7 @@ export function AboutPage() {
 								});
 							}}
 						>
-							View projects →
+							What I'm Working On →
 						</a>
 					</div>
 

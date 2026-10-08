@@ -44,7 +44,7 @@
 	z-index: 1;
 	width: 100%;
 	max-width: 780px;
-	padding: 88px 0;
+	padding: 74px 0;
 }
 
 .eyebrow,
@@ -173,6 +173,10 @@
 	grid-template-columns: 170px minmax(0, 1fr);
 	gap: 50px;
 	padding-bottom: 100px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 21px;
 }
 
 .timeline-date {

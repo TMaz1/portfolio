@@ -6,7 +6,7 @@ const article: ContentDocument = {
     kind: "project",
     slug: "ai-gateway",
     title: "AI Gateway",
-    eyebrow: "PROJECT / BACKEND / AI",
+    eyebrow: "PROJECT / BACKEND / AI / IN PROGRESS",
     intro:
         "A production-minded AI Gateway API that provides a secure policy-enforcement layer between client applications and multiple AI providers. The gateway abstracts provider-specific implementation while controlling authentication, model access, resource usage, and AI request handling.",
     heroLink: {

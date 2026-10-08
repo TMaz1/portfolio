@@ -25,10 +25,10 @@ export function EngineeringNotesPage() {
 		<>
 			<section className="notes-hero" aria-labelledby="notes-page-title">
 				<div className="notes-hero__inner container">
-					<p className="eyebrow">Engineering / Field Notes / 2026</p>
+					<p className="eyebrow"> / 2026</p>
 					<h1 id="notes-page-title">
-						What I'm
-						<span className="hero__emphasis">Learning.</span>
+						Engineering
+						<span className="hero__emphasis">Notes.</span>
 					</h1>
 					<p className="notes-hero__description">
 						Technical notes from architecture decisions,
@@ -47,7 +47,7 @@ export function EngineeringNotesPage() {
 								});
 							}}
 						>
-							Notes →
+							Articles →
 						</a>
 
 						<a
@@ -69,21 +69,15 @@ export function EngineeringNotesPage() {
 				<div className="notes-intro__label">01 / WHY</div>
 				<div className="notes-intro__content">
 					<h2 id="notes-intro-title">
-						Code is only
+						What I’m
 						<br />
-						half the story.
+						Learning.
 					</h2>
 					<p>
-						A portfolio can show what was built. Documentation
-						should explain why it was built that way, what went
-						wrong, which trade-offs mattered and what changed after
-						the first implementation met reality.
+						I like keeping notes on the things I build and learn along the way. Not just what worked, but the decisions behind it, the problems I ran into, and the things I’d do differently next time.
 					</p>
 					<p>
-						This archive is the layer between the portfolio and the
-						deeper content: project investigations alongside shorter
-						records of architectural decisions, implementation
-						problems and useful engineering patterns.
+						This is where I collect those notes, from project deep-dives and technical decisions to smaller lessons, experiments and patterns I’ve found useful.
 					</p>
 				</div>
 			</section>
@@ -101,10 +95,7 @@ export function EngineeringNotesPage() {
 							articles.
 						</h2>
 						<p>
-							Projects discovered here lead to the same content
-							system used for engineering articles, with the
-							project route preserving the distinction in the URL
-							and metadata.
+							A selection of projects I've built, with notes on how they work and why I built them.
 						</p>
 					</div>
 				</div>
@@ -125,17 +116,15 @@ export function EngineeringNotesPage() {
 				aria-labelledby="archive-title"
 			>
 				<div className="notes-section-heading">
-					<span>03 / GENERAL ENGINEERING NOTES</span>
+					<span>03 / Articles</span>
 					<div>
 						<h2 id="archive-title">
-							Engineering
+							Technical
 							<br />
-							notes.
+							Writing.
 						</h2>
 						<p>
-							A working archive of shorter technical articles.
-							Each entry is an ordinary Article document and can
-							grow independently as the content develops.
+							Notes on software engineering, performance, SEO and the things I've learned building for the web.
 						</p>
 					</div>
 				</div>

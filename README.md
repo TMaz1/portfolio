@@ -447,3 +447,9 @@ Presentation is shared
 The site remains simple to deploy and maintain
 ```
 The goal is not to demonstrate how much infrastructure can be built around a portfolio. It is to demonstrate that a small system, when deliberately modelled, can support a rich enough experience without unnecessary complexity.
+
+
+
+
+
+AI: Ollama LLMs RAG Embeddings AI Gateways

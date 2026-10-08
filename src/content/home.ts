@@ -42,7 +42,7 @@ export const experience: ExperienceItem[] = [
 		period: "Aug 2023 — Jun 2026",
 		role: "Career break",
 		description:
-			"Took a career break to fulfil primary caring responsibilities while actively upskilling in modern software engineering.",
+			"Took a career break to fulfil primary caring responsibilities before returning to professional software development in June 2026.",
 		achievements: [],
 	},
 	{
@@ -52,7 +52,7 @@ export const experience: ExperienceItem[] = [
 		company: "Takepayments Ltd",
 		companyUrl: "https://www.takepayments.com/",
 		description:
-			"Developed and maintained internal and customer-facing web applications in a high-traffic fintech environment using C#, ASP.NET Core, React, Umbraco, JavaScript, REST APIs and SQL.",
+			"Worked within a fintech development team supporting applications used across merchant onboarding, sales and marketing operations, using C#, ASP.NET Core, React, Umbraco, JavaScript, REST APIs and SQL.",
 		achievements: [
 			{
 				label: "Full-stack .NET",
@@ -70,7 +70,7 @@ export const experience: ExperienceItem[] = [
 					"Was brought into the Websites Made Easy team to handle high-priority security and technical tasks across 800+ websites hosted on three dedicated servers, drawing on previous knowledge of the environment.",
 			},
 			{
-				label: "Business → Code",
+				label: "Stakeholders",
 				description:
 					"Worked directly with marketing, sales and management to turn business requirements, reports and competitor research into technical solutions, assessing implementation options and delivery effort.",
 			},
@@ -147,6 +147,7 @@ export const skillGroups: SkillGroup[] = [
 			"C#",
 			"JavaScript",
 			"TypeScript",
+			"Python",
 			"PHP",
 			"SQL",
 			"HTML / CSS",
@@ -172,7 +173,6 @@ export const skillGroups: SkillGroup[] = [
 			"GA4",
 			"Google Search Console",
 			"Structured Data",
-			"Information Architecture",
 			"UX / CRO",
 			"Accessibility",
 			"AI Search Visibility",
@@ -184,8 +184,9 @@ export const skillGroups: SkillGroup[] = [
 			"SQL Server",
 			"MySQL / MariaDB",
 			"SQLite",
-			"REST APIs",
-			"AJAX",
+			"MongoDB",
+			"Rest APIs",
+			"Redis",
 		],
 	},
 	{
@@ -193,13 +194,13 @@ export const skillGroups: SkillGroup[] = [
 		items: [
 			"Git",
 			"Azure DevOps",
+			"AWS",
 			"Cloudflare",
 			"cPanel / WHM",
 			"Postman",
 			"Lighthouse",
 			"PageSpeed Insights",
 			"Screaming Frog",
-			"AWS",
 		],
 	},
 ];

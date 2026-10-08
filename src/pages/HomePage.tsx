@@ -19,17 +19,17 @@ export function HomePage() {
 					</h1>
 
 					<p className="hero-description">
-						Website Growth Engineer and Software Engineer combining development, performance, analytics, SEO and UX to build high-performing websites that deliver better experiences and business results. Experienced across C#/.NET, SQL, APIs, React, TypeScript, WordPress, Umbraco and production web infrastructure.
+						Software engineer with a background in production web development, working across applications, APIs and the wider web. I'm looking to join a team where I can contribute to a real product, keep learning from other engineers and grow through doing meaningful work.
 					</p>
 
 					<div className="hero-links">
 						<a
 							className="hero-button"
-							href="https://github.com/tmaz1"
+							href="/about#social"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							Github →
+							Connect →
 						</a>
 					</div>
 
@@ -52,7 +52,7 @@ export function HomePage() {
 						</h2>
 
 						<p className="section-intro">
-							My background is rooted in software engineering, with experience building and supporting production applications across the backend, frontend, APIs, databases and infrastructure. That breadth has naturally extended into website optimisation, where I now also work across technical SEO, performance, analytics and UX to improve how websites perform and deliver results.
+							My professional background started in production web support before moving into software development. My experience spans C#, .NET, React, TypeScript, SQL, PHP, WordPress and Umbraco, alongside APIs, databases and infrastructure. Working with websites has also given me experience across technical SEO, performance, analytics and UX.
 						</p>
 					</div>
 				</div>
@@ -100,7 +100,7 @@ export function HomePage() {
 				</h2>
 
 				<p>
-					I'm interested in software and web engineering roles where I can work across the technical details and the wider web experience — from building applications to improving performance, usability and growth.
+					I'm looking to be part of a team building a real product, where I can contribute, keep learning and grow as an engineer.
 				</p>
 
 				<a

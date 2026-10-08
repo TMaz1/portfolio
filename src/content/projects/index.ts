@@ -5,7 +5,7 @@ export const projects: ProjectSummary[] = [
 		slug: "ai-gateway",
 		title: "AI Gateway",
 		description:
-			"A secure gateway between applications and AI providers, designed to centralise authentication, authorisation, rate limiting, resource controls, provider selection and response validation. The project explores how AI access can be treated as a controlled application boundary rather than exposing models directly to clients.",
+			"A secure gateway between applications and AI providers, handling authentication, authorisation, rate limiting, resource controls, provider selection and response validation. Built to explore how AI access can be controlled at the application boundary.",
 		technologies: [
 			"Python",
 			"SQLite",
@@ -19,7 +19,7 @@ export const projects: ProjectSummary[] = [
 		slug: "authentication-api",
 		title: "Authentication API",
 		description:
-			"A modular authentication service built with ASP.NET Core 8, covering registration, email verification, MFA, password recovery, JWT and refresh-token sessions, role-based authorisation and account management. Built to explore the security and infrastructure behind a production-style authentication flow.",
+			"A modular authentication service built with ASP.NET Core 8, covering registration, email verification, MFA, password recovery, JWT and refresh-token sessions, role-based authorisation and account management. Built as a practical exploration of the security and infrastructure behind a modern authentication flow.",
 		technologies: [
 			"ASP.NET Core 8",
 			"C#",
@@ -47,9 +47,9 @@ export const projects: ProjectSummary[] = [
 	},
 	{
 		slug: "frontend-social-system",
-		title: "Frontend Social System",
+		title: "Social Media Frontend",
 		description:
-			"A frontend systems project exploring how a growing interactive application can remain maintainable as its UI and state become more complex. It uses reusable components, normalised state and a service layer to support dynamic layouts, collections, filtering, reordering and persistent user state.",
+			"A frontend-only social media demo built to see how far you can push an interactive application without a backend. Client-side state and localStorage handle persistence, while the project explores where frontend-only architecture starts to become limiting.",	
 		technologies: [
 			"React",
 			"TypeScript",

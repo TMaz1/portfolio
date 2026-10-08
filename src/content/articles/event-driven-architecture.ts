@@ -8,7 +8,7 @@ const article: ContentDocument = {
 	title: "Event-Driven Architecture: A Practical Guide",
 	eyebrow: "ARTICLE / ARCHITECTURE",
 	intro:
-		"A practical reference for designing event-driven systems: when to use events, when to stay synchronous, how to handle delivery and failure, and which patterns to reach for as the system becomes more distributed.",
+		"Notes on when event-driven architecture makes sense, when a synchronous approach is better, and how to handle delivery, failure and growing complexity.",
 	heroLink: {
 		label: "View a working event-driven example",
 		href: eventsApiHref,
