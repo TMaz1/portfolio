@@ -162,7 +162,7 @@
 .note-card__top,
 .note-card__bottom {
 	color: $color-subtle;
-	font-size: 8px;
+	font-size: $type-xxs;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 }
@@ -196,7 +196,7 @@
 	display: inline-flex;
 	margin-top: 18px;
 	color: $color-yellow-bright;
-	font-size: 9px;
+	font-size: $type-xs;
 	letter-spacing: 0.13em;
 	text-transform: uppercase;
 	transition:
@@ -233,7 +233,7 @@
 	background: transparent;
 	color: $color-subtle;
 	cursor: pointer;
-	font-size: 8px;
+	font-size: $type-xxs;
 	letter-spacing: 0.11em;
 	text-transform: uppercase;
 	transition:
@@ -263,7 +263,7 @@
 .note-filters>span {
 	padding-right: 16px;
 	color: $color-subtle;
-	font-size: 8px;
+	font-size: $type-xs;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	white-space: nowrap;

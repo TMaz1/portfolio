@@ -3,6 +3,7 @@
 .site-header {
 	position: sticky;
 	top: 0;
+	margin-top: 0;
 	z-index: $z-header;
 	background: $color-black;
 	-webkit-backdrop-filter: blur(10px);
@@ -160,7 +161,7 @@
 	padding: 13px 17px;
 	border-left: 1px solid transparent;
 	color: $color-muted;
-	font-size: 9px;
+	font-size: $type-xs;
 	letter-spacing: 0.14em;
 	text-transform: uppercase;
 	transition:
@@ -183,7 +184,8 @@
 		pointer-events: none;
 	}
 
-	.site-header--hidden .site-brand {
+	.site-header--hidden .site-brand,
+	.site-header--hidden .mobile-navigation__toggle {
 		display: none;
 	}
 }
@@ -192,7 +194,7 @@
 	.site-header__inner {
 		min-height: 52px;
 	}
-	
+
 	.site-brand__logo {
 		width: 28px;
 	}
@@ -207,6 +209,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+
 	.site-header,
 	.mobile-navigation__toggle span,
 	.mobile-navigation__menu {

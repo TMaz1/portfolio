@@ -87,7 +87,7 @@
 	gap: 12px 35px;
 	margin-top: 42px;
 	color: $color-subtle;
-	font-size: 9px;
+	font-size: $type-xxs;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 }
@@ -150,7 +150,7 @@
 	margin: 18px 0 22px;
 	color: $color-white;
 	font-family: $font-display;
-	font-size: 32px;
+	font-size: $type-xl;
 	font-weight: $weight-light;
 	line-height: 1;
 	text-transform: uppercase;
@@ -198,7 +198,7 @@
 .principle-number {
 	margin-bottom: 50px;
 	color: $color-yellow-bright;
-	font-size: 9px;
+	font-size: $type-xs;
 	letter-spacing: 0.16em;
 }
 
@@ -206,7 +206,7 @@
 	margin: 0 0 13px;
 	color: $color-white;
 	font-family: $font-display;
-	font-size: 29px;
+	font-size: $type-xl;
 	font-weight: $weight-light;
 	line-height: 1;
 	text-transform: uppercase;
@@ -239,7 +239,7 @@
 .radar-status {
 	padding-top: 6px;
 	color: $color-yellow-bright;
-	font-size: 9px;
+	font-size: $type-xs;
 	letter-spacing: 0.13em;
 	text-transform: uppercase;
 }
@@ -252,7 +252,7 @@
 	margin: 0 0 10px;
 	color: $color-white;
 	font-family: $font-display;
-	font-size: 30px;
+	font-size: $type-xl;
 	font-weight: $weight-light;
 	line-height: 1;
 	text-transform: uppercase;
@@ -280,7 +280,7 @@
 	padding: 5px 8px;
 	border: $border-subtle;
 	color: $color-subtle;
-	font-size: 8px;
+	font-size: $type-xxs;
 	line-height: 1;
 }
 
@@ -300,7 +300,7 @@
 .culture-label {
 	margin: 0 0 10px;
 	color: $color-yellow-bright;
-	font-size: 9px;
+	font-size: $type-xs;
 	letter-spacing: 0.16em;
 	text-transform: uppercase;
 }
@@ -309,7 +309,7 @@
 	margin: 0;
 	color: $color-white;
 	font-family: $font-display;
-	font-size: 25px;
+	font-size: $type-xl;
 	font-weight: $weight-light;
 	line-height: 1;
 	text-transform: uppercase;
@@ -329,7 +329,7 @@
 	background: transparent;
 	color: $color-white;
 	cursor: pointer;
-	font-size: 14px;
+	font-size: $type-md;
 	transition:
 		color $transition-fast,
 		border-color $transition-fast,
@@ -361,7 +361,7 @@
 .culture-card__index {
 	margin: 0 0 35px;
 	color: $color-yellow-bright;
-	font-size: 9px;
+	font-size: $type-xs;
 	letter-spacing: 0.16em;
 	text-transform: uppercase;
 }
@@ -389,7 +389,7 @@
 	display: block;
 	margin-top: 25px;
 	color: $color-subtle;
-	font-size: 8px;
+	font-size: $type-xxs;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 }
@@ -397,7 +397,7 @@
 .carousel-counter {
 	padding-top: 12px;
 	color: $color-subtle;
-	font-size: 8px;
+	font-size: $type-xxs;
 	letter-spacing: 0.12em;
 	text-transform: uppercase;
 }
@@ -427,7 +427,7 @@
 
 .social-item__pending {
 	color: $color-faint;
-	font-size: 8px;
+	font-size: $type-xs;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 }
@@ -548,7 +548,7 @@
 	}
 
 	.culture-card__content h4 {
-		font-size: 45px;
+		font-size: $type-xl;
 	}
 }
 
@@ -562,6 +562,6 @@
 	}
 
 	.culture-card__content h4 {
-		font-size: 39px;
+		font-size: $type-xl;
 	}
 }

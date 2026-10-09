@@ -63,30 +63,31 @@ export function ContentPage({ kind }: { kind: "article" | "project" }) {
 	}
 
 	return (
-		<article
-			className={`content-page content-page--${kind}`}
-		>
-			<ContentHero document={contentDocument} />
+		<>
+			<article
+				className={`content-page content-page--${kind}`}
+			>
+				<ContentHero document={contentDocument} />
 
-			<div className="content-layout container">
-				<ContentToc
-					blocks={contentDocument.blocks}
-					variant="desktop"
-				/>
-
-				<ContentToc
-					blocks={contentDocument.blocks}
-					variant="mobile"
-				/>
-
-				<div className="content-body">
-					<ContentRenderer
+				<div className="content-layout container">
+					<ContentToc
 						blocks={contentDocument.blocks}
+						variant="desktop"
 					/>
-				</div>
-			</div>
 
+					<ContentToc
+						blocks={contentDocument.blocks}
+						variant="mobile"
+					/>
+
+					<div className="content-body">
+						<ContentRenderer
+							blocks={contentDocument.blocks}
+						/>
+					</div>
+				</div>
+			</article>
 			<BackToTop />
-		</article>
+		</>
 	);
 }

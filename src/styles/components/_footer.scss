@@ -4,7 +4,7 @@
 	border-top: $border-subtle;
 	padding-block: 30px;
 	color: $color-subtle;
-	font-size: 9px;
+	font-size: $type-xs;
 	letter-spacing: 0.06em;
 }
 
@@ -43,7 +43,7 @@
 
 .site-footer__brand span {
 	font-family: $font-display;
-	font-size: 16px;
+	font-size: $type-lg;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 }

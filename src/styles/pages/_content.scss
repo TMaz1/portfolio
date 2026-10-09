@@ -88,7 +88,7 @@
 	gap: 14px 22px;
 	margin-top: 24px;
 	color: $color-subtle;
-	font-size: 9px;
+	font-size: $type-xxs;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
 }
@@ -144,7 +144,7 @@
 	display: block;
 	margin-bottom: 15px;
 	color: $color-yellow-bright;
-	font-size: 9px;
+	font-size: $type-xs;
 	letter-spacing: 0.16em;
 	text-transform: uppercase;
 }
@@ -173,7 +173,7 @@
 	color: $color-subtle;
 	cursor: pointer;
 	font: inherit;
-	font-size: 9px;
+	font-size: $type-xs;
 	line-height: 1.55;
 	text-align: left;
 	text-decoration: none;
@@ -253,7 +253,7 @@
 .content-block--heading-3 {
 	margin-top: 42px;
 	margin-bottom: 14px;
-	font-size: 28px;
+	font-size: $type-xl;
 	line-height: 1.1;
 }
 
@@ -310,7 +310,7 @@
 	background: transparent;
 	box-shadow: none;
 	color: $color-yellow-bright;
-	font-size: 9px;
+	font-size: $type-xs;
 	letter-spacing: 0.08em;
 }
 
@@ -350,7 +350,7 @@
 	padding: 11px 16px;
 	border-bottom: $border-subtle;
 	color: $color-subtle;
-	font-size: 9px;
+	font-size: $type-xs;
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
 }
@@ -381,7 +381,7 @@
 .content-quote figcaption {
 	margin-top: 10px;
 	color: $color-subtle;
-	font-size: 9px;
+	font-size: $type-xs;
 	line-height: 1.6;
 }
 
@@ -497,9 +497,13 @@
 	padding: 5px 8px;
 	border: $border-subtle;
 	color: $color-muted;
-	font-size: 7px;
+	font-size: $type-xxs;
 	letter-spacing: 0.11em;
 	text-transform: uppercase;
+}
+
+.content-card__icon {
+	font-size: $type-xxs;
 }
 
 .content-card__header {
@@ -513,7 +517,7 @@
 .content-card h3 {
 	color: $color-white;
 	font-family: $font-display;
-	font-size: 25px;
+	font-size: $type-xl;
 	font-weight: $weight-light;
 	line-height: 1;
 	text-transform: uppercase;
@@ -522,7 +526,7 @@
 .content-card p {
 	margin: 0;
 	color: $color-muted;
-	font-size: 9.5px;
+	font-size: $type-xs;
 	line-height: 1.8;
 }
 
@@ -534,7 +538,7 @@
 	padding-top: 15px;
 	border-top: 1px solid rgba($color-cream, 0.09);
 	color: $color-subtle;
-	font-size: 8px;
+	font-size: $type-xs;
 	text-transform: uppercase;
 }
 
@@ -579,7 +583,7 @@
 	gap: 10px;
 	margin-bottom: 11px;
 	color: $color-yellow-bright;
-	font-size: 9px;
+	font-size: $type-xs;
 	font-weight: $weight-medium;
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
@@ -620,7 +624,7 @@
 
 .content-step__number {
 	color: $color-yellow-bright;
-	font-size: 9px;
+	font-size: $type-xs;
 	letter-spacing: 0.12em;
 }
 
@@ -633,7 +637,7 @@
 	margin: 0;
 	color: $color-white;
 	font-family: $font-display;
-	font-size: 25px;
+	font-size: $type-xl;
 	font-weight: $weight-light;
 	line-height: 1;
 	text-transform: uppercase;
@@ -712,7 +716,7 @@
 
 .content-pathway__item>span {
 	color: $color-yellow-bright;
-	font-size: 9px;
+	font-size: $type-xs;
 }
 
 .content-faq {
@@ -741,7 +745,7 @@
 	content: "+";
 	float: right;
 	color: $color-yellow-bright;
-	font-size: 16px;
+	font-size: $type-lg;
 }
 
 .content-faq details[open] summary::after {
@@ -815,13 +819,13 @@
 
 .back-to-top {
 	position: fixed;
-	right: 20px;
+	right: 60px;
 	bottom: 20px;
 	z-index: 20;
 
 	display: grid;
-	width: 32px;
-	height: 32px;
+	width: 38px;
+	height: 38px;
 	place-items: center;
 	padding: 0;
 
@@ -848,7 +852,7 @@
 }
 
 .back-to-top.is-visible {
-	opacity: 0.8;
+	opacity: 1;
 	visibility: visible;
 	transform: translateY(0);
 	pointer-events: auto;
@@ -868,8 +872,8 @@
 }
 
 .back-to-top svg {
-	width: 13px;
-	height: 13px;
+	width: 15px;
+	height: 15px;
 	stroke-width: 1.5;
 }
 
@@ -902,10 +906,6 @@
 
 	.content-hero h1 {
 		font-size: clamp(48px, 15vw, 76px);
-	}
-
-	.content-hero__intro {
-		font-size: $type-xs;
 	}
 
 	.content-hero__meta {
@@ -964,15 +964,15 @@
 	}
 
 	.content-block--heading-2 {
-		font-size: clamp(38px, 12vw, 54px);
+		font-size: clamp(38px, 10vw, 54px);
 	}
 
 	.content-block--heading-3 {
-		font-size: 25px;
+		font-size: $type-xl;
 	}
 
 	.content-block--paragraph {
-		font-size: $type-xs;
+		font-size: $type-sm;
 	}
 
 	.content-block--paragraph-lead {
@@ -991,15 +991,14 @@
 	}
 
 	.back-to-top {
-		right: 14px;
-		bottom: 14px;
-		width: 30px;
-		height: 30px;
+		bottom: 54px;
+		width: 32px;
+		height: 32px;
 	}
 
 	.back-to-top svg {
-		width: 12px;
-		height: 12px;
+		width: 13px;
+		height: 13px;
 	}
 }
 

@@ -67,6 +67,10 @@
 	text-transform: uppercase;
 }
 
+.section-number {
+	font-size: $type-xxs;
+}
+
 .hero .eyebrow {
 	margin-bottom: 20px;
 }
@@ -107,7 +111,7 @@
 	border: 1px solid $color-yellow;
 	background: $color-yellow;
 	color: $color-black;
-	font-size: 9px;
+	font-size: $type-xs;
 	font-weight: $weight-medium;
 	letter-spacing: 0.14em;
 	text-transform: uppercase;
@@ -216,7 +220,7 @@
 	margin: 0 0 5px;
 	color: $color-white;
 	font-family: $font-display;
-	font-size: 34px;
+	font-size: $type-xl;
 	font-weight: $weight-light;
 	line-height: 1.1;
 	text-transform: uppercase;
@@ -408,7 +412,7 @@
 .project-number {
 	margin-bottom: 45px;
 	color: $color-yellow-bright;
-	font-size: 9px;
+	font-size: $type-xs;
 	letter-spacing: 0.16em;
 	text-align: center;
 }
@@ -418,7 +422,7 @@
 	margin: 0 auto 16px;
 	color: $color-white;
 	font-family: $font-display;
-	font-size: 32px;
+	font-size: $type-xl;
 	font-weight: $weight-light;
 	line-height: 1;
 	text-transform: uppercase;
@@ -444,7 +448,7 @@
 	padding: 5px 8px;
 	border: $border-subtle;
 	color: $color-muted;
-	font-size: 8px;
+	font-size: $type-xxs;
 	letter-spacing: 0.04em;
 }
 
@@ -454,7 +458,7 @@
 	bottom: 29px;
 	z-index: 5;
 	color: $color-yellow-bright;
-	font-size: 9px;
+	font-size: $type-xs;
 	letter-spacing: 0.13em;
 	text-transform: uppercase;
 	opacity: 0.7;
@@ -487,7 +491,7 @@
 	margin: 0 0 18px;
 	color: $color-yellow-bright;
 	font-family: $font-mono;
-	font-size: 9px;
+	font-size: $type-xs;
 	font-weight: $weight-regular;
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
@@ -534,7 +538,7 @@
 	display: inline-flex;
 	margin-top: 18px;
 	color: $color-yellow-bright;
-	font-size: 9px;
+	font-size: $type-xs;
 	letter-spacing: 0.13em;
 	text-transform: uppercase;
 	transition:
@@ -659,6 +663,6 @@
 	}
 
 	.break-title {
-		font-size: 42px;
+		font-size: $type-xl;
 	}
 }

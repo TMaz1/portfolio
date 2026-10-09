@@ -11,7 +11,7 @@ const article: ContentDocument = {
     intro:
         "If I rebuilt the 2.7M+ postcode import today, I would keep the parts that worked and redesign the process around bounded work, resumability, staging, observability and controlled failure.",
     heroLink: {
-        label: "Read Part 1: The original 2.7M+ postcode import",
+        label: "Read Part 1: The original plugin",
         href: part1Href,
     },
     archive: {
