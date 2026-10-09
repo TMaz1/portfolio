@@ -1,8 +1,9 @@
+import { site, siteRoutes, socialUrls } from "../../config/site";
 import type { AboutPageContent } from "./types";
 
 export const aboutContent: AboutPageContent = {
 	hero: {
-		eyebrow: "00 / About",
+		eyebrow: `${site.name} · Background · Approach & Philosophy`,
 		title: {
 			lines: ["About"],
 			emphasis: "Me.",
@@ -204,18 +205,18 @@ export const aboutContent: AboutPageContent = {
 			{
 				label: "LinkedIn",
 				description: "Professional experience and background.",
-				href: "https://www.linkedin.com/in/tayyaba-maz",
+				href: socialUrls.linkedin,
 			},
 			{
 				label: "GitHub",
 				description: "Projects, experiments and implementation work.",
-				href: "https://github.com/tmaz1",
+				href: socialUrls.github,
 			},
 			{
 				label: "Writing",
 				description:
 					"Notes on systems, implementation and things I'm learning.",
-				href: "/engineering-notes",
+				href: siteRoutes.notes,
 			},
 		],
 	},

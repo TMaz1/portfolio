@@ -6,6 +6,7 @@ import { ContentRenderer } from "../components/content/ContentRenderer";
 import { ContentToc } from "../components/content/ContentToc";
 import { BackToTop } from "../components/content/BackToTop";
 import { scrollToContentId } from "../utils/contentNavigation";
+import { siteRoutes } from "../config/site";
 
 export function ContentPage({ kind }: { kind: "article" | "project" }) {
 	const { slug } = useParams();
@@ -53,7 +54,7 @@ export function ContentPage({ kind }: { kind: "article" | "project" }) {
 
 				<Link
 					className="text-link"
-					to="/engineering-notes"
+					to={siteRoutes.notes}
 				>
 					Back to Engineering Notes →
 				</Link>

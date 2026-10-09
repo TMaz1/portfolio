@@ -82,7 +82,7 @@
 }
 
 .notes-intro__label,
-.notes-section-heading > span {
+.notes-section-heading>span {
 	padding-top: 9px;
 	color: $color-yellow-bright;
 	font-size: $type-xs;
@@ -113,7 +113,7 @@
 	line-height: 1.9;
 }
 
-.notes-intro p + p {
+.notes-intro p+p {
 	margin-top: 20px;
 }
 
@@ -194,7 +194,7 @@
 .project-archive-card a,
 .note-card__bottom a {
 	display: inline-flex;
-	margin-top: 25px;
+	margin-top: 18px;
 	color: $color-yellow-bright;
 	font-size: 9px;
 	letter-spacing: 0.13em;
@@ -226,10 +226,10 @@
 }
 
 .note-filters button {
+	position: relative;
 	min-height: 46px;
 	padding: 0 16px;
 	border: 0;
-	border-right: $border-subtle;
 	background: transparent;
 	color: $color-subtle;
 	cursor: pointer;
@@ -241,8 +241,12 @@
 		background $transition-fast;
 }
 
-.note-filters button:first-child {
-	border-left: $border-subtle;
+.note-filters button::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border: $border-subtle;
+	pointer-events: none;
 }
 
 .note-filters button:hover,
@@ -256,7 +260,7 @@
 	background: $color-yellow;
 }
 
-.note-filters > span {
+.note-filters>span {
 	padding-right: 16px;
 	color: $color-subtle;
 	font-size: 8px;
@@ -326,7 +330,7 @@
 	}
 }
 
-@media (max-width: 700px) {
+@media (max-width: $breakpoint-mobile) {
 	.notes-hero {
 		min-height: 430px;
 	}
@@ -375,7 +379,7 @@
 		padding-inline: 10px;
 	}
 
-	.note-filters > span {
+	.note-filters>span {
 		padding: 10px 12px;
 		border-top: $border-subtle;
 	}
@@ -387,6 +391,15 @@
 
 	.note-card__body {
 		padding-top: 55px;
+	}
+
+	.project-archive-card p,
+	.note-card__body p {
+		padding-bottom: 24px;
+	}
+
+	.note-card__bottom {
+		margin-top: 18px;
 	}
 }
 
@@ -403,7 +416,7 @@
 	.notes-section-heading {
 		padding-top: 60px;
 	}
-	
+
 	.note-card {
 		min-height: 350px;
 	}

@@ -5,6 +5,7 @@ import { NoteCard } from "../components/notes/NoteCard";
 import { NoteFilters } from "../components/notes/NoteFilters";
 import { ProjectArchiveCard } from "../components/notes/ProjectArchiveCard";
 import type { NoteFilterCategory } from "../types/content";
+import { socialUrls } from "../config/site";
 
 export function EngineeringNotesPage() {
 	const [filter, setFilter] = useState<"all" | NoteFilterCategory>("all");
@@ -25,9 +26,10 @@ export function EngineeringNotesPage() {
 		<>
 			<section className="notes-hero" aria-labelledby="notes-page-title">
 				<div className="notes-hero__inner container">
-					<p className="eyebrow"> / 2026</p>
+					<p className="eyebrow">Development Insights · Technical Writing</p>
 					<h1 id="notes-page-title">
 						Engineering
+						<br/>
 						<span className="hero__emphasis">Notes.</span>
 					</h1>
 					<p className="notes-hero__description">
@@ -52,7 +54,7 @@ export function EngineeringNotesPage() {
 
 						<a
 							className="button"
-							href="https://www.linkedin.com/in/tayyaba-maz"
+							href={socialUrls.linkedin}
 							target="_blank"
 							rel="noreferrer"
 						>

@@ -2,6 +2,8 @@ import { experience, skillGroups } from "../content/home";
 import { projects } from "../content/projects";
 import { ExperienceTimeline } from "../components/portfolio/ExperienceTimeline";
 import { SkillsGrid } from "../components/portfolio/SkillsGrid";
+import { site, siteRoutes, socialUrls } from "../config/site";
+
 
 export function HomePage() {
 	return (
@@ -9,7 +11,7 @@ export function HomePage() {
 			<section className="hero" aria-labelledby="hero-title">
 				<div className="hero-inner container">
 					<p className="eyebrow">
-						Tayyaba M · Web Development · Manchester, UK
+						{site.name} · Web Development · Manchester, UK
 					</p>
 
 					<h1 id="hero-title">
@@ -25,7 +27,7 @@ export function HomePage() {
 					<div className="hero-links">
 						<a
 							className="hero-button"
-							href="/about#social"
+							href={`${siteRoutes.about}#social`}
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -105,7 +107,7 @@ export function HomePage() {
 
 				<a
 					className="text-link"
-					href="mailto:tayyabamazhar001@gmail.com"
+					href={socialUrls.email}
 				>
 					Contact me →
 				</a>

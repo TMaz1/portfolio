@@ -6,6 +6,7 @@
 	z-index: $z-header;
 	background: rgba($color-black, 0.88);
 	backdrop-filter: blur(10px);
+	transition: transform 220ms ease;
 }
 
 .site-header__inner {
@@ -175,9 +176,20 @@
 	color: $color-yellow-bright;
 }
 
+@media (max-width: $breakpoint-tablet) {
+	.site-header--hidden {
+		transform: translateY(-100%);
+		pointer-events: none;
+	}
+}
+
 @media (max-width: $breakpoint-mobile) {
 	.site-header__inner {
-		min-height: 65px;
+		min-height: 52px;
+	}
+	
+	.site-brand__logo {
+		width: 28px;
 	}
 
 	.site-navigation {
@@ -190,7 +202,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-
+	.site-header,
 	.mobile-navigation__toggle span,
 	.mobile-navigation__menu {
 		transition: none;
