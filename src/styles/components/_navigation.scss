@@ -4,7 +4,8 @@
 	position: sticky;
 	top: 0;
 	z-index: $z-header;
-	background: rgba($color-black, 0.88);
+	background: $color-black;
+	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
 	transition: transform 220ms ease;
 }
@@ -180,6 +181,10 @@
 	.site-header--hidden {
 		transform: translateY(-100%);
 		pointer-events: none;
+	}
+
+	.site-header--hidden .site-brand {
+		display: none;
 	}
 }
 

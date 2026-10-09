@@ -26,16 +26,27 @@
 	pointer-events: none;
 }
 
-.hero::after {
+.content-hero-wrapper {
+	position: relative;
+	isolation: isolate;
+}
+
+.content-hero-wrapper::before {
 	content: "";
 	position: absolute;
-	width: 440px;
-	height: 440px;
-	top: -210px;
-	right: 10%;
+	z-index: -1;
+	top: -180px;
+	left: 50%;
+	width: min(900px, 120vw);
+	height: 520px;
+	transform: translateX(-50%);
 	border-radius: 50%;
-	background: rgba($color-yellow, 0.035);
-	filter: blur(85px);
+	background: radial-gradient(ellipse at center,
+			rgba($color-yellow, 0.07) 0%,
+			rgba($color-yellow, 0.035) 35%,
+			rgba($color-yellow, 0.012) 60%,
+			transparent 75%);
+	filter: blur(35px);
 	pointer-events: none;
 }
 
@@ -176,7 +187,7 @@
 }
 
 .timeline-item:last-child {
-  padding-bottom: 21px;
+	padding-bottom: 21px;
 }
 
 .timeline-date {
