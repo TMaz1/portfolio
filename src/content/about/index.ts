@@ -177,18 +177,18 @@ export const aboutContent: AboutPageContent = {
 		},
 		items: [
 			{
-				category: "Craft",
-				title: "Embroidery & upcycling",
+				category: "Film",
+				title: "30 films, first watches",
 				description:
-					"Learning embroidery and experimenting with garment alterations and upcycling.",
-				metadata: "01 / CRAFT",
+					"A personal challenge to watch 30 films I haven't seen before. So far, my favourites are The Thing (1982), No Country for Old Men (2007) and Heat (1995).",
+				metadata: "01 / FILM",
 			},
 			{
-				category: "Scrapbooking",
-				title: "Scrapbooking",
+				category: "Craft",
+				title: "Collage & clothing alterations",
 				description:
-					"Collecting magazine snippets, paper and other bits into scrapbook pages.",
-				metadata: "02 / SCRAPBOOKING",
+					"Collecting magazines for collages and making small changes to clothes, from replacing buttons to adjusting hems.",
+				metadata: "02 / CRAFT",
 			},
 		],
 	},
@@ -212,6 +212,11 @@ export const aboutContent: AboutPageContent = {
 				label: "GitHub",
 				description: "Projects, experiments and implementation work.",
 				href: socialUrls.github,
+			},
+			{
+				label: "npm",
+				description: "Reusable React components and UI utilities.",
+				href: socialUrls.npm,
 			},
 			{
 				label: "Writing",

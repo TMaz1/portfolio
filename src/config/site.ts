@@ -12,5 +12,6 @@ export const siteRoutes = {
 export const socialUrls = {
 	linkedin: "https://www.linkedin.com/in/tayyaba-maz",
 	github: "https://github.com/tmaz1",
+	npm: "https://www.npmjs.com/~custmaz",
 	email: "mailto:tayyabamazhar001@gmail.com",
 } as const;
