@@ -21,7 +21,7 @@ export function HomePage() {
 					</h1>
 
 					<p className="hero-description">
-						Software engineer and technical SEO specialist with a background in production web development, working across applications, APIs and the wider web. I'm looking to join a team where I can contribute to a real product, keep learning from other engineers and grow through doing meaningful work.
+						Software engineer focused on building reliable web applications, with additional expertise in technical SEO and website performance.
 					</p>
 
 					<div className="hero-links">
@@ -54,7 +54,7 @@ export function HomePage() {
 						</h2>
 
 						<p className="section-intro">
-							My professional background started in production web support before moving into software development. My experience spans C#, .NET, React, TypeScript, SQL, PHP, WordPress and Umbraco, alongside APIs, databases and infrastructure. Working with websites has also given me experience across technical SEO, performance, analytics and UX.
+							My professional background started in production web support before moving into software development. My experience spans C#, .NET, React, JavaScript, TypeScript, SQL, PHP, WordPress and Umbraco, alongside APIs, databases and infrastructure. Working with websites has also given me experience across technical SEO, performance, analytics and UX.
 						</p>
 					</div>
 				</div>
