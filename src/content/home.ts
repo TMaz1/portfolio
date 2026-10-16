@@ -111,6 +111,11 @@ export const experience: ExperienceItem[] = [
 					"Resolved 400+ live issues across PHP, JavaScript, WooCommerce, plugins, themes and hosting, including production outages caused by PHP conflicts and JavaScript execution errors.",
 			},
 			{
+				label: "Technical SEO & Analytics",
+				description:
+					"Audited and optimised WordPress websites using Google Lighthouse, Core Web Vitals and Screaming Frog to identify technical SEO, crawlability, indexing and performance issues. Implemented Google Tag Manager and Google Analytics tracking, supporting Google Ads conversion measurement and email marketing campaign tracking.",
+			},
+			{
 				label: "Technical Mentoring",
 				description:
 					"Mentored website designers and merchant-facing colleagues on technical processes, helping them diagnose issues and communicate solutions, and received peer recognition for problem-solving and technical communication.",
