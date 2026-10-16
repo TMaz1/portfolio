@@ -8,32 +8,32 @@ export const experience: ExperienceItem[] = [
 		company: "SkilledUp Life",
 		companyUrl: "https://skilledup.life/",
 		description:
-			"Owned website engineering and growth initiatives across frontend architecture, performance and data, translating technical research into measurable improvements and collaborating with stakeholders through delivery.",
+			"Owned website engineering and growth initiatives across frontend architecture, performance and data, translating technical research into prioritised improvements and measurable outcomes.",
 		achievements: [
 			{
 				label: "React + TypeScript",
 				description:
-					"Initiated and developed reusable Knowledge Hub and Career Pathways prototypes, establishing scalable content and navigation architecture for future expansion.",
-			},
-			{
-				label: "48 → 72 Mobile",
-				description:
-					"Led performance optimisation that increased Lighthouse mobile performance from 48 to 72 and desktop from 91 to 98, while reducing mobile CLS from 0.373 to 0.006.",
-			},
-			{
-				label: "Technical Leadership",
-				description:
-					"Translated audits and technical research into prioritised engineering requirements, then worked with stakeholders to troubleshoot, review and guide implementation.",
+					"Initiated and developed reusable Knowledge Hub and Career Pathways prototypes, establishing scalable component structures, content architecture and navigation patterns for future expansion.",
 			},
 			{
 				label: "Platform Engineering",
 				description:
-					"Identified systemic issues across the WordPress and hosting stack, driving improvements across rendering, asset delivery, caching and third-party dependencies.",
+					"Investigated bottlenecks across the production WordPress and hosting stack, tracing rendering, asset delivery, caching and third-party dependencies. Translated findings into prioritised engineering requirements, development tickets and implementation guidance, reporting directly to the CEO on technical recommendations and trade-offs.",
+			},
+			{
+				label: "48 → 72 Mobile",
+				description:
+					"Led website performance optimisation, improving Lighthouse Performance from 48 to 72 on mobile and 91 to 98 on desktop, while reducing mobile CLS from 0.373 to 0.006.",
+			},
+			{
+				label: "SEO Strategy",
+				description:
+					"Audited marketing pages and researched keywords, competitors and SERP opportunities, evaluating technical SEO, structured data and content optimisation. Used Screaming Frog, Google Search Console and GA4 to identify and prioritise organic search improvements.",
 			},
 			{
 				label: "77.3% Active Users",
 				description:
-					"Used GA4 and Search Console data to prioritise growth opportunities, contributing to 77.3% higher active users, 70.1% higher sessions, 40.4% higher organic sessions and 40.2% higher organic users.",
+					"Analysed GA4 acquisition and engagement metrics alongside Search Console data to inform website optimisation priorities, contributing to increases of 77.3% in active users, 70.1% in sessions, 40.4% in organic sessions and 40.2% in organic users.",
 			},
 		],
 	},

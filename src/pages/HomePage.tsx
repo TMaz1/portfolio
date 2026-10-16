@@ -21,7 +21,7 @@ export function HomePage() {
 					</h1>
 
 					<p className="hero-description">
-						Software engineer with a background in production web development, working across applications, APIs and the wider web. I'm looking to join a team where I can contribute to a real product, keep learning from other engineers and grow through doing meaningful work.
+						Software engineer and technical SEO specialist with a background in production web development, working across applications, APIs and the wider web. I'm looking to join a team where I can contribute to a real product, keep learning from other engineers and grow through doing meaningful work.
 					</p>
 
 					<div className="hero-links">
