@@ -57,27 +57,27 @@ export const experience: ExperienceItem[] = [
 			{
 				label: "Full-stack .NET",
 				description:
-					"Developed features across C#, ASP.NET Core, React and Umbraco, integrating frontend components with REST APIs, SQL data and existing .NET applications.",
+					"Developed features across C#, ASP.NET Core, React and Umbraco, integrating frontend components with REST APIs, SQL Server, Entity Framework Core and existing .NET applications. Validated changes through NUnit testing, Azure DevOps CI/CD pipelines and management code reviews before QA handover.",
 			},
 			{
 				label: "API + SQL",
 				description:
-					"Developed REST API endpoints and SQL-backed filtering logic for merchant application and partner data, allowing sales teams to view and segment approval, trading and lead information in internal dashboards.",
+					"Built REST API endpoints and SQL-backed filtering logic for merchant applications and partner data, enabling sales teams to segment approval, trading and lead information through internal dashboards.",
 			},
 			{
 				label: "800+ Websites",
 				description:
-					"Was brought into the Websites Made Easy team to handle high-priority security and technical tasks across 800+ websites hosted on three dedicated servers, drawing on previous knowledge of the environment.",
+					"Recalled to the Websites Made Easy team to urgently address high-priority security vulnerabilities across 800+ hosted websites, leveraging previous training and in-depth knowledge of the environment to accelerate remediation.",
 			},
 			{
 				label: "Stakeholders",
 				description:
-					"Worked directly with marketing, sales and management to turn business requirements, reports and competitor research into technical solutions, assessing implementation options and delivery effort.",
+					"Collaborated with marketing, sales, QA and technical teams to translate business requirements, performance insights and competitor research into practical solutions, assessing feasibility and delivery effort.",
 			},
 			{
-				label: "Compliance Delivery",
+				label: "Reusable Components",
 				description:
-					"Implemented and coordinated website changes required by Payment Services Regulator updates, working across shared React components and customer-facing journeys within Agile release cycles.",
+					"Built configurable Umbraco CMS components with modal, carousel and grid layouts, creating reusable patterns for consistent development across customer-facing websites and marketing pages.",
 			},
 		],
 	},
