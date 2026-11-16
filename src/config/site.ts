@@ -7,6 +7,7 @@ export const siteRoutes = {
 	home: "/",
 	about: "/about",
 	notes: "/engineering-notes",
+	projects: "/projects",
 } as const;
 
 export const socialUrls = {

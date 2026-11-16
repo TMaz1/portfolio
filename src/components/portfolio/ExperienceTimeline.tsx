@@ -4,7 +4,7 @@ import { ProjectCard } from "./ProjectCard";
 
 type ExperienceTimelineProps = {
 	items: ExperienceItem[];
-	projects: typeof import("../../content/projects").projects;
+	projects: typeof import("../../content/projects").featuredProjects;
 };
 
 export function ExperienceTimeline({
@@ -48,6 +48,7 @@ export function ExperienceTimeline({
 											key={project.slug}
 											project={project}
 											number={index + 1}
+											total={projects.length}
 										/>
 									))}
 								</div>

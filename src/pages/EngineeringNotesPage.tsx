@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { projects } from "../content/projects";
+import { projectDocuments } from "../content/projects/content";
 import { articleDocuments } from "../content/articles";
 import { NoteCard } from "../components/notes/NoteCard";
 import { NoteFilters } from "../components/notes/NoteFilters";
@@ -10,10 +11,25 @@ import { socialUrls } from "../config/site";
 export function EngineeringNotesPage() {
 	const [filter, setFilter] = useState<"all" | NoteFilterCategory>("all");
 
+	// Only projects with an explicitly authored project document
+	// should appear in the Project articles section.
+	const projectArticleProjects = useMemo(() => {
+		const authoredProjectSlugs = new Set(
+			projectDocuments.map((document) => document.slug),
+		);
+
+		return projects.filter((project) =>
+			authoredProjectSlugs.has(project.slug),
+		);
+	}, []);
+
+	// General Engineering Notes articles remain independently filtered
+	// using the existing topic/category filters.
 	const visibleNotes = useMemo(
 		() =>
 			articleDocuments.filter((document) => {
 				if (!document.archive) return false;
+
 				return (
 					filter === "all" ||
 					document.archive.filterCategories.includes(filter)
@@ -29,7 +45,7 @@ export function EngineeringNotesPage() {
 					<p className="eyebrow">Development Insights · Technical Writing</p>
 					<h1 id="notes-page-title">
 						Engineering
-						<br/>
+						<br />
 						<span className="hero__emphasis">Notes.</span>
 					</h1>
 					<p className="notes-hero__description">
@@ -102,7 +118,7 @@ export function EngineeringNotesPage() {
 					</div>
 				</div>
 				<div className="project-archive-grid">
-					{projects.map((project, index) => (
+					{projectArticleProjects.map((project, index) => (
 						<ProjectArchiveCard
 							key={project.slug}
 							project={project}

@@ -27,7 +27,8 @@ export function SiteFooter() {
 						aria-label="Footer navigation"
 					>
 						<Link to={siteRoutes.home}>Home</Link>
-						<Link to={siteRoutes.notes}>Notes</Link>
+						<Link to={siteRoutes.projects}>Projects</Link>
+						<Link to={siteRoutes.notes}>Engineering Notes</Link>
 						<Link to={siteRoutes.about}>About</Link>
 					</nav>
 

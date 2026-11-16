@@ -4,12 +4,37 @@ export type ContentLink = {
 	external?: boolean;
 };
 
+export type ProjectLink = {
+	label: string;
+	href: string;
+	type: "live" | "github" | "package" | "download" | "other";
+};
+
 export type ProjectSummary = {
 	slug: string;
 	title: string;
 	description: string;
 	technologies: string[];
-	href?: string;
+
+	section: string;
+	subsection?: string;
+
+	// Local image path, preferably inside public/assets/images/projects/
+	logo?: string;
+
+	// Single letter or icon fallback when no logo exists
+	icon?: string;
+
+	sortDate?: string;
+	displayDate?: string;
+
+	// Optional additional metadata, e.g. package downloads
+	meta?: string;
+
+	featured?: boolean;
+
+	links: ProjectLink[];
+	articleSlugs?: string[];
 };
 
 export type ExperienceAchievement = {

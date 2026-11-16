@@ -1,19 +1,19 @@
 import { Link } from "react-router-dom";
 import type { ProjectSummary } from "../../types/content";
 
-type ProjectCardProps = { project: ProjectSummary; number: number };
+type ProjectCardProps = { project: ProjectSummary; number: number; total: number };
 
-export function ProjectCard({ project, number }: ProjectCardProps) {
+export function ProjectCard({ project, number, total }: ProjectCardProps) {
 	return (
-		<article className="project">
-			{project.href ? (
+		<article className={`project${number === 3 && total === 3 ? " project--third-featured" : ""}`}>
+			{project.links[0]?.href ? (
 				<a
 					className="project__primary-link"
-					href={project.href}
+					href={project.links[0].href}
 					target="_blank"
-					rel="noreferrer"
+					rel="noopener noreferrer"
 				>
-					<ProjectCardContent project={project} number={number} />
+					<ProjectCardContent project={project} number={number} total={total} />
 				</a>
 			) : (
 				<Link
@@ -21,7 +21,7 @@ export function ProjectCard({ project, number }: ProjectCardProps) {
 					to={`/projects/${project.slug}`}
 					aria-label={`Read ${project.title} project article`}
 				>
-					<ProjectCardContent project={project} number={number} />
+					<ProjectCardContent project={project} number={number} total={total} />
 				</Link>
 			)}
 			<Link

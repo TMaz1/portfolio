@@ -1,40 +1,28 @@
+
 import type { ContentDocument } from "../../types/content";
-import { projects } from "./index";
 
 import apiGateway from "./ai-gateway";
 import authenticationApiMfaEmailVerification from "./authentication-api";
 import eventDrivenAppointmentsApi from "./event-driven-appointments-api";
 import frontendSocialSystem from "./frontend-social-system";
 
-const authoredProjectDocuments: ContentDocument[] = [
+/**
+ * Only explicitly authored project documents belong here.
+ *
+ * Adding a project to the project catalogue does not automatically
+ * create an Engineering Notes project article.
+ *
+ * To publish a new project article:
+ * 1. Create its content file in this directory.
+ * 2. Import it below.
+ * 3. Add it to projectDocuments.
+ *
+ * Projects without an authored document remain available on the
+ * Projects page but do not have a project article route.
+ */
+export const projectDocuments: ContentDocument[] = [
 	apiGateway,
 	authenticationApiMfaEmailVerification,
 	eventDrivenAppointmentsApi,
 	frontendSocialSystem,
-];
-
-const authoredSlugs = new Set(
-	authoredProjectDocuments.map((document) => document.slug),
-);
-
-const generatedProjectDocuments: ContentDocument[] = projects
-	.filter((project) => !authoredSlugs.has(project.slug))
-	.map((project) => ({
-		kind: "project",
-		slug: project.slug,
-		title: project.title,
-		eyebrow: "PROJECT",
-		intro: project.description,
-		blocks: [
-			{
-				type: "paragraph",
-				id: `${project.slug}-overview`,
-				text: project.description,
-			},
-		],
-	}));
-
-export const projectDocuments: ContentDocument[] = [
-	...authoredProjectDocuments,
-	...generatedProjectDocuments,
 ];

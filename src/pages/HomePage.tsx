@@ -1,5 +1,5 @@
 import { experience, skillGroups } from "../content/home";
-import { projects } from "../content/projects";
+import { featuredProjects } from "../content/projects";
 import { ExperienceTimeline } from "../components/portfolio/ExperienceTimeline";
 import { SkillsGrid } from "../components/portfolio/SkillsGrid";
 import { site, siteRoutes, socialUrls } from "../config/site";
@@ -61,7 +61,7 @@ export function HomePage() {
 
 				<ExperienceTimeline
 					items={experience}
-					projects={projects}
+					projects={featuredProjects}
 				/>
 			</section>
 

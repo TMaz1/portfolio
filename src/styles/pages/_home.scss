@@ -367,6 +367,18 @@
 		box-shadow $transition-base;
 }
 
+
+.project--third-featured {
+	grid-column: 1 / -1;
+	min-height: 270px;
+}
+
+@media (max-width: $breakpoint-mobile) {
+	.project--third-featured {
+		grid-column: auto;
+	}
+}
+
 .project::before {
 	content: "";
 	position: absolute;

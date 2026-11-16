@@ -127,7 +127,7 @@
 	grid-template-columns: 170px minmax(0, 1fr);
 	gap: 50px;
 	padding-top: 110px;
-	margin-bottom: 52px;
+	margin-bottom: 48px;
 	border-top: $border-subtle;
 }
 
@@ -191,7 +191,7 @@
 	line-height: 1.8;
 }
 
-.project-archive-card a,
+.project-archive-card__link,
 .note-card__bottom a {
 	display: inline-flex;
 	margin-top: 18px;
@@ -204,7 +204,11 @@
 		transform $transition-fast;
 }
 
-.project-archive-card a:hover,
+.project-archive-card__link span {
+	margin-left: 8px;
+}
+
+.project-archive-card__link:hover,
 .note-card__bottom a:hover {
 	color: $color-white;
 	transform: translateX(3px);
@@ -220,9 +224,58 @@
 	border-bottom: $border-subtle;
 }
 
+.note-filters__groups {
+	flex: 1;
+	min-width: 0;
+}
+
+.note-filters__group {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	padding: 8px 0;
+}
+
+.note-filters__group + .note-filters__group {
+	border-top: $border-soft;
+}
+
+.note-filters__label {
+	flex: 0 0 58px;
+	padding: 14px 0 0 12px;
+	color: $color-subtle;
+	font-size: $type-xxs;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
 .note-filters__buttons {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.note-filters__status {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	padding: 12px 16px;
+	border-left: $border-subtle;
+	color: $color-subtle;
+	font-size: $type-xs;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.note-filters__status button {
+	border: 0;
+	background: transparent;
+	color: $color-yellow-bright;
+	cursor: pointer;
+	font: inherit;
+	font-size: inherit;
+	text-decoration: underline;
+	text-underline-offset: 3px;
 }
 
 .note-filters button {
@@ -260,14 +313,7 @@
 	background: $color-yellow;
 }
 
-.note-filters>span {
-	padding-right: 16px;
-	color: $color-subtle;
-	font-size: $type-xs;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
-	white-space: nowrap;
-}
+
 
 .note-card {
 	min-height: 390px;
@@ -369,8 +415,24 @@
 		gap: 0;
 	}
 
+	.note-filters__group {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.note-filters__label {
+		flex-basis: auto;
+		padding: 8px 12px 2px;
+	}
+
 	.note-filters__buttons {
 		width: 100%;
+	}
+
+	.note-filters__status {
+		justify-content: space-between;
+		border-top: $border-subtle;
+		border-left: 0;
 	}
 
 	.note-filters button {
@@ -379,10 +441,6 @@
 		padding-inline: 10px;
 	}
 
-	.note-filters>span {
-		padding: 10px 12px;
-		border-top: $border-subtle;
-	}
 
 	.note-card {
 		min-height: 370px;
