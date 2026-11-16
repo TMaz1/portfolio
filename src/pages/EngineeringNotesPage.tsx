@@ -6,7 +6,6 @@ import { NoteCard } from "../components/notes/NoteCard";
 import { NoteFilters } from "../components/notes/NoteFilters";
 import { ProjectArchiveCard } from "../components/notes/ProjectArchiveCard";
 import type { NoteFilterCategory } from "../types/content";
-import { socialUrls } from "../config/site";
 
 export function EngineeringNotesPage() {
 	const [filter, setFilter] = useState<"all" | NoteFilterCategory>("all");
@@ -67,15 +66,6 @@ export function EngineeringNotesPage() {
 						>
 							Articles →
 						</a>
-
-						<a
-							className="button"
-							href={socialUrls.linkedin}
-							target="_blank"
-							rel="noreferrer"
-						>
-							LinkedIn ↗
-						</a>
 					</div>
 				</div>
 			</section>
@@ -87,15 +77,12 @@ export function EngineeringNotesPage() {
 				<div className="notes-intro__label">01 / WHY</div>
 				<div className="notes-intro__content">
 					<h2 id="notes-intro-title">
-						What I’m
+						How I Build
 						<br />
-						Learning.
+						&amp; Learn.
 					</h2>
 					<p>
-						I like keeping notes on the things I build and learn along the way. Not just what worked, but the decisions behind it, the problems I ran into, and the things I’d do differently next time.
-					</p>
-					<p>
-						This is where I collect those notes, from project deep-dives and technical decisions to smaller lessons, experiments and patterns I’ve found useful.
+						A space for project breakdowns, technical decisions, and the lessons behind my work. I write about what worked, what broke, and what I’d do differently next time.
 					</p>
 				</div>
 			</section>
@@ -113,7 +100,7 @@ export function EngineeringNotesPage() {
 							articles.
 						</h2>
 						<p>
-							A selection of projects I've built, with notes on how they work and why I built them.
+							Project-based articles and a look at my process.
 						</p>
 					</div>
 				</div>
@@ -142,7 +129,7 @@ export function EngineeringNotesPage() {
 							Writing.
 						</h2>
 						<p>
-							Notes on software engineering, performance, SEO and the things I've learned building for the web.
+							Lessons on software engineering, performance, and SEO from building for the web.
 						</p>
 					</div>
 				</div>

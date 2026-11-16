@@ -37,10 +37,10 @@ export const aboutContent: AboutPageContent = {
 		eyebrow: "Background",
 		title: "From curiosity to engineering.",
 		paragraphs: [
-			"I started coding at 16, with Visual Basic as my first programming language. It took me a while to really enjoy it, but once it clicked, I realised how much you could build with code. Some of the first projects I genuinely loved were small arcade-style games and maths-based learning games and quizzes, built with Processing, Pygame and C#. Since then, I've experimented with Python, Haskell, Prolog, Java, Android, React Native and plenty of other technologies through university and personal projects.",
-			"More recently, I've been deliberately pushing into areas I wish to explore further, particularly AI systems and event driven architecture. Working on websites commercially has given me a good understanding of the problems businesses actually run into, and I've found myself wanting to understand the systems behind them. That has led me to build things like an AI gateway, authentication systems, event-driven APIs and OCR pipelines, often because they solve problems I recognise or because they're areas I know I should understand better.",
-			"Professionally, I've worked across web development and software engineering, progressing from production web support into .NET development within a fintech environment. My commercial experience spans C#, .NET, TypeScript, SQL, REST APIs, React, WordPress, Umbraco and Azure DevOps, working across frontend, backend, databases, CMS platforms and live production infrastructure.",
-			"I've also developed a broader perspective on website growth, combining scalable page architecture with performance optimisation, technical SEO, UX and analytics to improve both the technical foundations of websites and their business outcomes. This has included contributing to 77.3% higher active users, 70.1% higher sessions and 40.4% higher organic sessions over the engagement period.",
+			"I started coding at 16, with Visual Basic as my first programming language. It took me a while to really enjoy it, but once it clicked, I realised how much you could build with code. Some of the first projects I genuinely loved were small arcade-style games and maths-based learning games and quizzes, built with Processing, Pygame and C#. Since then, I've worked with plenty of other languages and frameworks through university and personal projects.",
+			"Professionally, I've worked across web development and software engineering, moving from production web support into .NET development within a fintech environment. Working across frontend, backend, databases, CMS platforms and live infrastructure with C#, .NET, TypeScript and SQL has given me a good understanding of the problems businesses actually run into.",
+			"More recently, I've been pushing into areas I want to explore further, particularly AI systems and event-driven architecture. That has led me to build things like an AI gateway, authentication systems, event-driven APIs and OCR pipelines, either to solve problems I recognise from commercial work or because they're areas I want to know properly.",
+			"I've also developed a broader perspective on website growth, combining scalable page architecture with performance optimisation, technical SEO, UX and analytics to improve both the technical side of websites and their business outcomes. This has included contributing to 77.3% higher active users, 70.1% higher sessions and 40.4% higher organic sessions over the engagement period.",
 		],
 	},
 	techStack: {
@@ -111,25 +111,25 @@ export const aboutContent: AboutPageContent = {
 		},
 		items: [
 			{
-				number: "01 / EFFORT",
-				label: "Effort",
-				title: "Do the work properly.",
+				number: "01 / CURIOSITY",
+				label: "Curiosity",
+				title: "Build to understand.",
 				description:
-					"More code does not mean better code. I try to solve the actual problem without creating unnecessary problems for the next person.",
+					"Whether it is authentication flows, event-driven retries, or frontend limits, I learn best by pulling systems apart and building them from scratch.",
 			},
 			{
-				number: "02 / MODULARITY",
-				label: "Modularity",
-				title: "Keep it changeable.",
+				number: "02 / IMPACT",
+				label: "Impact",
+				title: "Spot the gap, fix the root.",
 				description:
-					"I prefer simple, modular systems and avoid adding complexity until the problem actually requires it.",
+					"From database bottlenecks and slow page loads to technical SEO and security gaps, I look for what is missing and build practical fixes that make a measurable difference.",
 			},
 			{
-				number: "03 / FAILURE",
-				label: "Failure",
-				title: "Fail early. Test harder.",
+				number: "03 / RELIABILITY",
+				label: "Reliability",
+				title: "For the real world.",
 				description:
-					"AI can make me more productive, but generated code still needs to earn its place through testing and review. I'd rather find problems early, understand why they happened and fix them properly.",
+					"Supporting hundreds of live websites taught me that things will break. I prefer simple, modular architecture with proper error handling and testing so systems stay dependable long after launch.",
 			},
 		],
 	},
@@ -156,6 +156,19 @@ export const aboutContent: AboutPageContent = {
 					"Rate Limiting",
 				],
 			},
+			{
+				status: "Incomplete",
+				title: "Event-Driven Appointments API",
+				description:
+					"An event-driven API for managing appointments and documents, featuring webhook delivery, exponential backoff retries, dead-letter queues and payload encryption. I'm currently hardening its webhook reliability, preventing race conditions and adding automated tests.",
+				technologies: [
+					"TypeScript",
+					"Node.js",
+					"SQLite",
+					"Docker",
+					"Webhooks",
+				],
+			},
 		],
 	},
 	culture: {
@@ -180,15 +193,22 @@ export const aboutContent: AboutPageContent = {
 				category: "Film",
 				title: "30 films, first watches",
 				description:
-					"A personal challenge to watch 30 films I haven't seen before. So far, my favourites are The Thing (1982), No Country for Old Men (2007) and Heat (1995).",
+					"A personal challenge to watch 30 films I haven't seen before. So far, my favourites are The Thing (1982), and Heat (1995).",
 				metadata: "01 / FILM",
 			},
 			{
 				category: "Craft",
-				title: "Collage & clothing alterations",
+				title: "Collage & scrapbooking",
 				description:
-					"Collecting magazines for collages and making small changes to clothes, from replacing buttons to adjusting hems.",
+					"Collecting magazines, tickets, and random bits of paper to put together collages and scrapbook pages.",
 				metadata: "02 / CRAFT",
+			},
+			{
+				category: "Puzzles",
+				title: "Sudoku",
+				description:
+					"I like doing a bit of Sudoku here and there to switch off. I'm not really good at it, but I do enjoy it!",
+				metadata: "03 / PUZZLES",
 			},
 		],
 	},

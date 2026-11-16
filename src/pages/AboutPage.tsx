@@ -5,6 +5,7 @@ import { ProjectRadar } from "../components/about/ProjectRadar";
 import { CultureSection } from "../components/about/CultureSection";
 import { SocialLinks } from "../components/about/SocialLinks";
 import { aboutContent } from "../content/about";
+import { socialUrls } from "../config/site";
 
 export function AboutPage() {
 	const { hero } = aboutContent;
@@ -35,16 +36,24 @@ export function AboutPage() {
 					<div className="hero-links">
 						<a
 							className="button"
-							href="#projects"
+							href="#social"
 							onClick={(event) => {
 								event.preventDefault();
-								document.getElementById("projects")?.scrollIntoView({
+								document.getElementById("social")?.scrollIntoView({
 									behavior: "smooth",
 									block: "start",
 								});
 							}}
 						>
-							What I'm Working On →
+							Connect →
+						</a>
+						<a
+							className="button"
+							href={socialUrls.linkedin}
+							target="_blank"
+							rel="noreferrer"
+						>
+							LinkedIn ↗
 						</a>
 					</div>
 
