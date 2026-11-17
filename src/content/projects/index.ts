@@ -50,6 +50,7 @@ export const projects: ProjectSummary[] = [
 		technologies: ["React", "TypeScript", "Vite", "localStorage"],
 		section: "web-applications",
 		subsection: "frontend-systems",
+		logo: "/assets/images/projects/social-system-logo.png",
 		icon: "S",
 		featured: false,
 		links: [{ label: "Live project", href: "https://social.tayyaba.uk/", type: "live" }],
